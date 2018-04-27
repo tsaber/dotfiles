@@ -1,0 +1,33 @@
+COLUMNS=250
+IGNOREOF=100
+HISTCONTROL=ignoredups
+export HISTIGNORE="&:ls:[bf]g:exit"
+export RANGER_LOAD_DEFAULT_RC=FALSE
+export XMODIFIERS=@im=fcitx 
+export HISTFILESIZE=-20000
+export QT_IM_MODULE=fcitx
+export HISTSIZE=10000 
+export LOCALE=de_DE.UTF-8
+export LANG=en_US.UTF-8
+export TZ="Europe/Berlin"
+export XDG_CURRENT_DESKTOP=i3wm
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+export DISPLAY=:0
+export XDG_VTNR=2
+
+if [ -n "$DISPLAY" ]; 
+  then
+    export BROWSER=chromium
+  else 
+    export BROWSER=links
+fi
+
+export XDG_DATA_HOME=/home/zavarch/.local/share
+export XDG_CONFIG=/home/zavarch/.config
+export MPD_HOST=/home/zavarch/.config/mpd/socket
+
+PATH="/home/zavarch/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/zavarch/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/zavarch/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MM_OPT="INSTALL_BASE=/home/zavarch/perl5"; export PERL_MM_OPT;

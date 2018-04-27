@@ -1,0 +1,7 @@
+source /home/zavarch/.alias
+source /home/zavarch/.env
+source /usr/share/doc/pkgfile/command-not-found.bash
+#source .wichstripsehn
+shopt -s autocd
+shopt -s checkwinsize
+
