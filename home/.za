@@ -1,5 +1,7 @@
 source /home/zavarch/.alias 
+source /home/zavarch/.config/.fun
 source /home/zavarch/.pam_environment
+source /home/zavarch/.env
 source /usr/share/doc/pkgfile/command-not-found.zsh
 zstyle ':completion:*' add-space true
 zstyle ':completion:*' auto-description '0 %dspecify:'
@@ -33,6 +35,12 @@ promptinit
 HISTFILE=~/.histfile
 HISTSIZE=1001
 
+autoload -U colors && colors
+
+prompt fade red
+
+
+
 setopt AUTO_PUSHD PUSHD_SILENT PUSHD_TO_HOME
 
 ## Remove duplicate entries
@@ -55,3 +63,6 @@ if [[ -f ${DIRSTACKFILE} ]]; then
      # "cd -" won't work after login by just setting $OLDPWD, so
      [[ -d $dirstack[1] ]] && cd -q $dirstack[1] && cd -q $OLDPWD
 fi
+source /etc/bash_completion.d/git-extras
+source '/usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh'
+

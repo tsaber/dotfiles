@@ -17,13 +17,12 @@ cmap w!! w !sudo tee >/dev/null %
 syntax on
 filetype plugin indent on 
 set nocompatible
+set clipboard=unnamedplus
 set nu
 set noswapfile
-set t_8f=^[[38;2;%lu;%lu;%lum        " set foreground color
-set t_8b=^[[48;2;%lu;%lu;%lum        " set background color
 set background=dark
 set termguicolors
-colorscheme molokai
+colorscheme desert
 set backup 
 set backupdir=/home/zavarch/.tmp
 set ruler

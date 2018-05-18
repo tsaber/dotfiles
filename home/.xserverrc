@@ -2,4 +2,4 @@
 
 #!/bin/sh
 
-##exec /usr/bin/Xorg :0  -ardelay 300 -arinterval 100 -nolisten tcp -auth /root/.Xauthority vt${XDG_VTNR} "${@}" 
+exec /usr/bin/Xorg :0  -ardelay 300 -arinterval 100 -nolisten tcp -auth /root/.Xauthority vt${XDG_VTNR} "${@}" 
