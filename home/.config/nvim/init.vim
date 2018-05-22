@@ -13,7 +13,8 @@ Plug 'trusktr/seti.vim'
 Plug 'honza/vim-snippets'
 call plug#end()
 
-cmap w!! w !sudo tee >/dev/null %
+cmap w!! w !sudo tee >/dev/null % 
+cmap qq q!
 syntax on
 filetype plugin indent on 
 set nocompatible

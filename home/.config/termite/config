@@ -3,7 +3,8 @@
 #audible_bell = false
 #clickable_url = true
 #dynamic_title = true
-font = creep 16
+#font = Lini 12 
+font = creep 18 
 #fullscreen = true
 #geometry = 640x480
 #icon_name = terminal
@@ -30,10 +31,10 @@ cursor_blink = system
 #filter_unmatched_urls = true
 
 # Emit escape sequences for extra modified keys
-#modify_other_keys = false
+modify_other_keys = false
 
 # set size hints for the window
-size_hints = false
+#size_hints = true
 
 # "off", "left" or "right"
 #scrollbar = off
@@ -44,12 +45,11 @@ size_hints = false
 #cursor = #dcdccc
 #cursor_foreground = #dcdccc
 
-foreground = #87ffff
+foreground = #FF7D40
 foreground_bold = #87ffd7
-background = #3a3a3a
 
 # 20% background transparency (requires a compositor)
-#background = rgba(63, 63, 63, 0.8)
+background = rgba(2, 4, 1, 0.8)
 
 # If unset, will reverse foreground and background
 highlight = #ff5f5f
@@ -73,7 +73,7 @@ color14 = #93e0e3
 color15 = #ffffff
 
 [hints]
-font = creep 13
+font = creep 16
 #foreground = #dcdccc
 #background = #3f3f3f
 active_foreground = #ffd7d7

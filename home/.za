@@ -1,7 +1,6 @@
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec startx; fi
 source /home/zavarch/.alias 
-source /home/zavarch/.config/.fun
 source /home/zavarch/.pam_environment
-source /home/zavarch/.env
 source /usr/share/doc/pkgfile/command-not-found.zsh
 zstyle ':completion:*' add-space true
 zstyle ':completion:*' auto-description '0 %dspecify:'
@@ -32,21 +31,15 @@ zstyle :compinstall filename '/home/zavarch/.za'
 autoload -Uz compinit promptinit
 compinit
 promptinit
+prompt fade blue
 HISTFILE=~/.histfile
 HISTSIZE=1001
 
 autoload -U colors && colors
-
-prompt fade red
-
-
-
 setopt AUTO_PUSHD PUSHD_SILENT PUSHD_TO_HOME
-
 ## Remove duplicate entries
 setopt PUSHD_IGNORE_DUPS
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
-
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 ## This reverts the +/- operators.
 setopt PUSHD_MINUS
@@ -66,3 +59,7 @@ fi
 source /etc/bash_completion.d/git-extras
 source '/usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh'
 
+#for sd_cmd in systemctl systemd-analyze systemd-run; do
+#alias $sd_cmd='DBUS_SESSION_BUS_ADDRESS="unix:path=$XDG_RUNTIME_DIR/bus" '$sd_cmd
+#    done
+#dbus-update-activation-environment --systemd --all
