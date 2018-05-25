@@ -1,0 +1,12 @@
+[Unit]
+Description=i3
+After=xorg.target
+Requires=xorg.target
+
+[Service]
+ExecStart=startx
+Restart=always
+RestartSec=10
+ 
+[Install]
+WantedBy=wm.target
