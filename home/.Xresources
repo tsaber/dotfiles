@@ -1,18 +1,18 @@
-!!*background:  #455a64
-!!*foreground:  #fafafa
-!!*color0:  #26374a
-!!*color1:  #da6edb
-!!*color2:  #39b0d5
-!!*color3:  #bdb07e
-!!*color4:  #6968db
-!!*color5:  #af38ff
-!!*color6:  #36bcff
-!!*color7:  #9c9d9f
-!!*color8:  #2c394a
-!!*color9:  #fe3f80
-!!*color10:  #92f790
-!!*color11:  #e89090
-!!*color12:  #5bb2ff
-!!*color13:  #d189ff
-!!*color14:  #34f9ff
-!!
+*background:  #455a64
+*foreground:  #fafafa
+*color0:  #26374a
+*color1:  #da6edb
+*color2:  #39b0d5
+*color3:  #bdb07e
+*color4:  #6968db
+*color5:  #af38ff
+*color6:  #36bcff
+*color7:  #9c9d9f
+*color8:  #2c394a
+*color9:  #fe3f80
+*color10:  #92f790
+*color11:  #e89090
+*color12:  #5bb2ff
+*color13:  #d189ff
+*color14:  #34f9ff
+
