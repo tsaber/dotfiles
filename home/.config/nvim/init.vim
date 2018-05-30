@@ -33,16 +33,8 @@ map Q gq
 map <F4> :!wc -m %<CR>
 inoremap <C-U> <C-G>u<C-U>
 augroup vimrcEx
-""""""""""""""""""""""""""""""""""""
-"block lines with ctrl+v
-"Insert comment sign (//) with I
-"escape with ESC
-"the key typing is
-"
-"ctrl+v → jjjj → I → // → ESC
-""""""""""""""""""""""""""""""""""""
-"" 'm m() shadalap
-"" 2> devnachschu:
+
+
 
 
 autocmd!

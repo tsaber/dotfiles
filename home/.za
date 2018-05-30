@@ -1,10 +1,10 @@
-#if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec startx; fi
+###if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec startx; fi
 source /home/zavarch/.alias 
 #source /home/zavarch/.pam_environment
 source /home/zavarch/.env
 source "/home/zavarch/.homesick/repos/homeshick/homeshick.sh"
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
-#setopt PUSHD_MINUS
+setopt PUSHD_MINUS
 #if [[ -f ${DIRSTACKFILE} ]]; then
 #     # Enabling NULL_GLOB via (N) weeds out any non-existing
 #     # directories from the saved dir-stack file.
@@ -18,6 +18,5 @@ fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 #     # "cd -" won't work after login by just setting $OLDPWD, so
 #     [[ -d $dirstack[1] ]] && cd -q $dirstack[1] && cd -q $OLDPWD
 #fi
-#source /etc/bash_completion.d/git-extras
-
-dbus-update-activation-environment --systemd  --verbose \ DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+#prompt 'random'
+#zstyle ':completion:*:cd:*' ignore-parents parent pwd
