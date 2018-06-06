@@ -3,6 +3,5 @@ source /home/zavarch/.env
 source /usr/share/doc/pkgfile/command-not-found.bash
 source .wichstripsehn
 
-stty pass8 
 
 
