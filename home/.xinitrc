@@ -17,5 +17,5 @@ fi
 
 xset r rate 400 50 &
 
-i3
-&
+i3 &
+

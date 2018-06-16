@@ -27,10 +27,10 @@ exec --no-startup-id /home/zavarch/bin/polyb
 # font pango:DejaVu Sans Mono 8
 # font pango:Roboto Sans Mono 12:
 #font pango:mononoki Nerd Font:Awesome  
-font pango:GoMono Nerd Font Mono 10: Awesome
+font pango:GoMono Nerd Font Mono 8: Awesome
 # font font pango:hack 12:mplus Nerd Font Mono:
 # font pango:LiterationMono Nerd Font 13:
-set $st "exec --no-startup-id st -f 'scientifica:pixelsize=14:antialias=true:autohint=true' -e tmux"
+set $st "exec --no-startup-id st -f 'scientifica:pixelsize=14:antialias=true:autohint=true' -e 'tmuxi'"
 set $t "exec --no-startup-id termite"
 gaps inner 1 
 gaps outer 1
@@ -166,8 +166,8 @@ for_window [class=",*"] title_format "%title"
 hide_edge_borders smart 
 default_border pixel
 default_floating_border pixel
-exec fcitx
 workspace back_and_forth output HDMI2
+
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+Tab move container to workspace back_and_forth
 bindsym $mod+n scratchpad show
@@ -206,4 +206,5 @@ exec compton --config ~/.config/compton/compton.conf
 
 
 exec cmst
-exec --no-startup-id blueshift
+exec --no-startup-id blueshift -c ~/.config/blueshift/comp
+exec --no-startup-id blueshift-tray

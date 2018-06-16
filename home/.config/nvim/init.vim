@@ -7,35 +7,33 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-
-Plug 'scrooloose/nerdcommenter'
+Plug 'scroloose/nerdcommenter'
 Plug 'trusktr/seti.vim'
-Plug 'honza/vim-snippets'
+Plug 'jiangmiao/auto-pairs'
+Plug 'YMCD'
 call plug#end()
 
 cmap w!! w !sudo tee >/dev/null % 
 cmap qq q!
 syntax on
-filetype plugin indent on 
+filetype plugin on 
 set nocompatible
 set clipboard=unnamedplus
 set nu
 set noswapfile
 set background=dark
 set termguicolors
-colorscheme desert
+colorscheme molokai
 set backup 
 set backupdir=/home/zavarch/.tmp
 set ruler
 set history=100
 set hlsearch
-map Q gq
+map Q cc "gq
 map <F4> :!wc -m %<CR>
 inoremap <C-U> <C-G>u<C-U>
 augroup vimrcEx
-
-
-
+"set g:python3_host_prog
 
 autocmd!
 autocmd FileType text setlocal textwidth=78
