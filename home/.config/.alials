@@ -70,6 +70,9 @@ alias mus='cd /opt/music'
 #alias sudo='sudo zsh -ic '
 alias tud='todo.sh -v'
 #alias BF='expac -H M '%m%n' | sort -h'
-
-
 alias rm='rm '
+alias blueshift='blueshift '
+alias blueshift='blueshift -c .config/blueshift/comp'
+alias wdwarf='wget -A.tar.bz2 -N  http://www.bay12games.com/dwarves/older_versions.html --spider -r -l 1'
+alias dwget="curl -s http://www.bay12games.com/dwarves/older_versions.html | grep linux.tar.bz2 | cut -d'\"' -f2 | head -1| wget -P ~/Downloads"
+alias pm='ponymix '

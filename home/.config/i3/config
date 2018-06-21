@@ -13,9 +13,14 @@ set $ws9 "9:df"
 set $MO "mons --primary HDMI2 -e left"
 bindsym $mod+F7 exec $MO
 exec $MO
-
-#exec st clock-tty; move to workspace $ws2
-#exec st "dfat"; move to workspace $ws2
+mouse_warping output
+focus_follows_mouse yes
+popup_during_fullscreen leave_fullscreen
+focus_wrapping yes
+workspace_auto_back_and_forth yes
+focus_on_window_activation urgent
+#exec st -e clock-tty; move to workspace 2
+#exec "i3-msg st -e 'dfat' && i3-msg 'move to workspace 2'"
 exec --no-startup-id pasystray
 exec --no-startup-id fcitx
 exec --no-startup-id KeeWeb 
@@ -27,17 +32,19 @@ exec --no-startup-id /home/zavarch/bin/polyb
 # font pango:DejaVu Sans Mono 8
 # font pango:Roboto Sans Mono 12:
 #font pango:mononoki Nerd Font:Awesome  
-font pango:GoMono Nerd Font Mono 8: Awesome
+font pango:Lini 8: Powerline
 # font font pango:hack 12:mplus Nerd Font Mono:
 # font pango:LiterationMono Nerd Font 13:
-set $st "exec --no-startup-id st -f 'scientifica:pixelsize=14:antialias=true:autohint=true' -e 'tmuxi'"
+#set $st "exec --no-startup-id st -f 'Anonymize Nerd Font Mono:pixelsize=12:antialias=true:autohint=true' -e 'tmuxi'"
+set $st "exec --no-startup-id st -f 'CodeNewRoman Nerd Font Mono:pixelsize=12:antialias=true:autohint=true' -e 'tmuxi'"
+#set $st "exec --no-startup-id st -f 'creep:pixelsize=18:antialias=true:autohint=true' -e 'tmuxi'"
 set $t "exec --no-startup-id termite"
 gaps inner 1 
 gaps outer 1
 exec --no-startup-id blueshift
 floating_modifier $mod
 default_orientation horizontal
-exec jws -s -t 20m -m fill ~/dunleds/*
+#exec jws -s -t 20m -m fill ~/dunleds/3/*
 # start a terminal
 #bindsym $mod+Return exec --no-startup-id termite
 bindsym $mod+Shift+Return $t 
@@ -130,6 +137,7 @@ workspace $ws8 output HDMI2
 workspace $ws4 output HDMI2
 workspace $ws10 output HDMI2
 assign [class="^firefox$"] $ws7
+assign [class="^firefox-nightly$"] $ws7
 assign [class="^term$"] $ws3
 assign [class="^skype$"] $ws1
 assign [class="^dota2$"] $ws10
@@ -149,11 +157,11 @@ for_window [window_role="task_dialog"] floating enable move output primary
 for_window [window_role="Preferences"] floating enable move output primary
 for_window [window_type="dialog"] floating enable move output primary
 for_window [window_type="menu"] floating enable move output primary
-for_window [window_type="prompt"] floating enable move output primary
 
 
 bindsym $mod+t exec --no-startup-id thunderbird
-bindsym $mod+p exec --no-startup-id firefox-nightly
+bindsym $mod+o exec --no-startup-id firefox-nightly
+bindsym $mod+p exec --no-startup-id chromium
 
 bindsym $mod+Shift+d "exec --no-startup-id steam-runtime steam://rungameid/373300"
 bindsym $mod+Shift+i "exec --no-startup-id st -o -c zsh dfhack"
@@ -186,13 +194,17 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym t resize shrink height 10 px or 10 ppt
         bindsym semicolon resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape
@@ -201,10 +213,9 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 exec_always --no-startup-id "/home/zavarch/bin/polyb"
-exec_always /home/zavarch/.za
+exec_always /home/zavarch/.va
 exec compton --config ~/.config/compton/compton.conf
 
 
 exec cmst
-exec --no-startup-id blueshift -c ~/.config/blueshift/comp
-exec --no-startup-id blueshift-tray
+exec --no-startup-id blueshift-tray -c ~/.config/blueshift/comp
