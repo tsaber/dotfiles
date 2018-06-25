@@ -19,38 +19,35 @@ popup_during_fullscreen leave_fullscreen
 focus_wrapping yes
 workspace_auto_back_and_forth yes
 focus_on_window_activation urgent
+workspace_layout stacked
 #exec st -e clock-tty; move to workspace 2
 #exec "i3-msg st -e 'dfat' && i3-msg 'move to workspace 2'"
 exec --no-startup-id pasystray
-exec --no-startup-id fcitx
-exec --no-startup-id KeeWeb 
-exec --no-startup-id /home/zavarch/bin/polyb
-
 
 # font pango:mplus Nerd Font Mono 13:Envy Code R 13
 # font pango:Envy Code R 14
 # font pango:DejaVu Sans Mono 8
 # font pango:Roboto Sans Mono 12:
 #font pango:mononoki Nerd Font:Awesome  
-font pango:Lini 8: Powerline
+font pango:Noto Mono 10: PowerlineSymbols
 # font font pango:hack 12:mplus Nerd Font Mono:
 # font pango:LiterationMono Nerd Font 13:
 #set $st "exec --no-startup-id st -f 'Anonymize Nerd Font Mono:pixelsize=12:antialias=true:autohint=true' -e 'tmuxi'"
-set $st "exec --no-startup-id st -f 'CodeNewRoman Nerd Font Mono:pixelsize=12:antialias=true:autohint=true' -e 'tmuxi'"
+set $st "exec --no-startup-id st -e tmux new-session -A"
 #set $st "exec --no-startup-id st -f 'creep:pixelsize=18:antialias=true:autohint=true' -e 'tmuxi'"
 set $t "exec --no-startup-id termite"
-gaps inner 1 
-gaps outer 1
-exec --no-startup-id blueshift
+#gaps inner 1 
+#gaps outer 1
 floating_modifier $mod
-default_orientation horizontal
-#exec jws -s -t 20m -m fill ~/dunleds/3/*
+default_orientation vertical
 # start a terminal
 #bindsym $mod+Return exec --no-startup-id termite
 bindsym $mod+Shift+Return $t 
 bindsym $mod+Return $st 
 bindsym $mod+Shift+q kill
 bindsym $mod+q exec --no-startup-id rofi -show drun
+bindsym $mod+e exec --no-startup-id rofi -show window
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -148,15 +145,15 @@ assign [class="^dfhack$"] $ws9
 assign [class="^weechat$"] $ws7
 assign [class="^dfat"] "2:dfat" 
 assign [class="^i3-nagbar$"]"3:co" 
-assign [class="^copyq$"] output primary
+assign [class="^copyq$"] output HDMI-2
 #assign.2
 
-for_window [window_role="pop-up"] floating enable move output primary
-for_window [window_role="bubble"] floating enable move output primary
-for_window [window_role="task_dialog"] floating enable move output primary
-for_window [window_role="Preferences"] floating enable move output primary
-for_window [window_type="dialog"] floating enable move output primary
-for_window [window_type="menu"] floating enable move output primary
+for_window [window_role="pop-up"] floating enable move output HDMI-2
+for_window [window_role="bubble"] floating enable move output HDMI-2
+for_window [window_role="task_dialog"] floating enable move output HDMI-2
+for_window [window_role="Preferences"] floating enable move output HDMI-2
+for_window [window_type="dialog"] floating enable move output HDMI-2
+for_window [window_type="menu"] floating enable move output HDMI-2
 
 
 bindsym $mod+t exec --no-startup-id thunderbird
@@ -174,14 +171,14 @@ for_window [class=",*"] title_format "%title"
 hide_edge_borders smart 
 default_border pixel
 default_floating_border pixel
-workspace back_and_forth output HDMI2
+workspace back_and_forth output HDMI-2
 
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+Tab move container to workspace back_and_forth
 bindsym $mod+n scratchpad show
 bindsym $mod+Shift+n move container to scratchpad
 bindsym $mod+x [urgent=latest] focus
-bindsym $mod+Shift+b move workspace to next output
+bindsym $mod+b move workspace to next output
 bindsym $mod+g exec copyq: Show main menu under cursor
 exec_always --no-startup-id  copyq
 
@@ -212,10 +209,14 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-exec_always --no-startup-id "/home/zavarch/bin/polyb"
 exec_always /home/zavarch/.va
 exec compton --config ~/.config/compton/compton.conf
 
 
 exec cmst
 exec --no-startup-id blueshift-tray -c ~/.config/blueshift/comp
+bar {
+     status_command i3status
+     output HDMI-2
+     font pango:Terminus 9
+}
