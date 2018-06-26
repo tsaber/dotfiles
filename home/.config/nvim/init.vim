@@ -54,7 +54,7 @@ set noswapfile
 set background=dark
 set termguicolors
 set backup 
-set backupdir=/home/zavarch/.tmp
+set backupdir=/home/zava/.tmp
 set ruler
 let g:ycm_global_ycm_extra_conf='/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 set history=100
