@@ -2,7 +2,7 @@
 source /home/zavarch/.alias 
 ##source /home/zavarch/.pam_environment
 source /home/zavarch/.env
-source "/home/zavarch/.homesick/repos/homeshick/homeshick.sh"
+source "/home/zava/.homesick/repos/homesick/homesick.sh"
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 setopt PUSHD_MINUS
 if [[ -f ${DIRSTACKFILE} ]]; then

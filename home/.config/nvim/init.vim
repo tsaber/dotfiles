@@ -50,6 +50,7 @@ filetype plugin on
 set nocompatible
 set clipboard=unnamedplus
 set nu
+colo kolor
 set noswapfile
 set background=dark
 set termguicolors

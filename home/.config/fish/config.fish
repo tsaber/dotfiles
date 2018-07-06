@@ -282,5 +282,7 @@ if status --is-login
     end
 end
 
+source ~/.env 
+source ~/.config/.alials
 
-source ~/.env ~/.config/.alials
+

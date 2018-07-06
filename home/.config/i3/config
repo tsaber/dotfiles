@@ -2,15 +2,15 @@
 set $mod Mod4 
 set $ws1 "1:abc"
 set $ws10 "10:dota2"
-set $ws2 "2:dfat"
+set $ws2 "2:fat"
 set $ws3 "3:co"
 set $ws4 "4:web"
 set $ws5 "5:mus"
 set $ws6 "6:tbc"
-set $ws7 "7:ste"
-set $ws8 "8:wee" 
+set $ws8 "8:ste"
+set $ws7 "7:wee" 
 set $ws9 "9:df"
-set $MO "mons --primary HDMI2 -e left"
+set $MO "xrandr --output HDMI-2 --primary --right-of eDP-1"
 bindsym $mod+F7 exec $MO
 exec $MO
 mouse_warping output
@@ -20,22 +20,16 @@ focus_wrapping yes
 workspace_auto_back_and_forth yes
 focus_on_window_activation urgent
 workspace_layout stacked
-#exec st -e clock-tty; move to workspace 2
-#exec "i3-msg st -e 'dfat' && i3-msg 'move to workspace 2'"
 exec --no-startup-id pasystray
 
-# font pango:mplus Nerd Font Mono 13:Envy Code R 13
-# font pango:Envy Code R 14
-# font pango:DejaVu Sans Mono 8
-# font pango:Roboto Sans Mono 12:
 #font pango:mononoki Nerd Font:Awesome  
-font pango:Noto Mono 10: PowerlineSymbols
+font pango:Terminus 9: PowerlineSymbols 
 # font font pango:hack 12:mplus Nerd Font Mono:
-# font pango:LiterationMono Nerd Font 13:
 #set $st "exec --no-startup-id st -f 'Anonymize Nerd Font Mono:pixelsize=12:antialias=true:autohint=true' -e 'tmuxi'"
-set $st "exec --no-startup-id st -e tmux new-session -A"
+set $st "exec --no-startup-id st -f 'Terminus:pixelsize=12:antialias=true' -e tmax"
+
 #set $st "exec --no-startup-id st -f 'creep:pixelsize=18:antialias=true:autohint=true' -e 'tmuxi'"
-set $t "exec --no-startup-id termite"
+set $t "exec --no-startup-id lxterminal"
 #gaps inner 1 
 #gaps outer 1
 floating_modifier $mod
@@ -47,7 +41,7 @@ bindsym $mod+Return $st
 bindsym $mod+Shift+q kill
 bindsym $mod+q exec --no-startup-id rofi -show drun
 bindsym $mod+e exec --no-startup-id rofi -show window
-
+bindsym $mod+F1 exec copyq toggle
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -123,16 +117,16 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 #mons
-workspace $ws1 output eDP1 
-workspace $ws2 output eDP1
-workspace $ws3 output HDMI2
-workspace $ws9 output HDMI2
-workspace $ws5 output HDMI2
-workspace $ws6 output HDMI2
-workspace $ws7 output HDMI2
-workspace $ws8 output HDMI2
-workspace $ws4 output HDMI2
-workspace $ws10 output HDMI2
+workspace $ws1 output eDP-1 
+workspace $ws2 output eDP-1
+workspace $ws3 output HDMI-2
+workspace $ws9 output HDMI-2
+workspace $ws5 output HDMI-2
+workspace $ws6 output HDMI-2
+workspace $ws7 output HDMI-2
+workspace $ws8 output HDMI-2
+workspace $ws4 output HDMI-2
+workspace $ws10 output HDMI-2
 assign [class="^firefox$"] $ws7
 assign [class="^firefox-nightly$"] $ws7
 assign [class="^term$"] $ws3
@@ -160,7 +154,7 @@ bindsym $mod+t exec --no-startup-id thunderbird
 bindsym $mod+o exec --no-startup-id firefox-nightly
 bindsym $mod+p exec --no-startup-id chromium
 
-bindsym $mod+Shift+d "exec --no-startup-id steam-runtime steam://rungameid/373300"
+bindsym $mod+Shift+d "exec --no-startup-id ~/.local/share/applications/Dota 2.desktop"
 bindsym $mod+Shift+i "exec --no-startup-id st -o -c zsh dfhack"
 
 # reload the configuration file
