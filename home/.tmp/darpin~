@@ -1,0 +1,3 @@
+curl -S https://github.com/DFHack/dfhack/releases/ | grep 64-gcc-7 | head -1 |cut -d'"' -f2| set derp  
+wget https://github.com/$derp
+

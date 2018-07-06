@@ -1,0 +1,2 @@
+#!/usr/bin/fish
+feh --randomize --bg-fill /home/zava/.config/variety/wallpaper/*

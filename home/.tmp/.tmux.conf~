@@ -14,7 +14,7 @@ bind-key C-b last-window
 # confirm before killing a window or the server
 bind-key k confirm kill-window
 bind-key K confirm kill-server
-bind-key -n C-b send-prefix
+
 # toggle statusbar
 bind-key b set-option status
 set -g status off
@@ -128,15 +128,15 @@ source-file ~/.tmuxline.conf
 # list of plugins
 set -g @shell_mode 'vi'
 # Remap window navigation to vim
-unbind-key j
-bind-key j select-pane -D
-unbind-key k
-bind-key k select-pane -U
-unbind-key h
+#unbind-key j
+#bind-key j select-pane -D
+#unbind-key k
+#bind-key k select-pane -U
+#unbind-key h
 
-bind-key h select-pane -L
-unbind-key l
-bind-key l select-pane -R
+#bind-key h select-pane -L
+#unbind-key l
+#bind-key l select-pane -R
 set -g @resurrect-capture-pane-contents 'on'
 set -g @continuum-save-interval '10'
 set -g @continuum-restore 'on'

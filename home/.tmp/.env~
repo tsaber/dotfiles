@@ -20,10 +20,11 @@ set -xg BROWSER chromium
 set -xg XDG_DATA_HOME /home/zava/.local/share
 set -xg XDG_CONFIG /home/zava/.config
 set -xg XDG_CONFIG_HOME /home/zava/.config
+set -xg MPD_HOST /home/zava/.config/mpd/socket
 set -xg XDG_RUNTIME_DIR /run/user/$UID
 set -xg SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/gnupg/S.gpg-agent.ssh"
 set -xg TIME_DIR "/run/user/1001"  
 set -xg LD_LIBRARY_PATH /usr/lib /lib
+
 set -xg GITHUB_TOKEN bb962884dedd4c47d0b695dae60b2eb041a7771d
 set -xg GITHUB_USER tsaber
-

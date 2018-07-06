@@ -1,0 +1,3 @@
+#!/usr/bin/fish
+        
+cd /opt/dwarffortress/tolz/AnnouncementWindow; and chmod +x run.py; and ./run.py

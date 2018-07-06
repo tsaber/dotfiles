@@ -1,0 +1,7 @@
+#!/bin/bash
+        
+cd /home/zava/Downloads/AnnouncementWindow-master && python run.py | i3-swallow tee
+
+#>> /dev/null 2>&1)     
+
+     
