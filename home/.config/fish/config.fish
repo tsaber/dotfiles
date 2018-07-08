@@ -285,4 +285,3 @@ end
 source ~/.env 
 source ~/.config/.alials
 
-

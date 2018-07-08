@@ -1,3 +1,4 @@
+SEARCH="Logitech G403 Prodigy Gaming Mouse"
 if [ "$SEARCH" = "" ]; then 
     exit 1
 fi

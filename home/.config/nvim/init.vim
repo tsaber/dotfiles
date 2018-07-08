@@ -20,7 +20,6 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 "Plug 'fatih/vim-go'
 Plug 'nvie/vim-flake8'
 Plug 'davidhalter/jedi-vim'
-Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
@@ -37,17 +36,14 @@ Plug 'xolox/vim-notes'
 " editing
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
-Plug 'godlygeek/tabular'
-Plug 'tpope/vim-repeat'
 
 " better statusline
 call plug#end()
 
 cmap w!! w !sudo tee >/dev/null % 
-cmap qq q!
+cmap q!! wq!
 syntax on
 filetype plugin on 
-set nocompatible
 set clipboard=unnamedplus
 set nu
 colo kolor

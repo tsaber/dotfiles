@@ -4,7 +4,7 @@
 #clickable_url = true
 #dynamic_title = true
 #font = Lini 12 
-font = creep 18 
+font = mononoki Nerd Font 10
 #fullscreen = true
 #geometry = 640x480
 #icon_name = terminal
@@ -73,12 +73,12 @@ color14 = #93e0e3
 color15 = #ffffff
 
 [hints]
-font = creep 16
+font = mononoki Nerd Font 8
 #foreground = #dcdccc
 #background = #3f3f3f
 active_foreground = #ffd7d7
 active_background = #ff0087
-padding = 40
+padding = 15
 border = #ff8787
 border_width = 10
 roundness = 5.0
