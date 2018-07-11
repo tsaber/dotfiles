@@ -5,7 +5,7 @@
 # Set default field separators
 #
 set -g IFS \n\ \t
-set -qg __fish_added_user_paths
+set -g __fish_added_user_paths
 or set -g __fish_added_user_paths
 
 #
@@ -284,4 +284,13 @@ end
 
 source ~/.env 
 source ~/.config/.alials
+#if [[ -z "$TMUX" ]] ;then
+#    ID="$( tmux ls | grep -vm1 attached | cut -d: -f1 )" # get the id of a deattached session
+#        if [[ -z "$ID" ]] ;then # if not available create a new one
+#           tmux new-session
+#        else
+#           tmux attach-session -t "$ID" # if available attach to it
+#        fi
+#fi
+
 
