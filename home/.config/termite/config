@@ -1,10 +1,10 @@
 [options]
 #allow_bold = true
 #audible_bell = false
-#clickable_url = true
+clickable_url = true
 #dynamic_title = true
 #font = Lini 12 
-font = mononoki Nerd Font 10
+font = xos4 Terminus 9
 #fullscreen = true
 #geometry = 640x480
 #icon_name = terminal
@@ -16,16 +16,31 @@ font = mononoki Nerd Font 10
 scrollback_lines = 10000
 #search_wrap = true
 #urgent_on_bell = true
-#hyperlinks = false
+hyperlinks = true
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
-browser = mimeo
+browser = qutebrowser
+color0 = #ea006a
+color2 = #ff1c2f
+color3 = #ff3d95
+color4 = #ea006a
+color5 = #00a7ea
+color6 = #ff808a
+color7 = #ea9500
+color8 = #3dc8ff
+color9 = #eac100
+color10 = #ffb93d
+color11 = #00ea51
+color12 = #3dff80
+color13 = #ffdd3d
+color14 = #1cffec
+color15 = #80fff4
 
 # "system", "on" or "off"
 cursor_blink = system
 
 # "block", "underline" or "ibeam"
-#cursor_shape = block
+cursor_shape = ibeam
 
 # Hide links that are no longer valid in url select overlay mode
 #filter_unmatched_urls = true
@@ -34,7 +49,7 @@ cursor_blink = system
 modify_other_keys = false
 
 # set size hints for the window
-#size_hints = true
+size_hints = true
 
 # "off", "left" or "right"
 #scrollbar = off
@@ -42,45 +57,28 @@ modify_other_keys = false
 [colors]
 # If both of these are unset, cursor falls back to the foreground color,
 # and cursor_foreground falls back to the background color.
-#cursor = #dcdccc
-#cursor_foreground = #dcdccc
+cursor = #3dff80
+cursor_foreground = #dcdccc
 
-foreground = #FF7D40
+foreground = #f43dff
 foreground_bold = #87ffd7
 
 # 20% background transparency (requires a compositor)
-background = rgba(2, 4, 1, 0.8)
+#background = rgba(2, 4, 1, 0.7)
 
 # If unset, will reverse foreground and background
-highlight = #ff5f5f
+#highlight = #ff5f5f
 
 # Colors from color0 to color254 can be set
-color0 = #3f3f3f
-color1 = #705050
-color2 = #60b48a
-color3 = #dfaf8f
-color4 = #506070
-color5 = #dc8cc3
-color6 = #8cd0d3
-color7 = #dcdccc
-color8 = #709080
-color9 = #dca3a3
-color10 = #c3bf9f
-color11 = #f0dfaf
-color12 = #94bff3
-color13 = #ec93d3
-color14 = #93e0e3
-color15 = #ffffff
-
 [hints]
-font = mononoki Nerd Font 8
+font = AurulentSansMono Nerd Font Mono 8
 #foreground = #dcdccc
 #background = #3f3f3f
 active_foreground = #ffd7d7
-active_background = #ff0087
+active_background = #fff987
 padding = 15
-border = #ff8787
-border_width = 10
-roundness = 5.0
+border = #dd00ea
+border_width = 1
+roundness = 4
 
 # vim: ft=dosini cms=#%s

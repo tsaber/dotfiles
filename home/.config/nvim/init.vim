@@ -8,68 +8,55 @@ endif
 
 call plug#begin()
 
-" syntax highlighting
-Plug 'peterhoeg/vim-qml'
-Plug 'artoj/qmake-syntax-vim'
-Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'tikhomirov/vim-glsl'
 
 " auto complete
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --racer-completer --omnisharp-completer --tern-completer' }
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-"Plug 'fatih/vim-go'
-Plug 'nvie/vim-flake8'
-Plug 'davidhalter/jedi-vim'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 
-" navigation/search file
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'rking/ag.vim'
-Plug 'dkprice/vim-easygrep'
-
-" note
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
-
-" editing
+Plug 'bling/vim-airline'
+Plug 'godlygeak/tabular'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
+Plug 'christoomey/vim-tmux-navigator'
 
 " better statusline
 call plug#end()
 
 cmap w!! w !sudo tee >/dev/null % 
-cmap q!! wq!
 syntax on
 filetype plugin on 
-set clipboard=unnamedplus
-set nu
-colo kolor
-set noswapfile
+colo dracula
 set background=dark
-set termguicolors
-set backup 
-set backupdir=/home/zava/.tmp
 set ruler
-let g:ycm_global_ycm_extra_conf='/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
+set termguicolors                    " Enable GUI colors for the terminal to get truecolor
+                             
 set history=100
 set hlsearch
-map <F4> :!wc -m %<CR>
 inoremap <C-U> <C-G>u<C-U>
-augroup vimrcEx
-
-autocmd!
-autocmd FileType text setlocal textwidth=78
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+let g:airline_theme='behelit'
 
 
-if !exists(":DiffOrig")
-  command DiffOrig vert new | set buftype=nofile | read ++edit # | 0d_ | diffthis
-                 \ | wincmd p | diffthis
-endif
+set showcmd
+set ignorecase
+set smarttab
+set hlsearch
+set number
+set noswapfile
+set cursorline
+set timeoutlen=500
+"set timeoutlen=0
+
+" for cross-terminal clipboard support
+set clipboard=unnamed
+set clipboard^=unnamedplus
 
 
-let g:python3_host_prog='/usr/bin/python3'
-let g:powerline_pycmd='py3'
+
+
+
+
+

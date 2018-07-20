@@ -49,7 +49,7 @@ case $session in
 	deepin 			  ) exec dbus-launch --sh-syntax --exit-with-session startdde;;
 	enlightenment 	  ) exec dbus-launch --sh-syntax --exit-with-session enlightenment_start;;
 	gnome 			  ) exec dbus-launch --sh-syntax --exit-with-session gnome-session;;
-	bspwm 			  ) exec dbus-launch --sh-syntax --exit-with-session bspwm-session;;
+	bspwm 			  ) exec dbus-launch --sh-syntax --exit-with-session bspwm;;
     i3|i3wm           ) exec dbus-launch --sh-syntax --exit-with-session i3;;
     lxde 	          ) exec dbus-launch --sh-syntax --exit-with-session startlxde;;
     lxqt         	  ) exec dbus-launch --sh-syntax --exit-with-session lxqt-session;;
@@ -64,3 +64,4 @@ case $session in
     *                 ) exec dbus-launch --sh-syntax --exit-with-session $1;;
 esac
 fi
+
