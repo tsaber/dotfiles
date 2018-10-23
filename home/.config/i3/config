@@ -1,4 +1,5 @@
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!  
+# Please see https://i3wm.org/docs/userguide.html for a complete 
+#reference!  
 set $mod Mod4 
 set $ws1 "1:abc"
 set $ws10 "10:dota2"
@@ -10,9 +11,6 @@ set $ws6 "6:tbc"
 set $ws8 "8:ste"
 set $ws7 "7:wee" 
 set $ws9 "9:df"
-set $MO "xrandr --output HDMI-2 --primary --right-of eDP-1"
-bindsym $mod+F7 exec $MO
-exec $MO
 mouse_warping output
 focus_follows_mouse yes
 popup_during_fullscreen leave_fullscreen
@@ -23,13 +21,13 @@ workspace_layout stacked
 exec --no-startup-id pasystray
 
 #font pango:mononoki Nerd Font:Awesome  
-font pango:Terminus 9: PowerlineSymbols 
+font pango:FixedSys Excelsior 11
 # font font pango:hack 12:mplus Nerd Font Mono:
 #set $st "exec --no-startup-id st -f 'Anonymize Nerd Font Mono:pixelsize=12:antialias=true:autohint=true' -e 'tmuxi'"
-set $st "exec --no-startup-id st -f 'Terminus:pixelsize=12:antialias=true' -e tmax"
+set $st "exec --no-startup-id termite"
 
 #set $st "exec --no-startup-id st -f 'creep:pixelsize=18:antialias=true:autohint=true' -e 'tmuxi'"
-set $t "exec --no-startup-id lxterminal"
+set $t "exec --no-startup-id st -f 'creep:pixelsize=16:antialias=true:autohint=true'"
 #gaps inner 1 
 #gaps outer 1
 floating_modifier $mod
@@ -154,8 +152,6 @@ bindsym $mod+t exec --no-startup-id thunderbird
 bindsym $mod+o exec --no-startup-id firefox-nightly
 bindsym $mod+p exec --no-startup-id chromium
 
-bindsym $mod+Shift+d "exec --no-startup-id ~/.local/share/applications/Dota 2.desktop"
-bindsym $mod+Shift+i "exec --no-startup-id st -o -c zsh dfhack"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -203,14 +199,10 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-exec_always /home/zavarch/.va
 exec compton --config ~/.config/compton/compton.conf
 
 
-exec cmst
+exec an2linserver.py
 exec --no-startup-id blueshift-tray -c ~/.config/blueshift/comp
-bar {
-     status_command i3status
-     output HDMI-2
-     font pango:Terminus 9
-}
+
+exec_always --no-startup-id /home/zava/.config/polybar/launch.sh

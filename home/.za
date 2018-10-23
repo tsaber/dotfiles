@@ -21,6 +21,4 @@ fi
 prompt 'clint'
 zstyle ':completion:*:cd:*' ignore-parents parent pwd
 eval "$(direnv hook zsh)"
-export $(dbus-launch)
-#dbus-update-activation-environment --systemd  --verbose \ DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 

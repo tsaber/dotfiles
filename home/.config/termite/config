@@ -4,7 +4,8 @@
 clickable_url = true
 #dynamic_title = true
 #font = Lini 12 
-font = xos4 Terminus 9
+#font = FixedSys Excelsior 12
+font = FixedSys Excelsior 13
 #fullscreen = true
 #geometry = 640x480
 #icon_name = terminal
@@ -19,7 +20,7 @@ scrollback_lines = 10000
 hyperlinks = true
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
-browser = qutebrowser
+browser = $BROWSER
 color0 = #ea006a
 color2 = #ff1c2f
 color3 = #ff3d95
@@ -64,7 +65,7 @@ foreground = #f43dff
 foreground_bold = #87ffd7
 
 # 20% background transparency (requires a compositor)
-#background = rgba(2, 4, 1, 0.7)
+background = rgba(2, 4, 1, 0.7)
 
 # If unset, will reverse foreground and background
 #highlight = #ff5f5f

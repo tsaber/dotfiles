@@ -14,11 +14,6 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-notes'
-Plug 'bling/vim-airline'
-Plug 'godlygeak/tabular'
-Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'christoomey/vim-tmux-navigator'
 
