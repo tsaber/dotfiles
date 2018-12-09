@@ -1,8 +1,8 @@
-source /home/zavarch/.alias
-source /home/zavarch/.env
-source /usr/share/doc/pkgfile/command-not-found.bash
-source /home/zavarch/.wichstripsehn
-export $(dbus-launch)
-source /etc/environment
+#source /home/zavarch/.alias
+#source /home/zavarch/.env
+#source /usr/share/doc/pkgfile/command-not-found.bash
+#source /home/zavarch/.wichstripsehn
+#export $(dbus-launch)
+#source /etc/environment
   
   

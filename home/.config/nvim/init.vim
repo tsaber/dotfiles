@@ -8,7 +8,7 @@ endif
 
 call plug#begin()
 
-
+" silent! cave
 " auto complete
 
 Plug 'scrooloose/nerdtree'
@@ -16,25 +16,34 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tpope/vim-surround'
 Plug 'christoomey/vim-tmux-navigator'
-
-" better statusline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
+Plug 'christoomey/vim-tmux-runner'
+Plug 'dag/vim-fish'
+Plug 'mbbill/undotree'
+Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
+Plug 'tomtom/quickfixsigns_vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 cmap w!! w !sudo tee >/dev/null % 
+cmap Q! q!
 syntax on
 filetype plugin on 
-colo dracula
 set background=dark
 set ruler
-
 set termguicolors                    " Enable GUI colors for the terminal to get truecolor
-                             
+
+
 set history=100
 set hlsearch
 inoremap <C-U> <C-G>u<C-U>
-let g:airline_theme='behelit'
+"let g:tmuxline_powerline_separators = 0
 
-
+let g:airline_theme = 'behelit'
 set showcmd
 set ignorecase
 set smarttab
@@ -50,8 +59,9 @@ set clipboard=unnamed
 set clipboard^=unnamedplus
 
 
-
-
-
-
-
+let g:airline#extensions#tmuxline#enabled = 0
+let g:tmuxline_theme = 'zenburn'
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
