@@ -15,3 +15,14 @@ end
 
 source ~/.config/fish/tmux.fish
 source /home/zava/.homesick/repos/homeshick/homeshick.fish
+
+
+
+if status --is-login
+  bass eval (dbus-launch)
+end
+
+
+
+
+

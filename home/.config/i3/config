@@ -88,20 +88,20 @@ workspace $ws7 output HDMI-2
 workspace $ws8 output HDMI-2
 workspace $ws4 output HDMI-2
 workspace $ws10 output HDMI-2
-assign [class="^firefox$"] $ws3
-assign [class="^firefox-nightly$"] $ws3
+assign [class="^firefox$"] $ws7
+assign [class="^firefox-nightly$"] $ws7
 assign [class="^term$"] $ws4
-assign [class="^skype$"] $ws1
+assign [class="^(?i)skype$"] $ws1
 assign [class="^dota2$"] $ws10
 assign [class="^Steam$"] $ws6
 assign [class="^lnp$"] $ws8
 assign [class="^Dwarf_Fortress$"] $ws9
 assign [class="^dfhack$"] $ws9
 assign [class="^weechat$"] $ws7
-assign [class="^dfat"] "2:dfat" 
-assign [class="^i3-nagbar$"]"3:co" 
+assign [class="^i3-nagbar$"] $ws3 
 assign [class="^copyq$"] output HDMI-2
-assign [class="^chromium"] $ws3
+assign [class="^(?i)chromium$"] $ws7
+assign [class="^st$"] $ws9
 assign [class="^orage"] $ws1
 # #assign.2
 
@@ -175,8 +175,7 @@ bindsym $mod+Shift+o $ens qutebrowser
 $ens orage
 bindsym $mod+Shift+i exec pavucontrol
 bindsym $mod+Shift+g $ens termite
-$ens xrandr --output eDP-1 --mode 1920x1080 --left-of HDMI-2
-$ens sleep 0.5; and mons -e left
+$ens "xrandr --output eDP-1 --mode 1920x1080 --left-of HDMI-2; and sleep 3; and mons -e left"
 bindsym $mod+Shift+u $ens termite -e ncpamixer
 $ens bitwarden
 # class                 border  backgr. text    indicator
@@ -184,4 +183,8 @@ client.focused #99cc99 #99cc99 #000000 #2d2d2d
 client.focused_inactive #393939 #393939 #888888 #292d2e
 client.unfocused #2d2d2d #2d2d2d #999999 #292d2e
 client.urgent #2f343a #900000 #ffffff #900000
-$ens termite -c 'weechat'
+$ens qutebrowser swappa.com
+$ens st -c 'weechat'
+bindsym $mod+'+' $ens kitty
+bindsym Print $ens screengrab
+$ens bass eval (dbus-launch)
