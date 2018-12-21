@@ -1,7 +1,7 @@
 if status --is-interactive
 	tmx
 end
-eval (virtualfish -s)
+#eval (virtualfish -s)
 if status --is-login
 	bass eval (dbus-launch)
 end
