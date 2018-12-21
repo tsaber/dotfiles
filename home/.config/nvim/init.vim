@@ -15,8 +15,10 @@ Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-classpath'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'vim-airline/vim-airline'
+" Plug 'shmargum/vim-sass-colors'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 Plug 'christoomey/vim-tmux-runner'
@@ -59,7 +61,7 @@ set clipboard=unnamed
 set clipboard^=unnamedplus
 
 
-let g:airline#extensions#tmuxline#enabled = 0
+let g:airline#extensions#tmuxline#enabled = 1
 let g:tmuxline_theme = 'zenburn'
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
