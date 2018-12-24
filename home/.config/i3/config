@@ -9,15 +9,16 @@ set $ws6 "6:tbc"
 set $ws8 "8:ste"
 set $ws7 "7:wee" 
 set $ws9 "9:df"
+set $ens "exec --no-startup-id"
 mouse_warping output
 focus_follows_mouse yes
 popup_during_fullscreen leave_fullscreen
 focus_wrapping yes
 workspace_auto_back_and_forth yes
 focus_on_window_activation urgent
-workspace_layout stacked
+layout splitv
 exec --no-startup-id pasystray
-font pango:artwiz glisp.se 12
+font pango:artwiz drift.se 14
 # font font pango:hack 12:mplus Nerd Font Mono:
 #set $st "exec --no-startup-id st -f 'Anonymize Nerd Font Mono:pixelsize=12:antialias=true:autohint=true' -e 'tmuxi'"
 set $st "exec --no-startup-id termite"
@@ -164,27 +165,25 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 $ens an2linuxserver.py
-exec --no-startup-id blueshift-tray -c ~/.config/blueshift/comp
+exec --no-startup-id blueshift-tray -c ~/.config/blueshift/comprehensive
 exec_always --no-startup-id /home/zava/.config/polybar/launch.sh
-exec --no-startup-id "xrandr --output HDMI-2 --primary --mode 1920x1080 --right-of eDP-1"
 exec --no-startup-id fish -c 'setxkbmap de; and xmodmap /home/zava/.fddfk'
 exec --no-startup-id "nitrogen --restore"
-set $ens exec --no-startup-id
 bindsym $mod+g $ens alacritty
 bindsym $mod+Shift+o $ens qutebrowser
-$ens orage
-bindsym $mod+Shift+i exec pavucontrol
+bindsym $mod+Shift+i $ens pavucontrol
 bindsym $mod+Shift+g $ens termite
-$ens "xrandr --output eDP-1 --mode 1920x1080 --left-of HDMI-2; and sleep 3; and mons -e left"
 bindsym $mod+Shift+u $ens termite -e ncpamixer
+$ens fish -c "xrandr --output eDP-1 --mode 1024x768 --left-of HDMI-2 --output HDMI-2 --mode 1920x1080 --primary; and sleep 0.05; and mons -e left"
 $ens bitwarden
 # class                 border  backgr. text    indicator
 client.focused #99cc99 #99cc99 #000000 #2d2d2d
 client.focused_inactive #393939 #393939 #888888 #292d2e
 client.unfocused #2d2d2d #2d2d2d #999999 #292d2e
 client.urgent #2f343a #900000 #ffffff #900000
-$ens qutebrowser swappa.com
-$ens st -c 'weechat'
-bindsym $mod+'+' $ens kitty
-bindsym Print $ens screengrab
-$ens bass eval (dbus-launch)
+$ens termite -e '/usr/bin/weechat'
+bindsym $mod+PgUp $ens kitty
+bindsym Print $ens fish -c "maimgur"
+$ens xrandr --dpi 96
+$ens termite -e '/usr/bin/newsboat'
+$ens redshift

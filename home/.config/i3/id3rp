@@ -1,5 +1,0 @@
-exec --no-startup-id copyq -d
-exec --no-startup-id redshift
-exec --no-startup-id chromium
-exec --no-startup-id pasystray
-exec --no-startup-id fcitx

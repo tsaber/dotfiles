@@ -18,7 +18,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-classpath'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'vim-airline/vim-airline'
-" Plug 'shmargum/vim-sass-colors'
+Plug 'ap/vim-css-color'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 Plug 'christoomey/vim-tmux-runner'
@@ -66,4 +66,7 @@ let g:tmuxline_theme = 'zenburn'
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
+endif
+if !exists('g:colors_name') || g:colors_name != 'base16-tube'
+  colorscheme base16-tube
 endif

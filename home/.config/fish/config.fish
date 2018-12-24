@@ -1,13 +1,13 @@
-if status --is-interactive
-	tmx
-end
-#eval (virtualfish -s)
-if status --is-login
-	bass eval (dbus-launch)
-end
+tmx
+
+#set -gx PATH $fish_user_paths
+
+
+eval (python -m virtualfish)
+
 
 if status --is-login
-	bass eval (ssh-agent -s)
+	bass eval (dbus-launch)
 end
 
 

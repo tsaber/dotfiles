@@ -1,1 +1,185 @@
-../../../../../../.config/i3/config
+set $mod Mod4 
+set $ws1 "1:abc"
+set $ws10 "10:dota2"
+set $ws2 "2:fat" 
+set $ws3 "3:web" 
+set $ws4 "4:b"
+set $ws5 "5:mus"
+set $ws6 "6:tbc"
+set $ws8 "8:ste"
+set $ws7 "7:wee" 
+set $ws9 "9:df"
+set $ens "exec --no-startup-id"
+mouse_warping output
+focus_follows_mouse yes
+popup_during_fullscreen leave_fullscreen
+focus_wrapping yes
+workspace_auto_back_and_forth yes
+focus_on_window_activation urgent
+layout splitv
+exec --no-startup-id pasystray
+font pango:artwiz drift.se 14
+# font font pango:hack 12:mplus Nerd Font Mono:
+#set $st "exec --no-startup-id st -f 'Anonymize Nerd Font Mono:pixelsize=12:antialias=true:autohint=true' -e 'tmuxi'"
+set $st "exec --no-startup-id termite"
+set $t "exec --no-startup-id st"
+floating_modifier $mod
+default_orientation vertical
+bindsym $mod+Shift+Return $t 
+bindsym $mod+Return $st 
+bindsym $mod+Shift+q kill
+bindsym $mod+q exec --no-startup-id rofi -show drun
+bindsym $mod+e exec --no-startup-id rofi -show window
+bindsym $mod+F1 exec copyq toggle
+bindsym $mod+F2 exec "fish -c polyb"
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+bindsym $mod+s exec tdrop -maw -10 -s dropdown termite 
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+bindsym $mod+z split v
+bindsym $mod+u split h
+bindsym $mod+f fullscreen toggle
+bindsym $mod+w layout toggle all
+bindsym $mod+Shift+f floating toggle 
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+bindsym $mod+d focus child
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+workspace $ws1 output eDP-1 
+workspace $ws2 output eDP-1
+workspace $ws3 output HDMI-2
+workspace $ws9 output HDMI-2
+workspace $ws5 output HDMI-2
+workspace $ws6 output HDMI-2
+workspace $ws7 output HDMI-2
+workspace $ws8 output HDMI-2
+workspace $ws4 output HDMI-2
+workspace $ws10 output HDMI-2
+assign [class="^firefox$"] $ws7
+assign [class="^firefox-nightly$"] $ws7
+assign [class="^term$"] $ws4
+assign [class="^(?i)skype$"] $ws1
+assign [class="^dota2$"] $ws10
+assign [class="^Steam$"] $ws6
+assign [class="^lnp$"] $ws8
+assign [class="^Dwarf_Fortress$"] $ws9
+assign [class="^dfhack$"] $ws9
+assign [class="^weechat$"] $ws7
+assign [class="^i3-nagbar$"] $ws3 
+assign [class="^copyq$"] output HDMI-2
+assign [class="^(?i)chromium$"] $ws7
+assign [class="^st$"] $ws9
+assign [class="^orage"] $ws1
+# #assign.2
+
+for_window [window_role="pop-up"] floating enable move output HDMI-2
+for_window [window_role="bubble"] floating enable move output HDMI-2
+for_window [window_role="task_dialog"] floating enable move output HDMI-2
+for_window [window_role="Preferences"] floating enable move output HDMI-2
+for_window [window_type="dialog"] floating enable move output HDMI-2
+for_window [window_type="menu"] floating enable move output HDMI-2
+
+
+bindsym $mod+t exec --no-startup-id thunderbird
+bindsym $mod+o exec --no-startup-id firefox-nightly
+bindsym $mod+p exec --no-startup-id chromium
+
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# retermiteart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+for_window [class=",*"] title_format "%title"
+hide_edge_borders smart 
+default_border pixel
+default_floating_border pixel
+workspace back_and_forth output HDMI-2
+
+bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+Shift+Tab move container to workspace back_and_forth
+bindsym $mod+n scratchpad show
+bindsym $mod+Shift+n move container to scratchpad
+bindsym $mod+x [urgent=latest] focus
+bindsym $mod+b move workspace to next output
+exec_always --no-startup-id  copyq
+bindsym $mod+Shift+d exec fish -c "doto"
+bindsym $mod+F3 exec --no-startup-id gpick -p -o
+
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym t resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+$ens an2linuxserver.py
+exec --no-startup-id blueshift-tray -c ~/.config/blueshift/comprehensive
+exec_always --no-startup-id /home/zava/.config/polybar/launch.sh
+exec --no-startup-id fish -c 'setxkbmap de; and xmodmap /home/zava/.fddfk'
+exec --no-startup-id "nitrogen --restore"
+bindsym $mod+g $ens alacritty
+bindsym $mod+Shift+o $ens qutebrowser
+bindsym $mod+Shift+i $ens pavucontrol
+bindsym $mod+Shift+g $ens termite
+bindsym $mod+Shift+u $ens termite -e ncpamixer
+$ens fish -c "xrandr --output eDP-1 --mode 1024x768 --left-of HDMI-2 --output HDMI-2 --mode 1920x1080 --primary; and sleep 0.05; and mons -e left"
+$ens bitwarden
+# $i3-theme-window
+$ens termite -e '/usr/bin/weechat'
+bindsym $mod+PgUp $ens kitty
+bindsym Print $ens fish -c "maimgur"
+$ens xrandr --dpi 96
+$ens termite -e '/usr/bin/newsboat'
+$ens redshift
