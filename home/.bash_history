@@ -228,3 +228,26 @@ docker run alpine:latest
 docker container ls
 docker container ls --all
 docker run -t -i --rm alpine:latest /bin/sh
+bw
+env
+set -S PATH
+env | grep BW
+bw unlock
+bw create item derp --session quAJv7FUK9jxxzw8SedkHTWvckCLIxfRKOQgj16sfXNRWRlDqlVPEHfu87hXleaYdk+hyET9+c91VvHnR+RTIA==
+bw create item derp --session quAJv7FUK9jxxzw8SedkHTWvckCLIxfRKOQgj16sfXNRWRlDqlVPEHfu87hXleaYdk+hyET9+c91VvHnR+RTIA==
+bw unlock --session "3vuizISFiiiLiTFV5vuKd2URR8D23k3IKWIf6gVp1dQOAHoS7Cg7VHuM8ktQ1hw3eCEBmG/tuZqKDxk5p7BoCA=="
+uu
+bw lock
+bw unlock | grep "--session" | cut -d$ -f1
+bw unlock | grep--session" | cut -d$ -f1
+
+
+bw unlock
+bw unlock | grep session
+"3vuizISFiiiLiTFV5vuKd2URR8D23k3IKWIf6gVp1dQOAHoS7Cg7VHuM8ktQ1hw3eCEBmG/tuZqKDxk5p7BoCA=="
+"3vuizISFiiiLiTFV5vuKd2URR8D23k3IKWIf6gVp1dQOAHoS7Cg7VHuM8ktQ1hw3eCEBmG/tuZqKDxk5p7BoCA==
+exit
+ls
+rm -rf .config/fish
+ftp
+ftp 

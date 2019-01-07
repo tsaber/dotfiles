@@ -9,16 +9,19 @@ set $ws6 "6:tbc"
 set $ws8 "8:ste"
 set $ws7 "7:wee" 
 set $ws9 "9:df"
-set $ens "exec --no-startup-id"
+set $ens exec --no-startup-id
 mouse_warping output
 focus_follows_mouse yes
 popup_during_fullscreen leave_fullscreen
 focus_wrapping yes
 workspace_auto_back_and_forth yes
 focus_on_window_activation urgent
-layout splitv
 exec --no-startup-id pasystray
-font pango:artwiz drift.se 14
+#font pango:artwiz glisp.se 9: Fixedsys Excelsior
+font pango:bitocra13
+font pango:Fixedsys Excelsior 9
+
+
 # font font pango:hack 12:mplus Nerd Font Mono:
 #set $st "exec --no-startup-id st -f 'Anonymize Nerd Font Mono:pixelsize=12:antialias=true:autohint=true' -e 'tmuxi'"
 set $st "exec --no-startup-id termite"
@@ -32,11 +35,12 @@ bindsym $mod+q exec --no-startup-id rofi -show drun
 bindsym $mod+e exec --no-startup-id rofi -show window
 bindsym $mod+F1 exec copyq toggle
 bindsym $mod+F2 exec "fish -c polyb"
+bindsym $mod+F4 exec bitwarden-bin
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
-bindsym $mod+s exec tdrop -maw -10 -s dropdown termite 
+bindsym $mod+s exec tdrop -maw -10 -s dropdown st
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
@@ -89,19 +93,20 @@ workspace $ws7 output HDMI-2
 workspace $ws8 output HDMI-2
 workspace $ws4 output HDMI-2
 workspace $ws10 output HDMI-2
-assign [class="^firefox$"] $ws7
-assign [class="^firefox-nightly$"] $ws7
+assign [class="^firefox$"] $ws3
+assign [class="^firefox-nightly$"] $ws3
 assign [class="^term$"] $ws4
 assign [class="^(?i)skype$"] $ws1
 assign [class="^dota2$"] $ws10
-assign [class="^Steam$"] $ws6
+assign [class="^Steam$"] $ws10
 assign [class="^lnp$"] $ws8
-assign [class="^Dwarf_Fortress$"] $ws9
-assign [class="^dfhack$"] $ws9
+# assign [class="^Dwarf_Fortress$"] $ws9
+
+assign [class="^dfhack$"] $ws4
 assign [class="^weechat$"] $ws7
 assign [class="^i3-nagbar$"] $ws3 
 assign [class="^copyq$"] output HDMI-2
-assign [class="^(?i)chromium$"] $ws7
+assign [class="^(i?)chromium$"] $ws8
 assign [class="^st$"] $ws9
 assign [class="^orage"] $ws1
 # #assign.2
@@ -114,9 +119,9 @@ for_window [window_type="dialog"] floating enable move output HDMI-2
 for_window [window_type="menu"] floating enable move output HDMI-2
 
 
-bindsym $mod+t exec --no-startup-id thunderbird
-bindsym $mod+o exec --no-startup-id firefox-nightly
-bindsym $mod+p exec --no-startup-id chromium
+bindsym $mod+t exec --no-startup-id sylpheed
+bindsym $mod+p exec --no-startup-id firefox-nightly
+bindsym $mod+o exec --no-startup-id chromium
 
 
 # reload the configuration file
@@ -165,7 +170,6 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 $ens an2linuxserver.py
-exec --no-startup-id blueshift-tray -c ~/.config/blueshift/comprehensive
 exec_always --no-startup-id /home/zava/.config/polybar/launch.sh
 exec --no-startup-id fish -c 'setxkbmap de; and xmodmap /home/zava/.fddfk'
 exec --no-startup-id "nitrogen --restore"
@@ -174,16 +178,19 @@ bindsym $mod+Shift+o $ens qutebrowser
 bindsym $mod+Shift+i $ens pavucontrol
 bindsym $mod+Shift+g $ens termite
 bindsym $mod+Shift+u $ens termite -e ncpamixer
-$ens fish -c "xrandr --output eDP-1 --mode 1024x768 --left-of HDMI-2 --output HDMI-2 --mode 1920x1080 --primary; and sleep 0.05; and mons -e left"
-$ens bitwarden
+$ens fish -c "xrandr --output HDMI-2 --mode 1920x1080 --primary"
+$ens fish -c "sleep 0.3; and xrandr --output eDP-1 --mode 1024x768 --left-of HDMI-2; and sleep 0.5; and mons -e left"
+$ens sleep 50; and bitwarden
 # class                 border  backgr. text    indicator
 client.focused #99cc99 #99cc99 #000000 #2d2d2d
 client.focused_inactive #393939 #393939 #888888 #292d2e
 client.unfocused #2d2d2d #2d2d2d #999999 #292d2e
 client.urgent #2f343a #900000 #ffffff #900000
-$ens termite -e '/usr/bin/weechat'
+$ens "termite -e /usr/bin/weechat"
 bindsym $mod+PgUp $ens kitty
-bindsym Print $ens fish -c "maimgur"
+bindsym Print $ens "fish -c maimgur"
 $ens xrandr --dpi 96
-$ens termite -e '/usr/bin/newsboat'
+$ens termite -e '/usr/bin/newsboat' 
 $ens redshift
+$ens "termite -e ncpamixer"
+$ens "cmst"

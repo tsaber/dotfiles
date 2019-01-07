@@ -16,13 +16,13 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-classpath'
+Plug 'tpope/vim-sensible'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'vim-airline/vim-airline'
 Plug 'ap/vim-css-color'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 Plug 'christoomey/vim-tmux-runner'
 Plug 'dag/vim-fish'
+Plug 'pangloss/vim-javascript'
 Plug 'mbbill/undotree'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-signify'
@@ -43,9 +43,8 @@ set termguicolors                    " Enable GUI colors for the terminal to get
 set history=100
 set hlsearch
 inoremap <C-U> <C-G>u<C-U>
-"let g:tmuxline_powerline_separators = 0
-
-let g:airline_theme = 'behelit'
+let g:tmuxline_powerline_separators = 0
+set autoread
 set showcmd
 set ignorecase
 set smarttab
@@ -61,8 +60,6 @@ set clipboard=unnamed
 set clipboard^=unnamedplus
 
 
-let g:airline#extensions#tmuxline#enabled = 1
-let g:tmuxline_theme = 'zenburn'
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
@@ -70,3 +67,4 @@ endif
 if !exists('g:colors_name') || g:colors_name != 'base16-tube'
   colorscheme base16-tube
 endif
+
