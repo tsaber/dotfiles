@@ -251,3 +251,44 @@ ls
 rm -rf .config/fish
 ftp
 ftp 
+nvim ~/.config/fish/config.fish
+st
+fish
+fish rr
+fish --help
+fish
+exit
+exit
+fish -c "set -Ux DISPLAY :0.0"
+exit
+rm .config/fish/fishd*
+cat fishd*
+ls
+cd .config
+cd fish
+ls
+cat fishfile
+fisher
+yay fisher
+fisher
+echo $PATH
+sudo fi /nd -name "fisher*"
+sudo fi /nd -name "fisher"
+sudo find -name "fisher"
+sudo fin/ d -name "fisher"
+ls
+cat fishd
+cat fishd*
+byobu
+nvim .config
+sudo chow-r n .config/fish/*
+sudo chown .config/fish/*
+sudo chown zava:zava .config/fish/*
+fisher
+tmux 
+echo $PATH
+function tmx tmux ls | grep -van 1 attached|cut -dw -f1|tmux attach -t --; or tmux new-session
+fish
+export PATH=/usr/bin
+fish
+exit

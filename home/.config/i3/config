@@ -42,6 +42,7 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 bindsym $mod+s exec tdrop -maw -10 -s dropdown st
 bindsym $mod+Left focus left
+bindsym $mod+Shift+F12 termite -e "bash"
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
@@ -180,7 +181,7 @@ bindsym $mod+Shift+g $ens termite
 bindsym $mod+Shift+u $ens termite -e ncpamixer
 $ens fish -c "xrandr --output HDMI-2 --mode 1920x1080 --primary"
 $ens fish -c "sleep 0.3; and xrandr --output eDP-1 --mode 1024x768 --left-of HDMI-2; and sleep 0.5; and mons -e left"
-$ens sleep 50; and bitwarden
+$ens bitwarden
 # class                 border  backgr. text    indicator
 client.focused #99cc99 #99cc99 #000000 #2d2d2d
 client.focused_inactive #393939 #393939 #888888 #292d2e
@@ -192,5 +193,5 @@ bindsym Print $ens "fish -c maimgur"
 $ens xrandr --dpi 96
 $ens termite -e '/usr/bin/newsboat' 
 $ens redshift
-$ens "termite -e ncpamixer"
+$ens "termite -e /usr/bin/ncpamixer"
 $ens "cmst"

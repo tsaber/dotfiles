@@ -1,18 +1,18 @@
-tmx
-if status --is-login
+if not set -q PATH 
 	set -gx PATH $fish_user_paths
 end
-
 eval (python -m virtualfish)
 
 
-if status --is-login
-	bass eval (dbus-launch)
+
+
+if test -z "$DBUS_SESSION_BUS_ADDRESS"
+        bass (dbus-launch --sh-syntax)
 end
 
-#if status --is-login
-#	bass eval (ssh-agent -s)
-#end
+if not set -q TMUX
+	tmx
+end
 
 
 function homeshick
@@ -25,10 +25,11 @@ function homeshick
 	end
 end
 
-if status --is-interactive
+if status is-interactive
     set BASE16_SHELL "$HOME/.config/base16-shell/"
     source "$BASE16_SHELL/profile_helper.fish"
 end
 
 
-task ls (random 1 (task ls | tail -n 1| cut -d't' -f1))
+task ls (random 1 (task ls | tail -n 1| cut -d't' -f1)) 2> /dev/null
+cowsay good moorning
