@@ -4,10 +4,9 @@
 clickable_url = true
 #dynamic_title = true
 #font = Lini 12 
-#font = FixedSys Excelsior 12
+font = artwiz drift.se 10
 #font = FixedSys Excelsior 12
 #font = Tamzen 12 
-font = cherry 12
 #font = Profont Windows Nerd Font Mono 13
 #fullscreen = true
 #geometry = 640x480

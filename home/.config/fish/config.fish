@@ -1,3 +1,4 @@
+set -Ux fish_user_paths /usr/bin /home/zava/bin /home/zava/.fzf/bin /home/zava/.fzf/ /usr/lib64/perl5/5.28/core_perl /usr/lib64/perl5/5.28/site_perl /usr/lib64/perl5/5.28/vendor_perl /usr/lib64/jvm/default/bin/ /usr/lib64/node_modules/ /home/zava/node_modules /opt/android-sdk/platform-tools /opt/android-sdk/build-tools/28.0.3
 if not set -q PATH 
 	set -gx PATH $fish_user_paths
 end
@@ -10,7 +11,7 @@ if test -z "$DBUS_SESSION_BUS_ADDRESS"
         bass (dbus-launch --sh-syntax)
 end
 
-if not set -q TMUX
+if not [ $TERM = "tmux-256color" ]
 	tmx
 end
 
