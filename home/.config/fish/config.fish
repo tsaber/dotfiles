@@ -1,5 +1,5 @@
 if status is-login 
-	if test -z "$DISPLAY" -a $XDG_VTNR = 1 
+	if test -z "$DISPLAY" -a $XDG_VTNR = 2 
 	        cdm 	
 	end 
 end
@@ -11,8 +11,8 @@ set -Ux fish_user_paths /usr/bin /home/zava/bin /home/zava/.fzf/bin /home/zava/.
 
 
 
-set -gx GPG_AGENT_INFO $XDG_RUNTIME_DIR/gnupg/S.gpg-agent
-set -gx SSH_AUTH_SOCK $XDG_RUNTIME_DIR/gnupg/S.gpg-agent.ssh
+set -gx GPG_AGENT_INFO unix:path=$XDG_RUNTIME_DIR/gnupg/S.gpg-agent
+set -gx SSH_AUTH_SOCK unix:path=$XDG_RUNTIME_DIR/gnupg/S.gpg-agent.ssh
 
 eval (python -m virtualfish) 
 
@@ -38,7 +38,7 @@ if status is-interactive
     source "$BASE16_SHELL/profile_helper.fish"
 end
 
-cowsay -f kitty -e ee lol
+cowsay -f satanic (date +%d%a%b%y\|%R\.)
 #eval (fasd --init auto)
 #source /usr/share/chruby/{chruby,auto}.fish
 base16 brogrammer
