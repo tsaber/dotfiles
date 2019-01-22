@@ -4,10 +4,9 @@
 clickable_url = true
 #dynamic_title = true
 #font = Lini 12 
-font = artwiz drift.se 10
-#font = FixedSys Excelsior 12
+font = FixedSys Excelsior 11
 #font = Tamzen 12 
-#font = Profont Windows Nerd Font Mono 13
+#font = Profont Windows Nerd Font Mono 8
 #fullscreen = true
 #geometry = 640x480
 #icon_name = terminal
@@ -34,7 +33,7 @@ cursor_shape = ibeam
 #filter_unmatched_urls = true
 
 # Emit escape sequences for extra modified keys
-modify_other_keys = false
+modify_other_keys = true
 
 # set size hints for the window
 size_hints = true
@@ -45,21 +44,19 @@ size_hints = true
 
 # Colors from color0 to color254 can be set
 [hints]
-font = ProggyCleanTT Nerd Font Mono 11
 #foreground = #dcdccc
+font = creep 9
 #background = #3f3f3f
 active_foreground = #ffd7d7
 active_background = #fff987
-padding = 15
+padding = 8
 border = #dd00ea
 border_width = 1
-roundness = 4
+roundness = 3
 
 # vim: ft=dosini cms=#%s
 ##[colors]
-##background = "#131313"
-##cursor = "#b9b9b9"
-##foreground = "#c6dbc5"
+#cursor = "#141505"
 ##color0 = #1f1f1f
 ##color1 = #f81118
 ##color2 = #2dc55e
@@ -79,52 +76,3 @@ roundness = 4
 ##colorBD = #d6dbe5
 ##colorIT =
 ##colorUL =
-[colors]
-# Base16 Rebecca
-# Author: Victor Borja (http://github.com/vic) based on Rebecca Theme (http://github.com/vic/rebecca-theme)
-
-foreground          = #f1eff8
-foreground_bold     = #ccccff
-cursor              = #ccccff
-cursor_foreground   = #292a44
-background          = rgba(21, 42, 38, 1)
-
-# 16 color space
-
-# Black, Gray, Silver, White
-color0  = #292a44
-color8  = #666699
-color7  = #f1eff8
-color15 = #53495d
-
-# Red
-color1  = #a0a0c5
-color9  = #a0a0c5
-
-# Green
-color2  = #6dfedf
-color10 = #6dfedf
-
-# Yellow
-color3  = #ae81ff
-color11 = #ae81ff
-
-# Blue
-color4  = #2de0a7
-color12 = #2de0a7
-
-# Purple
-color5  = #7aa5ff
-color13 = #7aa5ff
-
-# Teal
-color6  = #8eaee0
-color14 = #8eaee0
-
-# Extra colors
-color16 = #efe4a1
-color17 = #ff79c6
-color18 = #663399
-color19 = #383a62
-color20 = #a0a0c5
-color21 = #ccccff
