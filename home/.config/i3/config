@@ -183,10 +183,14 @@ $ens fish -c "xrandr --output HDMI-2 --mode 1920x1080 --primary"
 $ens fish -c "sleep 0.3; and xrandr --output eDP-1 --mode 1024x768 --left-of HDMI-2; and sleep 0.5; and mons -e left"
 $ens bitwarden
 # class                 border  backgr. text    indicator
-client.focused #99cc99 #99cc99 #000000 #2d2d2d
-client.focused_inactive #393939 #393939 #888888 #292d2e
-client.unfocused #2d2d2d #2d2d2d #999999 #292d2e
-client.urgent #2f343a #900000 #ffffff #900000
+client.focused          #949494 #2E5492 #ffffff #08226C
+client.focused_inactive #949494 #848484 #D4CFB4 #292d2e
+client.unfocused        #949494 #848484 #D4CFB4 #292d2e
+client.urgent           #949494 #900000 #ffffff #A65900
+
+# $i3-background
+exec --no-startup-id xsetroot -solid #3975A9
+
 $ens "termite -e /usr/bin/weechat"
 bindsym $mod+PgUp $ens kitty
 bindsym Print $ens "fish -c maimgur"

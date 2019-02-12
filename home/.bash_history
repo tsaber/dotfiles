@@ -292,3 +292,18 @@ fish
 export PATH=/usr/bin
 fish
 exit
+yay
+ssh-add ~/.ssh/kerkenderk
+cd
+cd .ssh
+nvim config
+ls
+ssh -p 8022 -i id_rsa 192.168.2.13
+ssh -p 8022 -i id_rsa 192.168.2.13
+yay
+sudo find / -name fedit
+cd 0a
+ls
+cd ..
+rsync -u /media/sdb1-usb-_USB_DISK_3.0_07/*.mp3 0a --bw-limit=500
+rsync -u /media/sdb1-usb-_USB_DISK_3.0_07/*.mp3 0a

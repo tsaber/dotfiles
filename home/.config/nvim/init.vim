@@ -64,7 +64,4 @@ if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
 endif
-if !exists('g:colors_name') || g:colors_name != 'base16-tube'
-  colorscheme base16-tube
-endif
 

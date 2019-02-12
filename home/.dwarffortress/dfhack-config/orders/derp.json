@@ -1,0 +1,791 @@
+[
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 0,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TOOL_LARGE_POT",
+				"item_type" : "TOOL",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_TOOL_LARGE_POT",
+		"job" : "MakeTool",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 1,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "BARREL",
+				"value" : 10
+			}
+		],
+		"job" : "MakeBarrel",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 2,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "BED",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructBed",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 3,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "ARMORSTAND",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructArmorStand",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 4,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "BOX",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructChest",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 10,
+		"amount_total" : 10,
+		"frequency" : "Daily",
+		"id" : 5,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_AMMO_BOLTS",
+				"item_type" : "AMMO",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_AMMO_BOLTS",
+		"job" : "MakeAmmo",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 6,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_WEAPON_CROSSBOW",
+				"item_type" : "WEAPON",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_WEAPON_CROSSBOW",
+		"job" : "MakeWeapon",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 7,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "DOOR",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructDoor",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 8,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "CHAIR",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructThrone",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 9,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "TABLE",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructTable",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 10,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "COFFIN",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructCoffin",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 11,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TOOL_JUG",
+				"item_type" : "TOOL",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_TOOL_JUG",
+		"job" : "MakeTool",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 12,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "GOBLET",
+				"value" : 10
+			}
+		],
+		"job" : "MakeGoblet",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 13,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TOOL_BOOK_BINDING",
+				"item_type" : "TOOL",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_TOOL_BOOK_BINDING",
+		"job" : "MakeTool",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 14,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TOOL_BOOKCASE",
+				"item_type" : "TOOL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_TOOL_BOOKCASE",
+		"job" : "MakeTool",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 3,
+		"amount_total" : 3,
+		"frequency" : "Daily",
+		"id" : 15,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 10
+			}
+		],
+		"job" : "MakeCrafts",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 16,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "TOY",
+				"value" : 10
+			}
+		],
+		"job" : "MakeToy",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 17,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TOOL_PEDESTAL",
+				"item_type" : "TOOL",
+				"value" : 4
+			}
+		],
+		"item_subtype" : "ITEM_TOOL_PEDESTAL",
+		"job" : "MakeTool",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 18,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "CABINET",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructCabinet",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 19,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "WEAPONRACK",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructWeaponRack",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 20,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TOOL_NEST_BOX",
+				"item_type" : "TOOL",
+				"value" : 2
+			}
+		],
+		"item_subtype" : "ITEM_TOOL_NEST_BOX",
+		"job" : "MakeTool",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 2,
+		"amount_total" : 2,
+		"frequency" : "Daily",
+		"id" : 21,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 2
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_SHIELD_BUCKLER",
+				"item_type" : "SHIELD",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_SHIELD_BUCKLER",
+		"job" : "MakeShield",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 22,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"reaction_product" : "DRINK_MAT",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"empty",
+					"food_storage"
+				],
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "BREW_DRINK_FROM_PLANT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 23,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT_GROWTH",
+				"reaction_product" : "DRINK_MAT",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"empty",
+					"food_storage"
+				],
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "BREW_DRINK_FROM_PLANT_GROWTH"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 24,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"unrotten",
+					"cookable",
+					"solid"
+				],
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"unrotten",
+					"cookable"
+				],
+				"value" : 1
+			}
+		],
+		"job" : "PrepareMeal",
+		"meal_ingredients" : 4
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 25,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TRAPCOMP_ENORMOUSCORKSCREW",
+				"item_type" : "TRAPCOMP",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_TRAPCOMP_ENORMOUSCORKSCREW",
+		"job" : "MakeTrapComponent",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 26,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "PIPE_SECTION",
+				"value" : 10
+			}
+		],
+		"job" : "MakePipeSection",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 27,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "BLOCKS",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructBlocks",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 28,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TOOL_HIVE",
+				"item_type" : "TOOL",
+				"value" : 5
+			}
+		],
+		"item_subtype" : "ITEM_TOOL_HIVE",
+		"job" : "MakeTool",
+		"material_category" : 
+		[
+			"wood"
+		]
+	}
+]
