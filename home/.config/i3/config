@@ -18,12 +18,10 @@ workspace_auto_back_and_forth yes
 focus_on_window_activation urgent
 exec --no-startup-id pasystray
 #font pango:artwiz glisp.se 9: Fixedsys Excelsior
-font pango:bitocra13
-font pango:Fixedsys Excelsior 9
+font pango:Fixedsys Excelsior 12
 
 
 # font font pango:hack 12:mplus Nerd Font Mono:
-#set $st "exec --no-startup-id st -f 'Anonymize Nerd Font Mono:pixelsize=12:antialias=true:autohint=true' -e 'tmuxi'"
 set $st "exec --no-startup-id termite"
 set $t "exec --no-startup-id st"
 floating_modifier $mod
@@ -170,9 +168,10 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-$ens an2linuxserver.py
+bindsym $mod+Shift+x "$ens alacritty -e ~/Downloads/cataclysmdda-0.C/./cataclysm-launcher"
+$ens termite -e an2linuxserver.py
 exec_always --no-startup-id /home/zava/.config/polybar/launch.sh
-exec --no-startup-id fish -c 'setxkbmap de; and xmodmap /home/zava/.fddfk'
+exec --no-startup-id "fish -c 'setxkbmap de; and xmodmap /home/zava/.fddfk'"
 exec --no-startup-id "nitrogen --restore"
 bindsym $mod+g $ens alacritty
 bindsym $mod+Shift+o $ens qutebrowser
@@ -180,22 +179,23 @@ bindsym $mod+Shift+i $ens pavucontrol
 bindsym $mod+Shift+g $ens termite
 bindsym $mod+Shift+u $ens termite -e ncpamixer
 $ens fish -c "xrandr --output HDMI-2 --mode 1920x1080 --primary"
-$ens fish -c "sleep 0.3; and xrandr --output eDP-1 --mode 1024x768 --left-of HDMI-2; and sleep 0.5; and mons -e left"
-$ens bitwarden
-# class                 border  backgr. text    indicator
-client.focused          #949494 #2E5492 #ffffff #08226C
-client.focused_inactive #949494 #848484 #D4CFB4 #292d2e
-client.unfocused        #949494 #848484 #D4CFB4 #292d2e
-client.urgent           #949494 #900000 #ffffff #A65900
+$ens fish -c "mons -o"
+$ens "sleep 4; and bitwarden"
+# <clientclass>         <border> <backgr.> <text> <indicator>
+client.focused          #f47f31 #f37320 #ffffff #f58c46
+client.focused_inactive #6c2e55 #61194a #ffffff #774060
+client.unfocused        #542937 #47172c #aea79f #603944
+client.urgent           #f0be50 #efb73e #ffffff #efb73e
 
 # $i3-background
-exec --no-startup-id xsetroot -solid #3975A9
+exec_always --no-startup-id xsetroot -solid '#542937'
 
 $ens "termite -e /usr/bin/weechat"
-bindsym $mod+PgUp $ens kitty
-bindsym Print $ens "fish -c maimgur"
+bindsym $mod+Shift+m $ens kitty
+bindsym Print $ens "fish -c maim -s ~/Pictures/(date +%a%b%y%R)"
 $ens xrandr --dpi 96
-$ens termite -e '/usr/bin/newsboat' 
+$ens "termite -e /usr/bin/newsboat" 
 $ens redshift
-$ens "termite -e /usr/bin/ncpamixer"
+$ens "alacritty -e /usr/bin/ncpamixer"
 $ens "cmst"
+$ens sylpheed

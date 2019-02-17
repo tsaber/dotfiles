@@ -18,12 +18,10 @@ workspace_auto_back_and_forth yes
 focus_on_window_activation urgent
 exec --no-startup-id pasystray
 #font pango:artwiz glisp.se 9: Fixedsys Excelsior
-font pango:bitocra13
-font pango:Fixedsys Excelsior 9
+font pango:Fixedsys Excelsior 12
 
 
 # font font pango:hack 12:mplus Nerd Font Mono:
-#set $st "exec --no-startup-id st -f 'Anonymize Nerd Font Mono:pixelsize=12:antialias=true:autohint=true' -e 'tmuxi'"
 set $st "exec --no-startup-id termite"
 set $t "exec --no-startup-id st"
 floating_modifier $mod
@@ -170,9 +168,10 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-$ens an2linuxserver.py
+bindsym $mod+Shift+x "$ens alacritty -e ~/Downloads/cataclysmdda-0.C/./cataclysm-launcher"
+$ens termite -e an2linuxserver.py
 exec_always --no-startup-id /home/zava/.config/polybar/launch.sh
-exec --no-startup-id fish -c 'setxkbmap de; and xmodmap /home/zava/.fddfk'
+exec --no-startup-id "fish -c 'setxkbmap de; and xmodmap /home/zava/.fddfk'"
 exec --no-startup-id "nitrogen --restore"
 bindsym $mod+g $ens alacritty
 bindsym $mod+Shift+o $ens qutebrowser
@@ -180,14 +179,15 @@ bindsym $mod+Shift+i $ens pavucontrol
 bindsym $mod+Shift+g $ens termite
 bindsym $mod+Shift+u $ens termite -e ncpamixer
 $ens fish -c "xrandr --output HDMI-2 --mode 1920x1080 --primary"
-$ens fish -c "sleep 0.3; and xrandr --output eDP-1 --mode 1024x768 --left-of HDMI-2; and sleep 0.5; and mons -e left"
-$ens bitwarden
+$ens fish -c "mons -o"
+$ens "sleep 4; and bitwarden"
 # $i3-theme-window
 $ens "termite -e /usr/bin/weechat"
-bindsym $mod+PgUp $ens kitty
-bindsym Print $ens "fish -c maimgur"
+bindsym $mod+Shift+m $ens kitty
+bindsym Print $ens "fish -c maim -s ~/Pictures/(date +%a%b%y%R)"
 $ens xrandr --dpi 96
-$ens termite -e '/usr/bin/newsboat' 
+$ens "termite -e /usr/bin/newsboat" 
 $ens redshift
-$ens "termite -e /usr/bin/ncpamixer"
+$ens "alacritty -e /usr/bin/ncpamixer"
 $ens "cmst"
+$ens sylpheed
