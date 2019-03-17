@@ -1,4 +1,4 @@
-# Defined in /tmp/fish.U31Xad/fish_prompt.fish @ line 2
+# Defined in /tmp/fish.HeF4Rr/fish_prompt.fish @ line 2
 function fish_prompt --description 'Write out the prompt'
 	set -l color_cwd
     set -l suffix
@@ -12,8 +12,8 @@ function fish_prompt --description 'Write out the prompt'
             set suffix '#'
         case '*'
             set color_cwd $fish_color_cwd
-            set suffix '$>'
+            set suffix '}->'
     end
-
-    echo -n -s @ ' ' (set_color $color_cwd) (prompt_pwd) (set_color normal) "$suffix "
+set -l du (df / | tail -n1 | sed "s/ */ /g" | cut -d' ' -f 5 | cut -d'%' -f1)
+    echo -n -s $du ' ' (set_color $color_cwd) (prompt_pwd) (set_color normal) "$suffix "
 end

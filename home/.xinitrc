@@ -52,14 +52,3 @@ exec dbus-launch --sh-syntax --exit-with-session i3;
 #    lxde 	          ) exec dbus-launch --sh-syntax --exit-with-session startlxde;;
 #    lxqt         	  ) exec dbus-launch --sh-syntax --exit-with-session lxqt-session;;
 #    i3|i3wm           ) exec dbus-launch --sh-syntax --exit-with-session i3;;
-#    kde               ) exec dbus-launch --sh-syntax --exit-with-session startkde;;
-#    cinnamon          ) exec dbus-launch --sh-syntax --exit-with-session cinnamon-session;;
-#    budgie            ) exec dbus-launch --sh-syntax --exit-with-session budgie-desktop;;
-#    mate              ) exec dbus-launch --sh-syntax --exit-with-session mate-session;;
-#    openbox           ) exec dbus-launch --sh-syntax --exit-with-session openbox-session;;
-#    xfce|xfce4        ) exec dbus-launch --sh-syntax --exit-with-session startxfce4;;
-#    # No known session, try to run it as command
-#    *                 ) exec dbus-launch --sh-syntax --exit-with-session $1;;
-#esac
-#fi
-

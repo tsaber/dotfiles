@@ -3,8 +3,88 @@
 		"amount_left" : 1,
 		"amount_total" : 1,
 		"frequency" : "Daily",
-		"id" : 0,
+		"id" : 26,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "PIPE_SECTION",
+				"value" : 10
+			}
+		],
+		"job" : "MakePipeSection",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 27,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "BLOCKS",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructBlocks",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 25,
 		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TRAPCOMP_ENORMOUSCORKSCREW",
+				"item_type" : "TRAPCOMP",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_TRAPCOMP_ENORMOUSCORKSCREW",
+		"job" : "MakeTrapComponent",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 0,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -32,7 +112,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 1,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -58,7 +138,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 2,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -84,7 +164,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 3,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -110,7 +190,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 4,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -136,7 +216,7 @@
 		"amount_total" : 10,
 		"frequency" : "Daily",
 		"id" : 5,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -192,7 +272,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 7,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -218,7 +298,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 8,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -244,7 +324,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 9,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -296,7 +376,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 11,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -324,7 +404,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 12,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -350,7 +430,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 13,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -378,7 +458,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 14,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -453,7 +533,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 17,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -481,7 +561,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 18,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -507,7 +587,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 19,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -533,7 +613,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 20,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -561,7 +641,7 @@
 		"amount_total" : 2,
 		"frequency" : "Daily",
 		"id" : 21,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -589,7 +669,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 22,
-		"is_active" : false,
+		"is_active" : true,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -621,7 +701,7 @@
 		"amount_total" : 1,
 		"frequency" : "Daily",
 		"id" : 23,
-		"is_active" : false,
+		"is_active" : true,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -684,88 +764,8 @@
 		"amount_left" : 1,
 		"amount_total" : 1,
 		"frequency" : "Daily",
-		"id" : 25,
-		"is_active" : true,
-		"is_validated" : true,
-		"item_conditions" : 
-		[
-			{
-				"condition" : "AtLeast",
-				"item_type" : "WOOD",
-				"value" : 1
-			},
-			{
-				"condition" : "AtMost",
-				"item_subtype" : "ITEM_TRAPCOMP_ENORMOUSCORKSCREW",
-				"item_type" : "TRAPCOMP",
-				"value" : 10
-			}
-		],
-		"item_subtype" : "ITEM_TRAPCOMP_ENORMOUSCORKSCREW",
-		"job" : "MakeTrapComponent",
-		"material_category" : 
-		[
-			"wood"
-		]
-	},
-	{
-		"amount_left" : 1,
-		"amount_total" : 1,
-		"frequency" : "Daily",
-		"id" : 26,
-		"is_active" : true,
-		"is_validated" : true,
-		"item_conditions" : 
-		[
-			{
-				"condition" : "AtLeast",
-				"item_type" : "WOOD",
-				"value" : 1
-			},
-			{
-				"condition" : "AtMost",
-				"item_type" : "PIPE_SECTION",
-				"value" : 10
-			}
-		],
-		"job" : "MakePipeSection",
-		"material_category" : 
-		[
-			"wood"
-		]
-	},
-	{
-		"amount_left" : 1,
-		"amount_total" : 1,
-		"frequency" : "Daily",
-		"id" : 27,
-		"is_active" : true,
-		"is_validated" : true,
-		"item_conditions" : 
-		[
-			{
-				"condition" : "AtLeast",
-				"item_type" : "WOOD",
-				"value" : 1
-			},
-			{
-				"condition" : "AtMost",
-				"item_type" : "BLOCKS",
-				"value" : 10
-			}
-		],
-		"job" : "ConstructBlocks",
-		"material_category" : 
-		[
-			"wood"
-		]
-	},
-	{
-		"amount_left" : 1,
-		"amount_total" : 1,
-		"frequency" : "Daily",
 		"id" : 28,
-		"is_active" : true,
+		"is_active" : false,
 		"is_validated" : true,
 		"item_conditions" : 
 		[
@@ -787,5 +787,1415 @@
 		[
 			"wood"
 		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 29,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TOOL_MINECART",
+				"item_type" : "TOOL",
+				"value" : 5
+			}
+		],
+		"item_subtype" : "ITEM_TOOL_MINECART",
+		"job" : "MakeTool",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 30,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TOOL_WHEELBARROW",
+				"item_type" : "TOOL",
+				"value" : 12
+			}
+		],
+		"item_subtype" : "ITEM_TOOL_WHEELBARROW",
+		"job" : "MakeTool",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 31,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"empty",
+					"bag"
+				],
+				"item_type" : "BOX",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"reaction_product" : "BAG_ITEM",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "PROCESS_PLANT_TO_BAG"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 32,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"unrotten",
+					"processable"
+				],
+				"item_type" : "PLANT",
+				"value" : 1
+			}
+		],
+		"job" : "ProcessPlants"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 33,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"unrotten",
+					"processable_to_barrel"
+				],
+				"item_type" : "PLANT",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"empty"
+				],
+				"item_type" : "BARREL",
+				"value" : 1
+			}
+		],
+		"job" : "ProcessPlantsBarrel"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 34,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"non_pressed"
+				],
+				"item_type" : "GLOB",
+				"reaction_class" : "PAPER_SLURRY",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "SHEET",
+				"value" : 20
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "PRESS_PLANT_PAPER"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 35,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"reaction_product" : "PRESS_PAPER_MAT",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "GLOB",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "MAKE_SLURRY_FROM_PLANT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 36,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"unrotten"
+				],
+				"item_type" : "PLANT",
+				"reaction_class" : "PAPER_PLANT",
+				"value" : 1
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "MAKE_SHEET_FROM_PLANT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 37,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "BIN",
+				"value" : 40
+			}
+		],
+		"job" : "ConstructBin",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 38,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"plant"
+				],
+				"item_type" : "CLOTH",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "BOX",
+				"value" : 100
+			}
+		],
+		"job" : "ConstructChest",
+		"material_category" : 
+		[
+			"cloth"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 39,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"plant"
+				],
+				"item_type" : "CLOTH",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "CHAIN",
+				"value" : 20
+			}
+		],
+		"job" : "MakeChain",
+		"material_category" : 
+		[
+			"cloth"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 40,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"collected",
+					"plant"
+				],
+				"item_type" : "THREAD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "CLOTH",
+				"value" : 500
+			}
+		],
+		"job" : "WeaveCloth",
+		"material_category" : 
+		[
+			"plant"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 41,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"collected",
+					"yarn"
+				],
+				"item_type" : "THREAD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "CLOTH",
+				"value" : 500
+			}
+		],
+		"job" : "WeaveCloth",
+		"material_category" : 
+		[
+			"yarn"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 42,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"plant"
+				],
+				"item_type" : "CLOTH",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_ARMOR_CLOAK",
+				"item_type" : "ARMOR",
+				"value" : 40
+			}
+		],
+		"item_subtype" : "ITEM_ARMOR_CLOAK",
+		"job" : "MakeArmor",
+		"material_category" : 
+		[
+			"cloth"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 43,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"plant"
+				],
+				"item_type" : "CLOTH",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_ARMOR_ROBE",
+				"item_type" : "ARMOR",
+				"value" : 100
+			}
+		],
+		"item_subtype" : "ITEM_ARMOR_ROBE",
+		"job" : "MakeArmor",
+		"material_category" : 
+		[
+			"cloth"
+		]
+	},
+	{
+		"amount_left" : 2,
+		"amount_total" : 2,
+		"frequency" : "Daily",
+		"id" : 44,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"plant"
+				],
+				"item_type" : "CLOTH",
+				"value" : 2
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_SHOES_SHOES",
+				"item_type" : "SHOES",
+				"value" : 50
+			}
+		],
+		"item_subtype" : "ITEM_SHOES_SHOES",
+		"job" : "MakeShoes",
+		"material_category" : 
+		[
+			"cloth"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 45,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_SHIELD_SHIELD",
+				"item_type" : "SHIELD",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_SHIELD_SHIELD",
+		"job" : "MakeShield",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 46,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtMost",
+				"flags" : 
+				[
+					"sand_bearing"
+				],
+				"value" : 10
+			}
+		],
+		"job" : "CollectSand"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 47,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BOULDER",
+				"reaction_product" : "FIRED_MAT",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TOOL_LARGE_POT",
+				"item_type" : "TOOL",
+				"value" : 50
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "MAKE_LARGE_CLAY_POT"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 48,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtMost",
+				"reaction_product" : "FIRED_MAT",
+				"value" : 10
+			}
+		],
+		"job" : "CollectClay"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 49,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BOULDER",
+				"reaction_product" : "FIRED_MAT",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TOOL_JUG",
+				"item_type" : "TOOL",
+				"value" : 60
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "MAKE_CLAY_JUG"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 50,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BOULDER",
+				"reaction_product" : "FIRED_MAT",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "BLOCKS",
+				"value" : 10
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "MAKE_CLAY_BRICKS"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 51,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BOULDER",
+				"reaction_product" : "FIRED_MAT",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "BLOCKS",
+				"value" : 250
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "MAKE_CLAY_BRICKS"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 52,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "CAGE",
+				"value" : 10
+			}
+		],
+		"job" : "MakeCage",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 53,
+		"is_active" : false,
+		"is_validated" : true,
+		"job" : "ShearCreature"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 54,
+		"is_active" : false,
+		"is_validated" : true,
+		"job" : "MilkCreature"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 55,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"unrotten",
+					"milk"
+				],
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"flags" : 
+				[
+					"unrotten"
+				],
+				"item_type" : "CHEESE",
+				"value" : 20
+			}
+		],
+		"job" : "MakeCheese"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 56,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"unrotten",
+					"totemable",
+					"body_part"
+				],
+				"value" : 1
+			}
+		],
+		"job" : "MakeTotem"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "OneTime",
+		"id" : 58,
+		"is_active" : true,
+		"is_validated" : true,
+		"job" : "ConstructStatue",
+		"material" : "INORGANIC:ROSE_GOLD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 60,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"butcherable",
+					"unrotten",
+					"nearby"
+				],
+				"value" : 1
+			}
+		],
+		"job" : "ButcherAnimal"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 62,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "BARREL",
+				"value" : 50
+			}
+		],
+		"job" : "MakeBarrel",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 63,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BOULDER",
+				"reaction_product" : "FIRED_MAT",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TOOL_JUG",
+				"item_type" : "TOOL",
+				"value" : 70
+			}
+		],
+		"job" : "CustomReaction",
+		"reaction" : "MAKE_CLAY_JUG"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 64,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"non_economic",
+					"hard"
+				],
+				"item_type" : "BOULDER",
+				"material" : "INORGANIC",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "ARMORSTAND",
+				"material" : "INORGANIC",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructArmorStand",
+		"material" : "INORGANIC"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 65,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"non_economic",
+					"hard"
+				],
+				"item_type" : "BOULDER",
+				"material" : "INORGANIC",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "CABINET",
+				"material" : "INORGANIC",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructCabinet",
+		"material" : "INORGANIC"
+	},
+	{
+		"amount_left" : 2,
+		"amount_total" : 2,
+		"frequency" : "Daily",
+		"id" : 66,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"flags" : 
+				[
+					"non_economic",
+					"hard"
+				],
+				"item_type" : "BOULDER",
+				"material" : "INORGANIC",
+				"value" : 2
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "TRAPPARTS",
+				"material" : "INORGANIC",
+				"value" : 34
+			}
+		],
+		"job" : "ConstructMechanisms",
+		"material" : "INORGANIC"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 67,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "TABLE",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "TRAPPARTS",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "CHAIN",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "TRACTION_BENCH",
+				"value" : 10
+			}
+		],
+		"job" : "ConstructTractionBench"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 68,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "INORGANIC:IRON",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_GLOVES_GAUNTLETS",
+				"item_type" : "GLOVES",
+				"material" : "INORGANIC:IRON",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_GLOVES_GAUNTLETS",
+		"job" : "MakeGloves",
+		"material" : "INORGANIC:IRON"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Monthly",
+		"id" : 69,
+		"is_active" : false,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "INORGANIC:IRON",
+				"value" : 5
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 30
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_ARMOR_BREASTPLATE",
+				"item_type" : "ARMOR",
+				"material" : "INORGANIC:IRON",
+				"value" : 3
+			}
+		],
+		"item_subtype" : "ITEM_ARMOR_BREASTPLATE",
+		"job" : "MakeArmor",
+		"material" : "INORGANIC:IRON"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 70,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "INORGANIC:IRON",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_WEAPON_PICK",
+				"item_type" : "WEAPON",
+				"material" : "INORGANIC:IRON",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_WEAPON_PICK",
+		"job" : "MakeWeapon",
+		"material" : "INORGANIC:IRON"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 71,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "INORGANIC:IRON",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TRAPCOMP_MENACINGSPIKE",
+				"item_type" : "TRAPCOMP",
+				"material" : "INORGANIC:IRON",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_TRAPCOMP_MENACINGSPIKE",
+		"job" : "MakeTrapComponent",
+		"material" : "INORGANIC:IRON"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 72,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "INORGANIC:SILVER",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_WEAPON_HAMMER_WAR",
+				"item_type" : "WEAPON",
+				"material" : "INORGANIC:SILVER",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_WEAPON_HAMMER_WAR",
+		"job" : "MakeWeapon",
+		"material" : "INORGANIC:SILVER"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 73,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "INORGANIC:SILVER",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_WEAPON_MACE",
+				"item_type" : "WEAPON",
+				"material" : "INORGANIC:SILVER",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_WEAPON_MACE",
+		"job" : "MakeWeapon",
+		"material" : "INORGANIC:SILVER"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 74,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "INORGANIC:SILVER",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_WEAPON_SWORD_SHORT",
+				"item_type" : "WEAPON",
+				"material" : "INORGANIC:SILVER",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_WEAPON_SWORD_SHORT",
+		"job" : "MakeWeapon",
+		"material" : "INORGANIC:SILVER"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 76,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "INORGANIC:SILVER",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_WEAPON_SPEAR",
+				"item_type" : "WEAPON",
+				"material" : "INORGANIC:SILVER",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_WEAPON_SPEAR",
+		"job" : "MakeWeapon",
+		"material" : "INORGANIC:SILVER"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 77,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "INORGANIC:SILVER",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_WEAPON_AXE_BATTLE",
+				"item_type" : "WEAPON",
+				"material" : "INORGANIC:SILVER",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_WEAPON_AXE_BATTLE",
+		"job" : "MakeWeapon",
+		"material" : "INORGANIC:SILVER"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 78,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "INORGANIC:SILVER",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "FLASK",
+				"material" : "INORGANIC:SILVER",
+				"value" : 10
+			}
+		],
+		"job" : "MakeFlask",
+		"material" : "INORGANIC:SILVER"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 79,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "INORGANIC:LEAD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_TOOL_WHEELBARROW",
+				"item_type" : "TOOL",
+				"material" : "INORGANIC:LEAD",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_TOOL_WHEELBARROW",
+		"job" : "MakeTool",
+		"material" : "INORGANIC:LEAD"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 80,
+		"is_active" : true,
+		"is_validated" : true,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "INORGANIC:COPPER",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_subtype" : "ITEM_SHOES_BOOTS",
+				"item_type" : "SHOES",
+				"material" : "INORGANIC:COPPER",
+				"value" : 10
+			}
+		],
+		"item_subtype" : "ITEM_SHOES_BOOTS",
+		"job" : "MakeShoes",
+		"material" : "INORGANIC:COPPER"
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 81,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "WOOD",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "BUCKET",
+				"value" : 10
+			}
+		],
+		"job" : "MakeBucket",
+		"material_category" : 
+		[
+			"wood"
+		]
+	},
+	{
+		"amount_left" : 1,
+		"amount_total" : 1,
+		"frequency" : "Daily",
+		"id" : 82,
+		"is_active" : false,
+		"is_validated" : false,
+		"item_conditions" : 
+		[
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "INORGANIC:SILVER",
+				"value" : 1
+			},
+			{
+				"condition" : "AtLeast",
+				"item_type" : "BAR",
+				"material" : "COAL",
+				"value" : 1
+			},
+			{
+				"condition" : "AtMost",
+				"item_type" : "BUCKET",
+				"material" : "INORGANIC:SILVER",
+				"value" : 10
+			}
+		],
+		"job" : "MakeBucket",
+		"material" : "INORGANIC:SILVER"
 	}
 ]

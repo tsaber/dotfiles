@@ -1,5 +1,10 @@
-# Defined in /tmp/fish.Bx6wFX/asciisig.fish @ line 2
+# Defined in /tmp/fish.Jghcst/asciisig.fish @ line 2
 function asciisig
-	cowsay -f eyes pfff
-	cowsay -f kitty tssss
+	cowsay -f sodomized "$argv[1]"
+	switch (count $argv)
+		case 1
+			cowsay -f turkey $argv
+		case 2 
+			cowsay -f turkey $argv[2]
+	end
 end

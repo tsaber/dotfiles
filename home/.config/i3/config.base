@@ -38,7 +38,7 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
-bindsym $mod+s exec tdrop -maw -10 -s dropdown st
+bindsym $mod+s exec tdrop -maw -10 -s dropdown st -e xpad
 bindsym $mod+Left focus left
 bindsym $mod+Shift+F12 termite -e "bash"
 bindsym $mod+Down focus down
@@ -84,14 +84,14 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 workspace $ws1 output eDP-1 
 workspace $ws2 output eDP-1
-workspace $ws3 output HDMI-2
-workspace $ws9 output HDMI-2
-workspace $ws5 output HDMI-2
-workspace $ws6 output HDMI-2
-workspace $ws7 output HDMI-2
-workspace $ws8 output HDMI-2
-workspace $ws4 output HDMI-2
-workspace $ws10 output HDMI-2
+workspace $ws3 output eDP-1
+workspace $ws9 output eDP-1
+workspace $ws5 output eDP-1
+workspace $ws6 output eDP-1
+workspace $ws7 output eDP-1
+workspace $ws8 output eDP-1
+workspace $ws4 output eDP-1
+workspace $ws10 output eDP-1
 assign [class="^firefox$"] $ws3
 assign [class="^firefox-nightly$"] $ws3
 assign [class="^term$"] $ws4
@@ -104,24 +104,25 @@ assign [class="^lnp$"] $ws8
 assign [class="^dfhack$"] $ws4
 assign [class="^weechat$"] $ws7
 assign [class="^i3-nagbar$"] $ws3 
-assign [class="^copyq$"] output HDMI-2
+assign [class="^copyq$"] output eDP-1
 assign [class="^(i?)chromium$"] $ws8
 assign [class="^st$"] $ws9
 assign [class="^orage"] $ws1
 # #assign.2
 
-for_window [window_role="pop-up"] floating enable move output HDMI-2
-for_window [window_role="bubble"] floating enable move output HDMI-2
-for_window [window_role="task_dialog"] floating enable move output HDMI-2
-for_window [window_role="Preferences"] floating enable move output HDMI-2
-for_window [window_type="dialog"] floating enable move output HDMI-2
-for_window [window_type="menu"] floating enable move output HDMI-2
+for_window [window_role="pop-up"] floating enable move output eDP-1
+for_window [window_role="bubble"] floating enable move output eDP-1
+for_window [window_role="task_dialog"] floating enable move output eDP-1
+for_window [window_role="Preferences"] floating enable move output eDP-1
+for_window [window_type="dialog"] floating enable move output eDP-1
+for_window [window_type="menu"] floating enable move output eDP-1
 
 
 bindsym $mod+t exec --no-startup-id sylpheed
 bindsym $mod+p exec --no-startup-id firefox-nightly
-bindsym $mod+o exec --no-startup-id chromium
+#bindsym $mod+o exec --no-startup-id chromium
 
+bindsym $mod+o exec --no-startup-id xpad
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -131,7 +132,7 @@ for_window [class=",*"] title_format "%title"
 hide_edge_borders smart 
 default_border pixel
 default_floating_border pixel
-workspace back_and_forth output HDMI-2
+workspace back_and_forth output eDP-1
 
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+Tab move container to workspace back_and_forth
@@ -169,25 +170,27 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 bindsym $mod+Shift+x "$ens alacritty -e ~/Downloads/cataclysmdda-0.C/./cataclysm-launcher"
-$ens termite -e an2linuxserver.py
+# $ens termite -e an2linuxserver.py
 exec_always --no-startup-id /home/zava/.config/polybar/launch.sh
 exec --no-startup-id "fish -c 'setxkbmap de; and xmodmap /home/zava/.fddfk'"
+exec xrandr --output eDP-1 --mode 1920x1080
 exec --no-startup-id "nitrogen --restore"
 bindsym $mod+g $ens alacritty
 bindsym $mod+Shift+o $ens qutebrowser
 bindsym $mod+Shift+i $ens pavucontrol
 bindsym $mod+Shift+g $ens termite
+bindsym $mod+Shift+p $ens xpad
 bindsym $mod+Shift+u $ens termite -e ncpamixer
-$ens fish -c "xrandr --output HDMI-2 --mode 1920x1080 --primary"
-$ens fish -c "mons -o"
-$ens "sleep 4; and bitwarden"
+$ens "fish -c bitwarden-bin; i3-msg move to workspace '6:tbc'"
 # $i3-theme-window
 $ens "termite -e /usr/bin/weechat"
 bindsym $mod+Shift+m $ens kitty
 bindsym Print $ens "fish -c maim -s ~/Pictures/(date +%a%b%y%R)"
-$ens xrandr --dpi 96
 $ens "termite -e /usr/bin/newsboat" 
 $ens redshift
 $ens "alacritty -e /usr/bin/ncpamixer"
 $ens "cmst"
-$ens sylpheed
+$ens 'sylpheed; i3-msg move to workspace "6:tbc"'
+$ens "fish -c rfkill unblock {0,1}"
+$ens "xinput set-prop 18 297 1"
+$ens "xinput set-prop 17 297 1"

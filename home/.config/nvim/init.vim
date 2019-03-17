@@ -54,7 +54,7 @@ set noswapfile
 set cursorline
 set timeoutlen=500
 "set timeoutlen=0
-
+let g:python_host_prog="/home/zava/.virtualenvs/derp/bin/python"
 " for cross-terminal clipboard support
 set clipboard=unnamed
 set clipboard^=unnamedplus
