@@ -5,9 +5,10 @@ clickable_url = true
 #dynamic_title = true
 #font = Lini 12 
 border_width = 0.5 
-font = Pixel Operator Mono 13
+#font = Pixel Operator Mono 16
 #font = artwiz drift.se
-cursorsape  lock
+font = Fixedsys Excelsior 20
+#  lock
 #font = 
 #fullscreen = true
 #icon_name = terminal
@@ -24,7 +25,7 @@ hyperlinks = true
 cursor_blink = true
 browser = w3m
 filter_unmatched_urls = true
-modify_other_keys = false
-size_hints = false
+modify_other_keys = false 
+size_hints = true
 #scrollbar = off
 

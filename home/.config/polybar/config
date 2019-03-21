@@ -11,7 +11,7 @@ secondary = #a12522
 alert = #bd2c40
 
 [bar/example]
-monitor = ${env:MONITOR:eDP-1}
+monitor = ${env:MONITOR:HDMI-2}
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -34,12 +34,12 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-#font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=12:antialias=false;0
-font-2 = wuncon siji:pixelsize=10;1
+#font-0 = fixed:pixelsize=15;0
+font-3 = unifont:fontformat=truetype:size=14:antialias=false;2
+font-2 = wuncon siji:pixelsize=12;1
 #font-0 = artwiz glisp:pixelsize=12:antialias=true:autohint=true;1
-font-0 = creep:pixelsize=12:antialias=true:autohint=true;1
-font-3 = icomoon:pixelsize=10:style=regular;2
+font-0 = Fixedsys Excelsior:pixelsize=15:antialias=true:autohint=true;0
+font-1 = icomoon:pixelsize=12:style=regular;1
 
 modules-left = bspwm i3
 modules-center = date

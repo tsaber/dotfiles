@@ -18,12 +18,12 @@ workspace_auto_back_and_forth yes
 focus_on_window_activation urgent
 exec --no-startup-id pasystray
 #font pango:artwiz glisp.se 9: Fixedsys Excelsior
-font pango:Fixedsys Excelsior 12
+font pango:Fixedsys Excelsior 14
 
 
 # font font pango:hack 12:mplus Nerd Font Mono:
 set $st "exec --no-startup-id termite"
-set $t "exec --no-startup-id st"
+set $t "exec --no-startup-id st -f 'Fixedsys Excelsior:pixelsize=15:style=Regular'"
 floating_modifier $mod
 default_orientation vertical
 bindsym $mod+Shift+Return $t 
@@ -85,13 +85,13 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 workspace $ws1 output eDP-1 
 workspace $ws2 output eDP-1
 workspace $ws3 output eDP-1
-workspace $ws9 output eDP-1
-workspace $ws5 output eDP-1
-workspace $ws6 output eDP-1
-workspace $ws7 output eDP-1
-workspace $ws8 output eDP-1
-workspace $ws4 output eDP-1
-workspace $ws10 output eDP-1
+workspace $ws9 output HDMI-2
+workspace $ws5 output HDMI-2
+workspace $ws6 output HDMI-2
+workspace $ws7 output HDMI-2
+workspace $ws8 output HDMI-2
+workspace $ws4 output HDMI-2
+workspace $ws10 output HDMI-2
 assign [class="^firefox$"] $ws3
 assign [class="^firefox-nightly$"] $ws3
 assign [class="^term$"] $ws4
@@ -172,8 +172,10 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Shift+x "$ens alacritty -e ~/Downloads/cataclysmdda-0.C/./cataclysm-launcher"
 # $ens termite -e an2linuxserver.py
 exec_always --no-startup-id /home/zava/.config/polybar/launch.sh
-exec --no-startup-id "fish -c 'setxkbmap de; and xmodmap /home/zava/.fddfk'"
+#exec --no-startup-id "fish -c 'setxkbmap de; and xmodmap /home/zava/.fddfk'"
+exec_always --no-startup-id "fish -c 'setxkbmap us; and xmodmap /home/zava/.xmodsett'"
 exec xrandr --output eDP-1 --mode 1920x1080
+exec xrandr --output HDMI-2 --mode 1920x1080
 exec --no-startup-id "nitrogen --restore"
 bindsym $mod+g $ens alacritty
 bindsym $mod+Shift+o $ens qutebrowser
@@ -181,7 +183,7 @@ bindsym $mod+Shift+i $ens pavucontrol
 bindsym $mod+Shift+g $ens termite
 bindsym $mod+Shift+p $ens xpad
 bindsym $mod+Shift+u $ens termite -e ncpamixer
-$ens "fish -c bitwarden-bin; i3-msg move to workspace '6:tbc'"
+$ens "fish -c bitwarden-bin; i3-msg move container to workspace '6:tbc'"
 # <clientclass>         <border> <backgr.> <text> <indicator>
 client.focused          #f47f31 #f37320 #ffffff #f58c46
 client.focused_inactive #6c2e55 #61194a #ffffff #774060
