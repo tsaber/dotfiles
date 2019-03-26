@@ -1,4 +1,3 @@
-
 [colors]
 ;background = ${xrdb:color0:#222}
 background =  #15282D
@@ -34,12 +33,12 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-#font-0 = fixed:pixelsize=15;0
-font-3 = unifont:fontformat=truetype:size=14:antialias=false;2
-font-2 = wuncon siji:pixelsize=12;1
-#font-0 = artwiz glisp:pixelsize=12:antialias=true:autohint=true;1
-font-0 = Fixedsys Excelsior:pixelsize=15:antialias=true:autohint=true;0
-font-1 = icomoon:pixelsize=12:style=regular;1
+font-0 = Fixedsys Excelsior:pixelsize=15:antialias=true:autohint=true;1
+font-1 = unifont:fontformat=truetype:size=14:antialias=true;1
+font-3 = wuncon siji:pixelsize=10;2
+;font-0 = artwiz glisp:pixelsize=12:antialias=true:autohint=true;1
+;font-4 = fixed;pixelsize=15;antialias=true;4
+font-2 = Symbols Nerd Font:pixelsize=12:style=2048-em;0
 
 modules-left = bspwm i3
 modules-center = date

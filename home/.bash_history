@@ -307,3 +307,25 @@ ls
 cd ..
 rsync -u /media/sdb1-usb-_USB_DISK_3.0_07/*.mp3 0a --bw-limit=500
 rsync -u /media/sdb1-usb-_USB_DISK_3.0_07/*.mp3 0a
+ssh-add derped
+chmod 0444 derped 
+ssh-add derped
+chmod 0400
+chmod 0400 derped
+ssh-add derped
+cat derkwkike.pub authorized_keys 
+cat derkwkike.pub > authorized_keys 
+ls -al derkwkike.pub 
+ls -al authorized_keys 
+chmod --help
+ls
+chmod 400 authorized_keys 
+ls -al authorized_keys 
+chmod 0500 authorized_keys 
+ls -al authorized_keys 
+chmod 0500 authorized_keys 
+ls -al authorized_keys 
+chmod 0600 authorized_keys 
+ls -al authorized_keys 
+cat derkwkike.pub > authorized_keys 
+exit

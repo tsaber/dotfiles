@@ -7,7 +7,7 @@ clickable_url = true
 border_width = 0.5 
 #font = Pixel Operator Mono 16
 #font = artwiz drift.se
-font = Fixedsys Excelsior 20
+font = Fixedsys Excelsior 16
 #  lock
 #font = 
 #fullscreen = true

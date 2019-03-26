@@ -39,7 +39,7 @@ set background=dark
 set ruler
 set termguicolors                    " Enable GUI colors for the terminal to get truecolor
 
-
+colo dracula
 set history=100
 set hlsearch
 inoremap <C-U> <C-G>u<C-U>

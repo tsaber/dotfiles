@@ -25,7 +25,7 @@ font pango:Fixedsys Excelsior 14
 set $st "exec --no-startup-id termite"
 set $t "exec --no-startup-id st -f 'Fixedsys Excelsior:pixelsize=15:style=Regular'"
 floating_modifier $mod
-default_orientation vertical
+default_orientation horizontal
 bindsym $mod+Shift+Return $t 
 bindsym $mod+Return $st 
 bindsym $mod+Shift+q kill
@@ -98,11 +98,15 @@ assign [class="^term$"] $ws4
 assign [class="^(?i)skype$"] $ws1
 assign [class="^dota2$"] $ws10
 assign [class="^Steam$"] $ws10
+assign [class="^bitwarden$"] $ws10
+
 assign [class="^lnp$"] $ws8
 # assign [class="^Dwarf_Fortress$"] $ws9
 
 assign [class="^dfhack$"] $ws4
 assign [class="^weechat$"] $ws7
+assign [class="^wechat$"] $ws7
+assign [class="^sylpheed$"] $ws7
 assign [class="^i3-nagbar$"] $ws3 
 assign [class="^copyq$"] output eDP-1
 assign [class="^(i?)chromium$"] $ws8
@@ -110,12 +114,20 @@ assign [class="^st$"] $ws9
 assign [class="^orage"] $ws1
 # #assign.2
 
-for_window [window_role="pop-up"] floating enable move output eDP-1
-for_window [window_role="bubble"] floating enable move output eDP-1
-for_window [window_role="task_dialog"] floating enable move output eDP-1
-for_window [window_role="Preferences"] floating enable move output eDP-1
-for_window [window_type="dialog"] floating enable move output eDP-1
-for_window [window_type="menu"] floating enable move output eDP-1
+for_window [window_role="pop-up"] floating enable move output HDMI-2
+for_window [window_role="bubble"] floating enable move output HDMI-2
+for_window [window_role="task_dialog"] floating enable move output HDMI-2
+for_window [window_role="Preferences"] floating enable move output HDMI-2
+for_window [window_type="dialog"] floating enable move output HDMI-2
+for_window [window_type="menu"] floating enable move output HDMI-2
+
+#for_window [window_role="pop-up"] floating enable move output HDMI-2
+#for_window [window_role="bubble"] floating enable move output HDMI-2
+#for_window [window_role="task_dialog"] floating enable move output HDMI-2
+#for_window [window_role="Preferences"] floating enable move output HDMI-2
+#for_window [window_type="dialog"] floating enable move output HDMI-2
+#for_window [window_type="menu"] floating enable move output HDMI-2
+
 
 
 bindsym $mod+t exec --no-startup-id sylpheed
@@ -172,8 +184,8 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Shift+x "$ens alacritty -e ~/Downloads/cataclysmdda-0.C/./cataclysm-launcher"
 # $ens termite -e an2linuxserver.py
 exec_always --no-startup-id /home/zava/.config/polybar/launch.sh
-#exec --no-startup-id "fish -c 'setxkbmap de; and xmodmap /home/zava/.fddfk'"
-exec_always --no-startup-id "fish -c 'setxkbmap us; and xmodmap /home/zava/.xmodsett'"
+## exec --no-startup-id "fish -c 'setxkbmap de; and xmodmap /home/zava/.fddfk'"
+	exec --no-startup-id "fish -c 'setxkbmap us; and xmodmap /home/zava/.xmodsett'"
 exec xrandr --output eDP-1 --mode 1920x1080
 exec xrandr --output HDMI-2 --mode 1920x1080
 exec --no-startup-id "nitrogen --restore"
@@ -182,8 +194,9 @@ bindsym $mod+Shift+o $ens qutebrowser
 bindsym $mod+Shift+i $ens pavucontrol
 bindsym $mod+Shift+g $ens termite
 bindsym $mod+Shift+p $ens xpad
-bindsym $mod+Shift+u $ens termite -e ncpamixer
-$ens "fish -c bitwarden-bin; i3-msg move container to workspace '6:tbc'"
+bindsym $mod+Shift+u $ens 'fish -c termite -e ncpamixer; and i3-msg move container to workspace $ws3'
+	
+$ens 'fish -c bitwarden-bin'
 # <clientclass>         <border> <backgr.> <text> <indicator>
 client.focused          #f47f31 #f37320 #ffffff #f58c46
 client.focused_inactive #6c2e55 #61194a #ffffff #774060
@@ -193,14 +206,18 @@ client.urgent           #f0be50 #efb73e #ffffff #efb73e
 # $i3-background
 exec_always --no-startup-id xsetroot -solid '#542937'
 
-$ens "termite -e /usr/bin/weechat"
+$ens "termite -e 'fish -c /usr/bin/weechat'"
 bindsym $mod+Shift+m $ens kitty
-bindsym Print $ens "fish -c maim -s ~/Pictures/(date +%a%b%y%R)"
+bindsym Print $ens "fish -c maim ~/Pictures/(date +%a%b%y%R)"
 $ens "termite -e /usr/bin/newsboat" 
 $ens redshift
 $ens "alacritty -e /usr/bin/ncpamixer"
 $ens "cmst"
-$ens 'sylpheed; i3-msg move to workspace "6:tbc"'
+$ens 'sylpheed'
 $ens "fish -c rfkill unblock {0,1}"
 $ens "xinput set-prop 18 297 1"
 $ens "xinput set-prop 17 297 1"
+$ens "mons --primary HDMI-2"
+$ens "mons -e left"
+$ens 'fish -c "sleep 5.5; and mons -e left"'
+bindsym $mod+Shift+z '$ens  fish -c usder'

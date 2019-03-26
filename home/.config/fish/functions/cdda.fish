@@ -1,4 +1,4 @@
-# Defined in /tmp/fish.xFgRYK/cdda.fish @ line 2
+# Defined in /tmp/fish.yryDLo/cdda.fish @ line 2
 function cdda
-	~/Downloads//cataclysmdda-0.C/./cataclysm-launcher
+	~/cataclysmdda-0.D/./cataclysm-launcher
 end
