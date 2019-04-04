@@ -40,7 +40,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 #if [ $TERM = linux ] || [ -e "/etc/systemd/system/graphical.target.wants/xlogin@$(whoami).service" ] ; then
 # Here Bspwm is kept as default
-i3 
+exec i3
+#exec dbus-launch --sh-syntax --exit-with-session i3;;
 
 #case $session in
 #	awesome 		  ) exec dbus-launch --sh-syntax --exit-with-session awesome;;

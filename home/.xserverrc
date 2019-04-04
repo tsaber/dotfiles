@@ -2,5 +2,5 @@
 
 #!/bin/sh
 
-exec /usr/bin/Xorg -nolisten tcp "$@" -keeptty
+exec /usr/bin/Xorg -nolisten tcp vt7 -keeptty
 

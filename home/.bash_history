@@ -329,3 +329,11 @@ chmod 0600 authorized_keys
 ls -al authorized_keys 
 cat derkwkike.pub > authorized_keys 
 exit
+/usr/bin/env fish
+exit
+exit
+nvim .config/fish/config.fish
+nvim .tmux.conf
+fish
+nvim .tmux.conf
+fish

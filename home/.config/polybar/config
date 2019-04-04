@@ -33,12 +33,12 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Fixedsys Excelsior:pixelsize=15:antialias=true:autohint=true;1
+font-0 =mononoki Nerd Font:size=11:antialias=true:autohint=true;0
 font-1 = unifont:fontformat=truetype:size=14:antialias=true;1
-font-3 = wuncon siji:pixelsize=10;2
-;font-0 = artwiz glisp:pixelsize=12:antialias=true:autohint=true;1
-;font-4 = fixed;pixelsize=15;antialias=true;4
-font-2 = Symbols Nerd Font:pixelsize=12:style=2048-em;0
+font-3 = Siji:style=Regular:size=10;1
+;font-0 = artwiz glisp:size=12:antialias=true:autohint=true;1
+;font-4 = fixed;size=15;antialias=true;4
+font-2 = Symbols Nerd Font:size=15:style=2048-em;0
 
 modules-left = bspwm i3
 modules-center = date
@@ -71,8 +71,7 @@ label = %title:0:30:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix = "⋄ "
 format-prefix-underline = ${colors.secondary}
 
 label-layout = %layout%
@@ -87,7 +86,7 @@ label-indicator-underline = ${colors.secondary}
 type = internal/fs
 interval = 25
 
-mount-0 = /
+mount-0 = / 
 
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
@@ -191,7 +190,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = "ᄝ "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
 label = %percentage:2%%
@@ -199,7 +198,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = "⊅ "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
 label = %percentage_used%%
@@ -213,17 +212,17 @@ format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #9f78e1
 label-connected = %essid%
 
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected = %ifname% disconnected
+label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+
+ramp-signal-1 = ▁
+ramp-signal-2 = ▃
+ramp-signal-3 = ▅
+ramp-signal-4 = █
+
 ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
@@ -252,7 +251,7 @@ date-alt = " %Y-%m-%d"
 time = %H%M
 time-alt = %H%M%S
 
-format-prefix = 
+format-prefix = ᚅ
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #daaca5
 
@@ -262,7 +261,7 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume = ♫ %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted
@@ -277,7 +276,7 @@ bar-volume-foreground-4 = #55aa55
 bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
-bar-volume-indicator = |
+bar-volume-indicator = [|]
 bar-volume-indicator-font = 2
 bar-volume-fill = ─
 bar-volume-fill-font = 2
@@ -289,7 +288,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL
+label-volume = ♬ %percentage%
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
@@ -305,7 +304,7 @@ bar-volume-foreground-4 = #55aa55
 bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
-bar-volume-indicator = |
+bar-volume-indicator = [|]
 bar-volume-indicator-font = 2
 bar-volume-fill = ─
 bar-volume-fill-font = 2
@@ -352,7 +351,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #f50a4d
+format-underline = #f20a4d
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
@@ -360,9 +359,10 @@ label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+ramp-0 = ▁ 
+ramp-1 = ▃
+ramp-2 = ▅
+
 ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
@@ -372,7 +372,7 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = ©
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}
