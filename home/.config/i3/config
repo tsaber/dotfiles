@@ -185,7 +185,7 @@ bindsym $mod+Shift+x "$ens alacritty -e ~/Downloads/cataclysmdda-0.C/./cataclysm
 # $ens termite -e an2linuxserver.py
 exec_always --no-startup-id /home/zava/.config/polybar/launch.sh
 exec_always fish -c usder
-exec xrandr --output eDP-1 --auto
+exec xrandr --output eDP-1 --mode 1920x1080
 exec_always fish -c "nitrogen --restore"
 bindsym $mod+g $ens alacritty
 bindsym $mod+Shift+o $ens qutebrowser
@@ -220,7 +220,6 @@ $ens "fish -c rfkill unblock {0,1}"
 $ens "xinput set-prop 18 297 1"
 $ens "xinput set-prop 17 297 1"
 $ens "mons --primary eDP-1"
-exec "fish -c 'sleep 5.5; and mons -e left'"
 bindsym $mod+Shift+z '$ens  "fish -c usder"'
 exec 'fish -c usder'
 bindsym $mod+Alt+f exec "fish -c facco"
