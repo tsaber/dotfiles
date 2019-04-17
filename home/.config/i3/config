@@ -219,7 +219,7 @@ $ens 'thunderbird'
 $ens "fish -c rfkill unblock {0,1}"
 $ens "xinput set-prop 18 297 1"
 $ens "xinput set-prop 17 297 1"
-$ens "mons --primary eDP-1"
+$ens "mons --primary HDMI-2"
 bindsym $mod+Shift+z '$ens  "fish -c usder"'
 exec 'fish -c usder'
-bindsym $mod+Alt+f exec "fish -c facco"
+#bindsym $mod+Alt+f exec "fish -c facco"
