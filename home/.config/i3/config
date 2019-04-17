@@ -20,7 +20,6 @@ exec --no-startup-id pasystray
 #font pango:artwiz glisp.se 9: Fixedsys Excelsior
 font pango:Fixedsys Excelsior 14
 
-
 # font font pango:hack 12:mplus Nerd Font Mono:
 set $st "exec --no-startup-id termite"
 set $t "exec --no-startup-id st -f 'Fixedsys Excelsior:pixelsize=15:style=Regular'"
@@ -185,7 +184,6 @@ bindsym $mod+Shift+x "$ens alacritty -e ~/Downloads/cataclysmdda-0.C/./cataclysm
 # $ens termite -e an2linuxserver.py
 exec_always --no-startup-id /home/zava/.config/polybar/launch.sh
 exec_always fish -c usder
-exec xrandr --output eDP-1 --mode 1920x1080
 exec_always fish -c "nitrogen --restore"
 bindsym $mod+g $ens alacritty
 bindsym $mod+Shift+o $ens qutebrowser
@@ -220,6 +218,6 @@ $ens "fish -c rfkill unblock {0,1}"
 $ens "xinput set-prop 18 297 1"
 $ens "xinput set-prop 17 297 1"
 $ens "mons --primary HDMI-2"
-bindsym $mod+Shift+z '$ens  "fish -c usder"'
+$ens "fish -c sleep 0.1; and mons -e left"
 exec 'fish -c usder'
-#bindsym $mod+Alt+f exec "fish -c facco"
+bindsym $mod+Mod1+f exec "fish -c facco"
