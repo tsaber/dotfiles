@@ -1,0 +1,60 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export BROWSER:firefox\x2dnightly
+SETUVAR --export BSN:561784103
+SETUVAR --export DDGR_COLORS:Bcdgef
+SETUVAR --export DISPLAY:\x3a0
+SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
+SETUVAR FZF_LEGACY_KEYBINDINGS:1
+SETUVAR FZF_PREVIEW_DIR_CMD:ls
+SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
+SETUVAR FZF_TMUX_HEIGHT:40\x25
+SETUVAR GH_BASE_DIR:/home/zava
+SETUVAR LOCALE:en_US\x2eUTF\x2d8
+SETUVAR --export PYENV_ROOT:/home/zava/\x2evirtualenvs/derp/bin/
+SETUVAR --export STEAMAPPS:/home/zava/\x2elocal/share/Steam/steamapps/common/
+SETUVAR --export VISUAL:nvim
+SETUVAR --export XDG_VTNR:1
+SETUVAR ZO_CMD:zo
+SETUVAR Z_CMD:z
+SETUVAR Z_DATA:/home/zava/\x2elocal/share/z/data
+SETUVAR Z_DATA_DIR:/home/zava/\x2elocal/share/z
+SETUVAR Z_EXCLUDE:/home/zava
+SETUVAR __fish_init_2_39_8:\x1d
+SETUVAR __fish_init_2_3_0:\x1d
+SETUVAR --export dberp:unix\x3aabstract\x3d/tmp/dbus\x2d2UFHDAHZSu\x2cguid\x3d11088188143a8ed0fa05bf6d5c9a74d5
+SETUVAR deee:ren
+SETUVAR fish_color_autosuggestion:555\x1ebrblack
+SETUVAR fish_color_cancel:\x2dr
+SETUVAR fish_color_command:\x2d\x2dbold
+SETUVAR fish_color_comment:red
+SETUVAR fish_color_cwd:green
+SETUVAR fish_color_cwd_root:red
+SETUVAR fish_color_end:brmagenta
+SETUVAR fish_color_error:brred
+SETUVAR fish_color_escape:bryellow\x1e\x2d\x2dbold
+SETUVAR fish_color_history_current:\x2d\x2dbold
+SETUVAR fish_color_host:normal
+SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
+SETUVAR fish_color_normal:normal
+SETUVAR fish_color_operator:bryellow
+SETUVAR fish_color_param:cyan
+SETUVAR fish_color_quote:yellow
+SETUVAR fish_color_redirection:brblue
+SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_user:brgreen
+SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR --export fish_greeting:
+SETUVAR fish_key_bindings:fish_default_key_bindings
+SETUVAR fish_pager_color_completion:\x1d
+SETUVAR fish_pager_color_description:B3A06D\x1eyellow
+SETUVAR fish_pager_color_prefix:green
+SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR --export fish_user_paths:/usr/bin\x1e/home/zava/bin\x1e/home/zava/\x2efzf/bin\x1e/home/zava/\x2efzf/\x1e/usr/bin/site_perl/\x1e/usr/bin/vendor/perl/bin\x1e/usr/bin/core_perl\x1e/usr/lib/jvm/java\x2d10\x2dopenjdk/bin\x1e/usr/lib/jvm/default/bin\x1e/home/zava/node_modules\x1e/opt/android\x2dsdk/platform\x2dtools\x1e/opt/android\x2dsdk/build\x2dtools/28\x2e0\x2e3\x1e/usr/bin/vendor_perl/\x1e/home/zava/\x2egem/ruby/2\x2e6\x2e0/bin\x1e/home/zava/\x2evirtualenvs/derp/bin\x1e/home/zava/\x2envm/versions/node/v11\x2e6\x2e0/bin\x1e/bin\x1e/sbin/bin\x1e/bin/sbin
+SETUVAR fry_auto_switch:0
+SETUVAR fry_installer:ruby\x2dinstall
+SETUVAR fry_prepend_path:0
+SETUVAR fry_rubies:/home/zava/\x2erubies
+SETUVAR pisces_pairs:\x28\x2c\x29\x1e\x5b\x2c\x5d\x1e\x7b\x2c\x7d\x1e\x22\x2c\x22\x1e\x27\x2c\x27
+SETUVAR --export pogepi:192\x2e168\x2e178\x2e89\x09

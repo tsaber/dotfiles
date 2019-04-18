@@ -1,0 +1,38 @@
+if status --is-login 
+	if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
+	       startx
+	end 
+end
+
+if not [ $TERM = "tmux-256color" ]
+	tmx 
+end 
+
+
+
+eval (python -m virtualfish) 
+
+
+function homeshick
+	if test \( (count $argv) = 2 -a "$argv[1]" = "cd" \)
+		cd "$HOME/.homesick/repos/$argv[2]"
+		eval $HOMESHICK_DIR/bin/homeshick (string escape -- $argv)
+		eval $HOME/.homesick/repos/homeshick/bin/homeshick (string escape -- $argv)
+	end
+end
+
+if status --is-interactive
+    source "$BASE16_SHELL/profile_helper.fish"
+    
+end
+if status --is-interactive
+end
+#cowsay -f satanic (date +%d%a%b%y\|%R\.)
+#eval (fasd --init auto)
+#source /usr/share/chruby/{chruby,auto}.fish
+vf activate derp
+  if status --is-interactive
+  end
+
+task ls (random 1 3) 2>/dev/null
+
