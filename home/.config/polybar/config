@@ -3,10 +3,10 @@
 background =  #15282D
 background-alt = #1E1C52
 ;foreground = ${xrdb:color7:#222}
-foreground = #a12400
-foreground-alt = #A17100
-primary = #631717
-secondary = #a12522
+foreground = #a1a4f0
+foreground-alt = #A171a0
+primary = #6317b7
+secondary = #a1a5f2
 alert = #bd2c40
 
 [bar/example]
@@ -34,7 +34,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 =mononoki Nerd Font:size=11:antialias=true:autohint=true;0
+font-0 =mononoki Nerd Font:size=9:antialias=true:autohint=true;0
 font-1 = unifont:fontformat=truetype:size=14:antialias=true;1
 font-3 = Siji:style=Regular:size=10;1
 ;font-0 = artwiz glisp:size=12:antialias=true:autohint=true;1

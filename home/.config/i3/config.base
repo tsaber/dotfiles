@@ -190,7 +190,7 @@ bindsym $mod+Shift+o $ens qutebrowser
 bindsym $mod+Shift+i $ens pavucontrol
 bindsym $mod+Shift+g $ens termite
 bindsym $mod+Shift+p $ens xpad
-bindsym $mod+Shift+u $ens 'fish -c termite -e ncpamixer; and i3-msg move container to workspace '$ws9''
+bindsym $mod+Shift+u $ens 'fish -c "termite -e ncpamixer; and i3-msg move container to workspace $ws3"'
 exec bitwarden-bin
 # $i3-theme-window
 $ens "termite -e /usr/bin/weechat"
