@@ -1,13 +1,7 @@
-	if status --is-login 
-		if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
-		       startx
-		end 
-	end
-
-	if not [ $TERM = "screen-256color" ]
-		tmx 
-		usder
-	end 
+if not [ $TERM = "screen-256color" ]
+	tmx 
+	usder
+end 
 eval (python -m virtualfish) 
 vf activate derp
 function homeshick
@@ -19,14 +13,15 @@ function homeshick
 		eval $HOME/.homesick/repos/homeshick/bin/homeshick (string escape -- $argv)
 	end
 end
-if status --is-interactive
+if status is-interactive
     set BASE16_SHELL "$HOME/.config/base16-shell/"
     source "$BASE16_SHELL/profile_helper.fish"
-    xinput set-prop 19 299 0 
-    usder
 end
 #cowsay -f satanic (date +%d%a%b%y\|%R\.)
 #bax eval (fasd --init auto)
 #source /usr/share/chruby/{chruby,auto}.fish
 
-base16-dracula
+if status is-login
+	sudo ryzen-stabilizator -disable-c6 > /dev/null
+	sudo nitrogen --restore
+end

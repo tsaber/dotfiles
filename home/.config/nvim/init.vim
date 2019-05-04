@@ -39,11 +39,10 @@ set background=dark
 set ruler
 set termguicolors                    " Enable GUI colors for the terminal to get truecolor
 
-colo dracula
 set history=100
 set hlsearch
 inoremap <C-U> <C-G>u<C-U>
-let g:tmuxline_powerline_separators = 0
+let g:tmuxline_powerline_separators = 1
 set autoread
 set showcmd
 set ignorecase

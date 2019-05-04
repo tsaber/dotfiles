@@ -10,8 +10,8 @@ secondary = #a1a5f2
 alert = #bd2c40
 
 [bar/example]
-monitor = ${env:MONITOR:HDMI-2}
-;monitor = ${env:MONITOR:eDP-1}
+monitor = ${env:MONITOR:DisplayPort-1}
+;monitor = ${env:MONITOR:eDP}
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -228,11 +228,11 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = enp0s25
+interface = enp3s0f3u1u4u3
 interval = 3.0
 
-format-connected-underline = #55aa55
-format-connected-prefix = " "
+format-connected-underline =  #55aaaa
+format-connected-prefix = "∢ "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
@@ -297,13 +297,13 @@ format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+bar-volume-foreground-0 = #55aaa5
+bar-volume-foreground-1 = #55aaa5
+bar-volume-foreground-2 = #55aaa5
+bar-volume-foreground-3 = #55aaa5
+bar-volume-foreground-4 = #55aaff
+bar-volume-foreground-5 = #f5a7ff
+bar-volume-foreground-6 = #ff55f5
 bar-volume-gradient = false
 bar-volume-indicator = [|]
 bar-volume-indicator-font = 2
@@ -320,7 +320,7 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+format-charging-underline = #abb5ba
 
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
@@ -329,20 +329,20 @@ format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
 ramp-capacity-foreground = ${colors.foreground-alt}
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
 animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-framerate = 750
 

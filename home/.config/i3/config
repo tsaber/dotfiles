@@ -13,22 +13,22 @@ set $ens exec --no-startup-id
 mouse_warping output
 focus_follows_mouse yes
 popup_during_fullscreen leave_fullscreen
-focus_wrapping yes
+focus_wrapping yes 
 workspace_auto_back_and_forth yes
 focus_on_window_activation urgent
 exec --no-startup-id pasystray
 #font pango:artwiz glisp.se 9: Fixedsys Excelsior
-font pango:Fixedsys Excelsior 14
+font pango:Fixedsys Excelsior 12
 
 # font font pango:hack 12:mplus Nerd Font Mono:
 set $st "exec --no-startup-id termite"
-set $t "exec --no-startup-id st -f 'Fixedsys Excelsior:pixelsize=15:style=Regular'"
+set $t "exec --no-startup-id st"
 floating_modifier $mod
 default_orientation horizontal
 bindsym $mod+Shift+Return $t 
 bindsym $mod+Return $st 
 bindsym $mod+Shift+q kill
-bindsym $mod+q exec --no-startup-id rofi -show drun
+bindsym $mod+q exec --no-startup-id "rofi -modi window#run#drun#ssh#combi -show run -theme lb"
 bindsym $mod+e exec --no-startup-id rofi -show window
 bindsym $mod+F1 exec copyq toggle
 bindsym $mod+F2 exec "fish -c polyb"
@@ -51,8 +51,8 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-bindsym $mod+z split v
-bindsym $mod+u split h
+bindsym $mod+z split toggle
+bindsym $mod+u exec palemoon
 bindsym $mod+f fullscreen toggle
 bindsym $mod+w layout toggle all
 bindsym $mod+Shift+f floating toggle 
@@ -81,18 +81,19 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-workspace $ws1 output eDP-1 
-workspace $ws2 output eDP-1
-workspace $ws3 output eDP-1
-workspace $ws9 output HDMI-2
-workspace $ws5 output HDMI-2
-workspace $ws6 output HDMI-2
-workspace $ws7 output HDMI-2
-workspace $ws8 output HDMI-2
-workspace $ws4 output HDMI-2
-workspace $ws10 output HDMI-2
+workspace $ws1 output eDP 
+workspace $ws2 output eDP
+workspace $ws3 output eDP
+workspace $ws9 output DisplayPort-1
+workspace $ws5 output DisplayPort-1
+workspace $ws6 output DisplayPort-1
+workspace $ws7 output DisplayPort-1
+workspace $ws8 output DisplayPort-1
+workspace $ws4 output DisplayPort-1
+workspace $ws10 output DisplayPort-1
 assign [class="^firefox$"] $ws3
-assign [class="^firefox-nightly$"] $ws3
+assign [class="^palemoon-bin$"] $ws3
+assign [class="^firefox$"] $ws3
 assign [class="^term$"] $ws4
 assign [class="^(?i)skype$"] $ws1
 assign [class="^dota2$"] $ws10
@@ -107,30 +108,30 @@ assign [class="^weechat$"] $ws7
 assign [class="^wechat$"] $ws7
 assign [class="^thunderbird$"] $ws7
 assign [class="^i3-nagbar$"] $ws3 
-assign [class="^copyq$"] output eDP-1
+assign [class="^copyq$"] output eDP
 assign [class="^(i?)chromium$"] $ws8
-assign [class="^st$"] $ws9
+assign [class="^st$"] $ws2
 assign [class="^orage"] $ws1
 # #assign.2
 
-for_window [window_role="pop-up"] floating enable move output HDMI-2
-for_window [window_role="bubble"] floating enable move output HDMI-2
-for_window [window_role="task_dialog"] floating enable move output HDMI-2
-for_window [window_role="Preferences"] floating enable move output HDMI-2
-for_window [window_type="dialog"] floating enable move output HDMI-2
-for_window [window_type="menu"] floating enable move output HDMI-2
+for_window [window_role="pop-up"] floating enable move output DisplayPort-1
+for_window [window_role="bubble"] floating enable move output DisplayPort-1
+for_window [window_role="task_dialog"] floating enable move output DisplayPort-1
+for_window [window_role="Preferences"] floating enable move output DisplayPort-1
+for_window [window_type="dialog"] floating enable move output DisplayPort-1
+for_window [window_type="menu"] floating enable move output DisplayPort-1
 
-#for_window [window_role="pop-up"] floating enable move output HDMI-2
-#for_window [window_role="bubble"] floating enable move output HDMI-2
-#for_window [window_role="task_dialog"] floating enable move output HDMI-2
-#for_window [window_role="Preferences"] floating enable move output HDMI-2
-#for_window [window_type="dialog"] floating enable move output HDMI-2
-#for_window [window_type="menu"] floating enable move output HDMI-2
+#for_window [window_role="pop-up"] floating enable move output DisplayPort-1
+#for_window [window_role="bubble"] floating enable move output DisplayPort-1
+#for_window [window_role="task_dialog"] floating enable move output DisplayPort-1
+#for_window [window_role="Preferences"] floating enable move output DisplayPort-1
+#for_window [window_type="dialog"] floating enable move output DisplayPort-1
+#for_window [window_type="menu"] floating enable move output DisplayPort-1
 
 
 
 bindsym $mod+t exec --no-startup-id thunderbird
-bindsym $mod+p exec --no-startup-id firefox-nightly
+bindsym $mod+p exec --no-startup-id firefox
 #bindsym $mod+o exec --no-startup-id chromium
 
 bindsym $mod+o exec --no-startup-id turtl
@@ -143,7 +144,7 @@ for_window [class=",*"] title_format "%title"
 hide_edge_borders smart 
 default_border pixel
 default_floating_border pixel
-workspace back_and_forth output eDP-1
+workspace back_and_forth output eDP
 
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+Tab move container to workspace back_and_forth
@@ -154,7 +155,8 @@ bindsym $mod+b move workspace to next output
 exec_always --no-startup-id  copyq
 bindsym $mod+Shift+d exec fish -c "doto"
 bindsym $mod+F3 exec --no-startup-id gpick -p -o
-
+gaps inner 25
+gaps outer 15
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -180,44 +182,41 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-bindsym $mod+Shift+x "$ens alacritty -e ~/Downloads/cataclysmdda-0.C/./cataclysm-launcher"
-# $ens termite -e an2linuxserver.py
+$ens termite -e 'an2linuxserver.py'
 exec_always --no-startup-id /home/zava/.config/polybar/launch.sh
 exec_always fish -c usder
-exec_always fish -c "nitrogen --restore"
+exec_always 'fish -c sudo nitrogen --restore'
 bindsym $mod+g $ens alacritty
 bindsym $mod+Shift+o $ens qutebrowser
 bindsym $mod+Shift+i $ens pavucontrol
 bindsym $mod+Shift+g $ens termite
-bindsym $mod+Shift+p $ens xpad
-bindsym $mod+Shift+u $ens 'fish -c "termite -e ncpamixer; and i3-msg move container to workspace $ws3"'
+bindsym $mod+Shift+p $ens turtl
+bindsym $mod+Shift+u $ens bitwarden-bin
 exec bitwarden-bin
-# <clientclass>         <border> <backgr.> <text> <indicator>
-client.focused          #f47f31 #f37320 #ffffff #f58c46
-client.focused_inactive #6c2e55 #61194a #ffffff #774060
-client.unfocused        #542937 #47172c #aea79f #603944
-client.urgent           #f0be50 #efb73e #ffffff #efb73e
-
-# $i3-background
-exec_always --no-startup-id xsetroot -solid '#542937'
-
+# class                 border  backgr. text    indicator
+client.focused #586e75 #586e75 #fdf6e3 #268bd2
+client.focused_inactive #073642 #073642 #93a1a1 #002b36
+client.unfocused #002b36 #002b36 #586e75 #002b36
+client.urgent #dc322f #dc322f #fdf6e3 #dc322f
 $ens "termite -e /usr/bin/weechat"
 bindsym $mod+Shift+m $ens kitty
-bindsym Print exec fish -c 'maim /home/zava/Pictures/(date +%a%b%s%H%M).png'
-bindsym $mod+Print exec fish -c 'maim -s /home/zava/Pictures/(date +%a%H%M%s).png'
+#maim:
+bindsym Print exec fish -c 'maim /home/zava/Pictures/skrenshet(date +%a%b%s%H%M).png'
+bindsym $mod+Print exec fish -c 'maim -s /home/zava/Pictures/megasele(date +%a%H%M%s).png'
 bindsym $mod+Shift+Print exec fish -c 'maim -i (xdotool getactivewindow) ~/curwind(date +%a%b%R).jpg'
-$ens "alacritty -e /usr/bin/newsboat" 
-$ens redshift
-#$ens "alacritty -e /usr/bin/ncpamixer"
-$ens "cmst"   
-$ens rclone mount derpberx: /home/zava/0b 
-$ens  rclone mount we: /home/zava/0a
-$ens 'thunderbird'
 
-$ens "fish -c rfkill unblock {0,1}"
-$ens "xinput set-prop 18 297 1"
-$ens "xinput set-prop 17 297 1"
-$ens "mons --primary HDMI-2"
-$ens "fish -c sleep 0.1; and mons -e left"
-exec 'fish -c usder'
+#$ens alacritty -e /usr/bin/newsboat 
+$ens redshift -l 56:5
+$ens alacritty -e pavucontrol
+$ens nm-applet
+exec_always 'copyq >> /dev/null'
+$ens rclone mount derpberx: /home/zava/0b 
+$ens rclone mount we: /home/zava/0a
+$ens rclone mount yernderx: /home/zava/0y
+$ens thunderbird
+bindsym $mod+Mod1+r $ens "rofi -modi window#run#drun#ssh#combi -show run -theme lb"
+$ens "mons --primary DisplayPort-1; and sleep 4; and mons -e left"
 bindsym $mod+Mod1+f exec "fish -c facco"
+bindsym $mod+F5 $ens '/home/zava/bin/bluerest.sh'
+exec devmon
+$ens blueman-adapters
