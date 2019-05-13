@@ -10,9 +10,16 @@ function __fish_complete_man
             case '-**'
 
             case '*'
-                set section $prev[1]
+                set section (string escape --style=regex $prev[1])
+                set section (string replace --all / \\/ $section)
         end
         set -e prev[1]
+    end
+
+    set -l exclude_fish_commands
+    # Only include fish commands when section is empty or 1
+    if test -z "$section" -o "$section" = "1"
+      set -e exclude_fish_commands
     end
 
     set section $section"[^)]*"
@@ -24,7 +31,7 @@ function __fish_complete_man
 
     if test -n "$token"
         # Do the actual search
-        apropos $token ^/dev/null | awk '
+        apropos $token 2>/dev/null | awk '
                 BEGIN { FS="[\t ]- "; OFS="\t"; }
                 # BSD/Darwin
                 /^[^( \t]+\('$section'\)/ {
@@ -63,8 +70,10 @@ function __fish_complete_man
                 '
 
         # Fish commands are not given by apropos
-        set -l files $__fish_datadir/man/man1/*.1
-        string replace -r '.*/([^/]+)\.1$' '$1\t1: fish command' -- $files
+        if not set -ql exclude_fish_commands
+          set -l files $__fish_data_dir/man/man1/*.1
+          string replace -r '.*/([^/]+)\.1$' '$1\t1: fish command' -- $files
+        end
     else
         return 1
     end

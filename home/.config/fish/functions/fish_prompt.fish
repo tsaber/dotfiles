@@ -1,33 +1,22 @@
-function fish_prompt
-	# Store the exit code of the last command
-	set -g sf_exit_code $status
-	set -g SPACEFISH_VERSION 2.4.0
+# vim: set noet:
+#
+# Set the default prompt command.
 
-	# ------------------------------------------------------------------------------
-	# Configuration
-	# ------------------------------------------------------------------------------
+function fish_prompt --description "Write out the prompt"
+    set -l color_cwd
+    set -l suffix
+    switch "$USER"
+        case root toor
+            if set -q fish_color_cwd_root
+                set color_cwd $fish_color_cwd_root
+            else
+                set color_cwd $fish_color_cwd
+            end
+            set suffix '#'
+        case '*'
+            set color_cwd $fish_color_cwd
+            set suffix '>'
+    end
 
-	__sf_util_set_default SPACEFISH_PROMPT_ADD_NEWLINE true
-	__sf_util_set_default SPACEFISH_PROMPT_FIRST_PREFIX_SHOW false
-	__sf_util_set_default SPACEFISH_PROMPT_PREFIXES_SHOW true
-	__sf_util_set_default SPACEFISH_PROMPT_SUFFIXES_SHOW true
-	__sf_util_set_default SPACEFISH_PROMPT_DEFAULT_PREFIX "via "
-	__sf_util_set_default SPACEFISH_PROMPT_DEFAULT_SUFFIX " "
-	__sf_util_set_default SPACEFISH_PROMPT_ORDER time user dir host git package node ruby golang php rust haskell julia docker aws venv conda pyenv dotnet kubecontext exec_time line_sep battery vi_mode jobs exit_code char
-
-	# ------------------------------------------------------------------------------
-	# Sections
-	# ------------------------------------------------------------------------------
-
-	# Keep track of whether the prompt has already been opened
-	set -g sf_prompt_opened $SPACEFISH_PROMPT_FIRST_PREFIX_SHOW
-
-	if test "$SPACEFISH_PROMPT_ADD_NEWLINE" = "true"
-		echo
-	end
-
-	for i in $SPACEFISH_PROMPT_ORDER
-		eval __sf_section_$i
-	end
-	set_color normal
+    echo -n -s "$USER" @ (prompt_hostname) ' ' (set_color $color_cwd) (prompt_pwd) (set_color normal) "$suffix "
 end

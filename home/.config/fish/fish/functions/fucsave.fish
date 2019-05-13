@@ -1,3 +1,0 @@
-function fucsave
-	funcsave
-end

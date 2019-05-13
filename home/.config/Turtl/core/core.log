@@ -3871,3 +3871,509 @@
 2019-05-03T17:09:30 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
 2019-05-03T17:09:30 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
 2019-05-03T17:09:30 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-07T19:22:34 - [INFO][turtl_core] main::init() -- init with user config {"data_folder":"/home/zava/.config/Turtl/core","api":{"client_version_string":"desktop/0.7.2.5","proxy":null},"openssl_cert_file":"/opt/turtl/resources/app/scripts/resources/cacert.pem"}
+2019-05-07T19:22:34 - [INFO][turtl_core] main::init() -- created data folder: /home/zava/.config/Turtl/core
+2019-05-07T19:22:34 - [INFO][turtl_core] main::start() -- begin
+2019-05-07T19:22:34 - [INFO][turtl_core] main::start() -- locking data dir: /home/zava/.config/Turtl/core/run.lock
+2019-05-07T19:22:34 - [INFO][turtl_core::messaging] messaging::start() -- main loop
+2019-05-07T19:22:34 - [INFO][turtl_core::messaging] messaging::ui_event() -- messaging:ready
+2019-05-07T19:22:34 - [INFO][turtl_core::dispatch] dispatch(1): app:api:set-endpoint
+2019-05-07T19:22:34 - [INFO][turtl_core::dispatch] dispatch(2): user:login-from-saved
+2019-05-07T19:22:34 - [INFO][turtl_core::models::user] User::restore_login() -- restored login from "/home/zava/.config/Turtl/core/7049.login"
+2019-05-07T19:22:38 - [INFO][turtl_core::api] api::call() -- res(6): 200 POST https://apiv3.turtlapp.com/auth
+2019-05-07T19:22:50 - [INFO][turtl_core::api] api::call() -- res(425): 200 GET https://apiv3.turtlapp.com/users/7049
+2019-05-07T19:22:50 - [INFO][turtl_core::messaging] messaging::ui_event() -- user:login
+2019-05-07T19:22:50 - [INFO][turtl_core::dispatch] dispatch(3): sync:start
+2019-05-07T19:22:50 - [INFO][turtl_core::sync] sync::runner() -- outgoing init (run 1)
+2019-05-07T19:22:50 - [INFO][turtl_core::sync] sync::runner() -- outgoing main loop
+2019-05-07T19:22:50 - [INFO][turtl_core::sync] sync::runner() -- incoming init (run 1)
+2019-05-07T19:22:50 - [INFO][turtl_core::sync] sync::runner() -- files:outgoing init (run 1)
+2019-05-07T19:22:50 - [INFO][turtl_core::sync] sync::runner() -- files:incoming init (run 1)
+2019-05-07T19:22:50 - [INFO][turtl_core::sync] sync::runner() -- files:outgoing main loop
+2019-05-07T19:22:50 - [INFO][turtl_core::sync] sync::runner() -- files:incoming main loop
+2019-05-07T19:23:00 - [ERROR][turtl_core::sync] sync::runner() -- incoming: init: {"message":"https://apiv3.turtlapp.com/sync?sync_id=972879&type=initial: timed out","type":"generic"}
+2019-05-07T19:23:00 - [INFO][turtl_core::sync] sync::start() -- incoming shut down (run 1)
+2019-05-07T19:23:01 - [INFO][turtl_core::sync] sync::start() -- outgoing shut down (run 1)
+2019-05-07T19:23:01 - [INFO][turtl_core::sync] sync::start() -- files:incoming shut down (run 1)
+2019-05-07T19:23:01 - [INFO][turtl_core::sync] sync::start() -- files:outgoing shut down (run 1)
+2019-05-07T19:23:05 - [INFO][turtl_core::dispatch] dispatch(4): sync:start
+2019-05-07T19:23:05 - [INFO][turtl_core::sync] sync::runner() -- outgoing init (run 2)
+2019-05-07T19:23:05 - [INFO][turtl_core::sync] sync::runner() -- outgoing main loop
+2019-05-07T19:23:05 - [INFO][turtl_core::sync] sync::runner() -- incoming init (run 2)
+2019-05-07T19:23:05 - [INFO][turtl_core::sync] sync::runner() -- files:incoming init (run 2)
+2019-05-07T19:23:05 - [INFO][turtl_core::sync] sync::runner() -- files:incoming main loop
+2019-05-07T19:23:05 - [INFO][turtl_core::sync] sync::runner() -- files:outgoing init (run 2)
+2019-05-07T19:23:05 - [INFO][turtl_core::sync] sync::runner() -- files:outgoing main loop
+2019-05-07T19:23:16 - [ERROR][turtl_core::sync] sync::runner() -- incoming: init: {"message":"https://apiv3.turtlapp.com/sync?sync_id=972879&type=initial: timed out","type":"generic"}
+2019-05-07T19:23:16 - [INFO][turtl_core::sync] sync::start() -- incoming shut down (run 2)
+2019-05-07T19:23:16 - [INFO][turtl_core::sync] sync::start() -- outgoing shut down (run 2)
+2019-05-07T19:23:16 - [INFO][turtl_core::sync] sync::start() -- files:incoming shut down (run 2)
+2019-05-07T19:23:17 - [INFO][turtl_core::sync] sync::start() -- files:outgoing shut down (run 2)
+2019-05-07T19:23:17 - [INFO][turtl_core::dispatch] dispatch(5): app:api:get-endpoint
+2019-05-07T19:23:17 - [INFO][turtl_core::dispatch] dispatch(6): sync:get-pending
+2019-05-07T19:23:21 - [INFO][turtl_core::dispatch] dispatch(7): sync:shutdown
+2019-05-07T19:23:21 - [INFO][turtl_core::turtl] turtl.sync_shutdown() -- has state? false
+2019-05-07T19:23:21 - [INFO][turtl_core::dispatch] dispatch(8): user:logout
+2019-05-07T19:23:21 - [INFO][turtl_core::messaging] messaging::ui_event() -- user:logout:clear-cookie
+2019-05-07T19:23:21 - [INFO][turtl_core::turtl] turtl.sync_shutdown() -- has state? false
+2019-05-07T19:23:21 - [INFO][turtl_core::messaging] messaging::ui_event() -- user:logout
+2019-05-07T19:23:21 - [INFO][turtl_core::dispatch] dispatch(9): app:api:get-endpoint
+2019-05-07T19:23:21 - [INFO][turtl_core::dispatch] dispatch(10): app:api:get-old-endpoint
+2019-05-07T19:23:22 - [INFO][turtl_core::dispatch] dispatch(11): app:wipe-app-data
+2019-05-07T19:23:22 - [INFO][turtl_core::messaging] messaging::ui_event() -- user:logout:clear-cookie
+2019-05-07T19:23:22 - [INFO][turtl_core::turtl] turtl.sync_shutdown() -- has state? false
+2019-05-07T19:23:27 - [INFO][turtl_core::turtl] turtl.sync_shutdown() -- has state? false
+2019-05-07T19:23:27 - [INFO][turtl_core::messaging] messaging::ui_event() -- user:logout
+2019-05-07T19:23:27 - [INFO][turtl_core::turtl] turtl.wipe_app_data() -- removing /home/zava/.config/Turtl/core/turtl-kv.sqlite
+2019-05-07T19:23:27 - [INFO][turtl_core::turtl] turtl.wipe_app_data() -- removing /home/zava/.config/Turtl/core/turtl-user-7049-srv-httpsapiv3turtlappcom.sqlite
+2019-05-07T19:23:27 - [INFO][turtl_core::turtl] turtl.wipe_app_data() -- removing /home/zava/.config/Turtl/core/files/u_7049.n_016950462114e23689c82549c27d45307840fde3d3cff82701f4ddd239bb0e5b015a7da6a1c30004.enc
+2019-05-07T19:23:27 - [INFO][turtl_core::turtl] turtl.wipe_app_data() -- removing /home/zava/.config/Turtl/core/files/u_7049.n_01695d873ae7e23689c82549c27d45307840fde3d3cff82701f4ddd239bb0e5b015a7da6a1c30010.enc
+2019-05-07T19:23:27 - [INFO][turtl_core::turtl] turtl.wipe_app_data() -- removing /home/zava/.config/Turtl/core/files/u_7049.n_01695dd35b64fa28807017fa29da2121f2b0eb62e841ef346aa3de506315b9ae53aa6bfdcbb10022.enc
+2019-05-07T19:23:27 - [INFO][turtl_core::turtl] turtl.wipe_app_data() -- removing /home/zava/.config/Turtl/core/files/u_7049.n_0169a67f15f8d85748e6293a2bfcfb4398b6aeb533ebb472d325ab4f334636288f9b234d7980002b.enc
+2019-05-07T19:23:27 - [INFO][turtl_core::turtl] turtl.wipe_app_data() -- removing /home/zava/.config/Turtl/core/files/u_7049.n_0169ac1b634bd85748e6293a2bfcfb4398b6aeb533ebb472d325ab4f334636288f9b234d79800038.enc
+2019-05-07T19:23:27 - [INFO][turtl_core::turtl] turtl.wipe_app_data() -- removing /home/zava/.config/Turtl/core/files/u_7049.n_0169ea45531090bcd98f7764187f7a522adb9cc5cb26eddc0adff050515fb550e31aa8ca51e80040.enc
+2019-05-07T19:23:27 - [INFO][turtl_core::turtl] turtl.wipe_app_data() -- removing /home/zava/.config/Turtl/core/files/u_7049.n_016a218c087690bcd98f7764187f7a522adb9cc5cb26eddc0adff050515fb550e31aa8ca51e80060.enc
+2019-05-07T19:23:27 - [INFO][turtl_core::turtl] turtl.wipe_app_data() -- removing /home/zava/.config/Turtl/core/files/u_7049.n_016a4c83af55fa28807017fa29da2121f2b0eb62e841ef346aa3de506315b9ae53aa6bfdcbb10078.enc
+2019-05-07T19:23:27 - [INFO][turtl_core::turtl] turtl.wipe_app_data() -- removing /home/zava/.config/Turtl/core/files/u_7049.n_016a4c83decbfa28807017fa29da2121f2b0eb62e841ef346aa3de506315b9ae53aa6bfdcbb100fb.enc
+2019-05-07T19:23:27 - [INFO][turtl_core::turtl] turtl.wipe_app_data() -- removing /home/zava/.config/Turtl/core/files/u_7049.n_016a51576d1afa28807017fa29da2121f2b0eb62e841ef346aa3de506315b9ae53aa6bfdcbb1005e.enc
+2019-05-07T19:23:47 - [INFO][turtl_core::dispatch] dispatch(12): app:api:set-endpoint
+2019-05-07T19:23:47 - [INFO][turtl_core::dispatch] dispatch(13): app:api:set-old-endpoint
+2019-05-07T19:23:47 - [INFO][turtl_core::dispatch] dispatch(14): user:login
+2019-05-07T19:23:47 - [INFO][turtl_core::models::user] user::generate_auth() -- generating v0 auth
+2019-05-07T19:23:50 - [INFO][turtl_core::api] api::call() -- res(6): 200 POST https://apiv3.turtlapp.com/auth
+2019-05-07T19:24:01 - [INFO][turtl_core::api] api::call() -- res(425): 200 GET https://apiv3.turtlapp.com/users/7049
+2019-05-07T19:24:01 - [INFO][turtl_core::messaging] messaging::ui_event() -- user:login
+2019-05-07T19:24:01 - [INFO][turtl_core::dispatch] dispatch(15): user:save-login
+2019-05-07T19:24:01 - [INFO][turtl_core::models::user] User::save_login() -- saved login to "/home/zava/.config/Turtl/core/7049.login"
+2019-05-07T19:24:01 - [INFO][turtl_core::dispatch] dispatch(16): sync:start
+2019-05-07T19:24:01 - [INFO][turtl_core::sync] sync::runner() -- outgoing init (run 3)
+2019-05-07T19:24:01 - [INFO][turtl_core::sync] sync::runner() -- incoming init (run 3)
+2019-05-07T19:24:01 - [INFO][turtl_core::sync] sync::runner() -- files:incoming init (run 3)
+2019-05-07T19:24:01 - [INFO][turtl_core::sync] sync::runner() -- outgoing main loop
+2019-05-07T19:24:01 - [INFO][turtl_core::sync] sync::runner() -- files:outgoing init (run 3)
+2019-05-07T19:24:01 - [INFO][turtl_core::sync] sync::runner() -- files:outgoing main loop
+2019-05-07T19:24:01 - [INFO][turtl_core::sync] sync::runner() -- files:incoming main loop
+2019-05-07T19:24:28 - [INFO][turtl_core::api] api::call() -- res(31713): 200 GET https://apiv3.turtlapp.com/sync/full
+2019-05-07T19:24:28 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-07T19:24:28 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-07T19:24:28 - [INFO][turtl_core::messaging] messaging::ui_event() -- sync:connected
+2019-05-07T19:24:28 - [INFO][turtl_core::sync] sync::start() -- all sync threads started
+2019-05-07T19:24:28 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-07T19:24:28 - [INFO][turtl_core::sync] sync::runner() -- incoming main loop
+2019-05-07T19:24:28 - [INFO][turtl_core::messaging] messaging::ui_event() -- profile:loaded
+2019-05-07T19:24:28 - [INFO][turtl_core::messaging] messaging::ui_event() -- profile:indexed
+2019-05-07T19:24:28 - [INFO][turtl_core::dispatch] dispatch(17): profile:load
+2019-05-07T19:24:28 - [INFO][turtl_core::dispatch] dispatch(18): profile:find-notes
+2019-05-07T19:24:28 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- syncing file for 0169ac1b634bd85748e6293a2bfcfb4398b6aeb533ebb472d325ab4f334636288f9b234d79800038
+2019-05-07T19:24:34 - [INFO][turtl_core::api] api::call() -- res(232): 200 GET https://apiv3.turtlapp.com/notes/0169ac1b634bd85748e6293a2bfcfb4398b6aeb533ebb472d325ab4f334636288f9b234d79800038/attachment
+2019-05-07T19:24:34 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- grabbing file at URL https://s3.us-east-1.amazonaws.com/turtlapp.com/files/0169ac1b634bd85748e6293a2bfcfb4398b6aeb533ebb472d325ab4f334636288f9b234d79800038?AWSAccessKeyId=AKIAIGYLSXFGXZ5KLBYA&Expires=1557250774&Signature=SKFEmPUZ2IK4iEJIvOfqR0CkGV4%3D
+2019-05-07T19:24:35 - [INFO][turtl_core::messaging] messaging::ui_event() -- sync:file:downloaded
+2019-05-07T19:24:35 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- syncing file for 0169a67f15f8d85748e6293a2bfcfb4398b6aeb533ebb472d325ab4f334636288f9b234d7980002b
+2019-05-07T19:24:40 - [INFO][turtl_core::api] api::call() -- res(234): 200 GET https://apiv3.turtlapp.com/notes/0169a67f15f8d85748e6293a2bfcfb4398b6aeb533ebb472d325ab4f334636288f9b234d7980002b/attachment
+2019-05-07T19:24:40 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- grabbing file at URL https://s3.us-east-1.amazonaws.com/turtlapp.com/files/0169a67f15f8d85748e6293a2bfcfb4398b6aeb533ebb472d325ab4f334636288f9b234d7980002b?AWSAccessKeyId=AKIAIGYLSXFGXZ5KLBYA&Expires=1557250780&Signature=MNQlJktL5CmM0%2FpqUCkUNm1wiEk%3D
+2019-05-07T19:24:46 - [INFO][turtl_core::messaging] messaging::ui_event() -- sync:file:downloaded
+2019-05-07T19:24:46 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- syncing file for 016a51576d1afa28807017fa29da2121f2b0eb62e841ef346aa3de506315b9ae53aa6bfdcbb1005e
+2019-05-07T19:24:49 - [INFO][turtl_core::dispatch] dispatch(19): profile:sync:model
+2019-05-07T19:24:49 - [INFO][turtl_core::messaging] messaging::ui_event() -- sync:update
+2019-05-07T19:24:49 - [INFO][turtl_core::dispatch] dispatch(20): profile:find-notes
+2019-05-07T19:24:49 - [INFO][turtl_core::sync::outgoing] SyncOutgoing.run_sync() -- sending 1 sync items
+2019-05-07T19:24:52 - [INFO][turtl_core::api] api::call() -- res(232): 200 GET https://apiv3.turtlapp.com/notes/016a51576d1afa28807017fa29da2121f2b0eb62e841ef346aa3de506315b9ae53aa6bfdcbb1005e/attachment
+2019-05-07T19:24:52 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- grabbing file at URL https://s3.us-east-1.amazonaws.com/turtlapp.com/files/016a51576d1afa28807017fa29da2121f2b0eb62e841ef346aa3de506315b9ae53aa6bfdcbb1005e?AWSAccessKeyId=AKIAIGYLSXFGXZ5KLBYA&Expires=1557250792&Signature=HRS6veIQZBOumoI5BXCBKQnWDtI%3D
+2019-05-07T19:24:53 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013784&type=poll: timed out","type":"generic"}
+2019-05-07T19:24:54 - [INFO][turtl_core::messaging] messaging::ui_event() -- sync:file:downloaded
+2019-05-07T19:24:54 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- syncing file for 016a4c83decbfa28807017fa29da2121f2b0eb62e841ef346aa3de506315b9ae53aa6bfdcbb100fb
+2019-05-07T19:24:59 - [INFO][turtl_core::api] api::call() -- res(236): 200 GET https://apiv3.turtlapp.com/notes/016a4c83decbfa28807017fa29da2121f2b0eb62e841ef346aa3de506315b9ae53aa6bfdcbb100fb/attachment
+2019-05-07T19:24:59 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- grabbing file at URL https://s3.us-east-1.amazonaws.com/turtlapp.com/files/016a4c83decbfa28807017fa29da2121f2b0eb62e841ef346aa3de506315b9ae53aa6bfdcbb100fb?AWSAccessKeyId=AKIAIGYLSXFGXZ5KLBYA&Expires=1557250799&Signature=%2F4rsCJt4HXjxGb6%2FDv8jsRHH5Ls%3D
+2019-05-07T19:25:00 - [INFO][turtl_core::messaging] messaging::ui_event() -- sync:file:downloaded
+2019-05-07T19:25:00 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- syncing file for 016a4c83af55fa28807017fa29da2121f2b0eb62e841ef346aa3de506315b9ae53aa6bfdcbb10078
+2019-05-07T19:25:06 - [INFO][turtl_core::api] api::call() -- res(232): 200 GET https://apiv3.turtlapp.com/notes/016a4c83af55fa28807017fa29da2121f2b0eb62e841ef346aa3de506315b9ae53aa6bfdcbb10078/attachment
+2019-05-07T19:25:06 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- grabbing file at URL https://s3.us-east-1.amazonaws.com/turtlapp.com/files/016a4c83af55fa28807017fa29da2121f2b0eb62e841ef346aa3de506315b9ae53aa6bfdcbb10078?AWSAccessKeyId=AKIAIGYLSXFGXZ5KLBYA&Expires=1557250805&Signature=4NdDKWoYWQM0IoRZJUd4WX1fdYI%3D
+2019-05-07T19:25:07 - [INFO][turtl_core::messaging] messaging::ui_event() -- sync:file:downloaded
+2019-05-07T19:25:07 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- syncing file for 016a218c087690bcd98f7764187f7a522adb9cc5cb26eddc0adff050515fb550e31aa8ca51e80060
+2019-05-07T19:25:12 - [INFO][turtl_core::api] api::call() -- res(232): 200 GET https://apiv3.turtlapp.com/notes/016a218c087690bcd98f7764187f7a522adb9cc5cb26eddc0adff050515fb550e31aa8ca51e80060/attachment
+2019-05-07T19:25:12 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- grabbing file at URL https://s3.us-east-1.amazonaws.com/turtlapp.com/files/016a218c087690bcd98f7764187f7a522adb9cc5cb26eddc0adff050515fb550e31aa8ca51e80060?AWSAccessKeyId=AKIAIGYLSXFGXZ5KLBYA&Expires=1557250812&Signature=7VaX24cWjZ4N6wHOi0M7lpCeiec%3D
+2019-05-07T19:25:13 - [INFO][turtl_core::messaging] messaging::ui_event() -- sync:file:downloaded
+2019-05-07T19:25:13 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- syncing file for 0169ea45531090bcd98f7764187f7a522adb9cc5cb26eddc0adff050515fb550e31aa8ca51e80040
+2019-05-07T19:25:13 - [INFO][turtl_core::api] api::call() -- res(996): 200 POST https://apiv3.turtlapp.com/sync
+2019-05-07T19:25:13 - [INFO][turtl_core::sync::outgoing] SyncOutgoing.run_sync() -- got 1 successes, 0 failed, 0 blocked syncs
+2019-05-07T19:25:13 - [INFO][turtl_core::messaging] messaging::ui_event() -- sync:outgoing:complete
+2019-05-07T19:25:19 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013784&type=poll: timed out","type":"generic"}
+2019-05-07T19:25:19 - [INFO][turtl_core::api] api::call() -- res(232): 200 GET https://apiv3.turtlapp.com/notes/0169ea45531090bcd98f7764187f7a522adb9cc5cb26eddc0adff050515fb550e31aa8ca51e80040/attachment
+2019-05-07T19:25:19 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- grabbing file at URL https://s3.us-east-1.amazonaws.com/turtlapp.com/files/0169ea45531090bcd98f7764187f7a522adb9cc5cb26eddc0adff050515fb550e31aa8ca51e80040?AWSAccessKeyId=AKIAIGYLSXFGXZ5KLBYA&Expires=1557250819&Signature=qluXo1v5QdfWq9xtOIQjF3iUnio%3D
+2019-05-07T19:25:20 - [INFO][turtl_core::messaging] messaging::ui_event() -- sync:file:downloaded
+2019-05-07T19:25:20 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- syncing file for 01695d873ae7e23689c82549c27d45307840fde3d3cff82701f4ddd239bb0e5b015a7da6a1c30010
+2019-05-07T19:25:26 - [INFO][turtl_core::api] api::call() -- res(232): 200 GET https://apiv3.turtlapp.com/notes/01695d873ae7e23689c82549c27d45307840fde3d3cff82701f4ddd239bb0e5b015a7da6a1c30010/attachment
+2019-05-07T19:25:26 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- grabbing file at URL https://s3.us-east-1.amazonaws.com/turtlapp.com/files/01695d873ae7e23689c82549c27d45307840fde3d3cff82701f4ddd239bb0e5b015a7da6a1c30010?AWSAccessKeyId=AKIAIGYLSXFGXZ5KLBYA&Expires=1557250826&Signature=p5yf8E8g2P8lwegYo12I64hJs7Y%3D
+2019-05-07T19:25:27 - [INFO][turtl_core::messaging] messaging::ui_event() -- sync:file:downloaded
+2019-05-07T19:25:27 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- syncing file for 016950462114e23689c82549c27d45307840fde3d3cff82701f4ddd239bb0e5b015a7da6a1c30004
+2019-05-07T19:25:31 - [INFO][turtl_core::api] api::call() -- res(236): 200 GET https://apiv3.turtlapp.com/notes/016950462114e23689c82549c27d45307840fde3d3cff82701f4ddd239bb0e5b015a7da6a1c30004/attachment
+2019-05-07T19:25:31 - [INFO][turtl_core::sync::files::incoming] FileSyncIncoming.download_file() -- grabbing file at URL https://s3.us-east-1.amazonaws.com/turtlapp.com/files/016950462114e23689c82549c27d45307840fde3d3cff82701f4ddd239bb0e5b015a7da6a1c30004?AWSAccessKeyId=AKIAIGYLSXFGXZ5KLBYA&Expires=1557250831&Signature=Jda1J%2FvLkg8G%2BHqmmFKXpnTBlH8%3D
+2019-05-07T19:25:32 - [INFO][turtl_core::api] api::call() -- res(967): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013784&type=poll
+2019-05-07T19:25:32 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 1 incoming syncs
+2019-05-07T19:25:32 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-07T19:25:32 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-07T19:25:32 - [INFO][turtl_core::messaging] messaging::ui_event() -- sync:file:downloaded
+2019-05-07T19:25:58 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:26:24 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:26:50 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:27:16 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:27:42 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:28:08 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:28:34 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:29:00 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:29:26 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:29:52 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:30:18 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:30:44 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:31:10 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:31:36 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:32:02 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:32:28 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:32:54 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:33:20 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:33:46 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:34:12 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:34:38 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:35:04 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:35:30 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:35:56 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:36:22 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:36:48 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:37:14 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:37:40 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:38:06 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:38:32 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:38:58 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:39:24 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:39:50 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:40:16 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:40:42 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:41:08 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:41:34 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:42:00 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:42:26 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:42:52 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:43:18 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:43:44 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:44:10 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:44:36 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:45:02 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:45:28 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:45:54 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:46:20 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:46:46 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:47:12 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:47:38 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:48:04 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:48:30 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:48:56 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:49:22 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:49:48 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:50:14 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:50:40 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:51:06 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:51:32 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:51:58 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:52:24 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:52:50 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:53:16 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:53:42 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:54:08 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:54:34 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:55:00 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:55:26 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:55:52 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:56:18 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:56:44 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:57:10 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:57:36 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:58:02 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:58:28 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:58:55 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:59:21 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T19:59:47 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:00:13 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:00:39 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:01:05 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:01:31 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:01:57 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:02:23 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:02:49 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:03:15 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:03:41 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:04:07 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:04:33 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:04:59 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:05:25 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:05:51 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:06:17 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:06:43 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:07:09 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:07:35 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:08:01 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:08:27 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:08:53 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:09:19 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:09:45 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:10:11 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:10:37 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:11:03 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:11:29 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:11:55 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:12:21 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:12:47 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:13:13 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:13:39 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:14:05 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:14:31 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:14:57 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:15:23 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:15:49 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:16:15 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:16:41 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:17:07 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:17:33 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:17:59 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:18:25 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:18:51 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:19:17 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:19:43 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:20:09 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:20:35 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:21:01 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:21:27 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:21:53 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:22:19 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:22:45 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:23:11 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:23:37 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:24:03 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:24:29 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:24:55 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:25:21 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:25:47 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:26:13 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:26:39 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:27:05 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:27:31 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:27:57 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:28:23 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:28:49 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:29:15 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:29:41 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:30:07 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:30:33 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:30:59 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:31:25 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:31:51 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:32:17 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:32:43 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:33:09 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:33:35 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:34:01 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:34:27 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:34:53 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:35:19 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:35:46 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:36:12 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:36:38 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:37:04 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:37:30 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:37:56 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:38:22 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:38:48 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:39:14 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:39:40 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:40:06 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:40:32 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:40:58 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:41:24 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:41:50 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:42:16 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:42:42 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:43:08 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:43:34 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:44:00 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:44:26 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:44:52 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:45:18 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:45:44 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:46:10 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:46:36 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:47:02 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:47:28 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:47:54 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:48:20 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:48:46 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:49:12 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:49:38 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:50:04 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:50:30 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:50:56 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:51:22 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:51:48 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:52:14 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:52:40 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:53:06 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:53:32 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:53:58 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:54:24 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:54:50 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:55:16 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:55:42 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:56:08 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:56:34 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:57:00 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:57:26 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:57:52 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:58:18 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:58:44 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:59:10 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T20:59:36 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:00:02 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:00:28 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:00:54 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:01:20 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:01:46 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:02:12 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:02:38 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:03:04 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:03:30 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:03:56 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:04:22 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:04:48 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:05:14 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:05:40 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:06:06 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:06:32 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:06:58 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:07:24 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:07:50 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:08:16 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:08:42 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:09:08 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:09:34 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:10:00 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:10:26 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:10:52 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:11:18 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:11:44 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:12:10 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:12:36 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:13:03 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:13:29 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:13:55 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:14:21 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:14:47 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:15:13 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:15:39 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:16:05 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:16:31 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:16:57 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:17:23 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:17:49 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:18:15 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:18:41 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:19:07 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:19:33 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:19:59 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:20:25 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:20:51 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:21:17 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:21:43 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:22:09 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:22:35 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:23:01 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:23:27 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:23:53 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:24:19 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:24:45 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:25:11 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:25:37 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:26:03 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:26:29 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:26:55 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:27:21 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:27:47 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:28:13 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:28:39 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:29:05 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:29:31 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:29:57 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:30:23 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:30:49 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:31:15 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:31:41 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:32:07 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:32:33 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:32:59 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:33:25 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:33:51 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:34:17 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:34:43 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:35:09 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:35:35 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:36:01 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:36:27 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:36:53 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:37:19 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:37:45 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:38:11 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:38:37 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:39:03 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:39:29 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:39:55 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:40:21 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:40:47 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:41:13 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:41:39 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:42:05 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:42:31 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:42:57 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:43:23 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:43:49 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:44:15 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:44:41 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:45:07 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:45:33 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:45:59 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:46:25 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:46:51 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:47:17 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:47:43 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:48:09 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:48:35 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:49:01 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:49:28 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:49:54 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:50:20 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:50:46 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:51:12 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:51:38 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:52:04 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:52:30 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:52:56 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:53:22 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:53:48 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:54:14 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:54:40 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:55:06 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:55:32 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:55:58 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:56:24 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:56:50 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:57:16 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:57:42 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:58:08 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:58:34 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:59:00 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:59:26 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T21:59:52 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T22:00:18 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T22:00:44 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T22:01:10 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T22:01:36 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T22:02:02 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T22:02:28 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T22:02:54 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-07T22:03:20 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}

@@ -194,7 +194,7 @@ bindsym $mod+Shift+p $ens turtl
 bindsym $mod+Shift+u $ens bitwarden-bin
 exec bitwarden-bin
 # $i3-theme-window
-$ens "termite -e /usr/bin/weechat"
+$ens "termite -e fish -c /usr/bin/weechat"
 bindsym $mod+Shift+m $ens kitty
 #maim:
 bindsym Print exec fish -c 'maim /home/zava/Pictures/skrenshet(date +%a%b%s%H%M).png'
@@ -210,7 +210,7 @@ $ens rclone mount derpberx: /home/zava/0b
 $ens rclone mount we: /home/zava/0a
 $ens rclone mount yernderx: /home/zava/0y
 $ens thunderbird
-bindsym $mod+Mod1+r $ens "rofi -modi window#run#drun#ssh#combi -show run -theme lb"
+bindsym $mod+Mod1+r $ens chromium
 $ens "mons --primary DisplayPort-1; and sleep 4; and mons -e left"
 bindsym $mod+Mod1+f exec "fish -c facco"
 bindsym $mod+F5 $ens '/home/zava/bin/bluerest.sh'

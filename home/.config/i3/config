@@ -198,7 +198,7 @@ client.focused #586e75 #586e75 #fdf6e3 #268bd2
 client.focused_inactive #073642 #073642 #93a1a1 #002b36
 client.unfocused #002b36 #002b36 #586e75 #002b36
 client.urgent #dc322f #dc322f #fdf6e3 #dc322f
-$ens "termite -e /usr/bin/weechat"
+$ens "termite -e fish -c /usr/bin/weechat"
 bindsym $mod+Shift+m $ens kitty
 #maim:
 bindsym Print exec fish -c 'maim /home/zava/Pictures/skrenshet(date +%a%b%s%H%M).png'
@@ -214,7 +214,7 @@ $ens rclone mount derpberx: /home/zava/0b
 $ens rclone mount we: /home/zava/0a
 $ens rclone mount yernderx: /home/zava/0y
 $ens thunderbird
-bindsym $mod+Mod1+r $ens "rofi -modi window#run#drun#ssh#combi -show run -theme lb"
+bindsym $mod+Mod1+r $ens chromium
 $ens "mons --primary DisplayPort-1; and sleep 4; and mons -e left"
 bindsym $mod+Mod1+f exec "fish -c facco"
 bindsym $mod+F5 $ens '/home/zava/bin/bluerest.sh'
