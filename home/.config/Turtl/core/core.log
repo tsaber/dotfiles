@@ -4377,3 +4377,708 @@
 2019-05-07T22:02:28 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
 2019-05-07T22:02:54 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
 2019-05-07T22:03:20 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:09:36 - [INFO][turtl_core] main::init() -- init with user config {"data_folder":"/home/zava/.config/Turtl/core","api":{"client_version_string":"desktop/0.7.2.5","proxy":null},"openssl_cert_file":"/opt/turtl/resources/app/scripts/resources/cacert.pem"}
+2019-05-14T03:09:36 - [INFO][turtl_core] main::init() -- created data folder: /home/zava/.config/Turtl/core
+2019-05-14T03:09:36 - [INFO][turtl_core] main::start() -- begin
+2019-05-14T03:09:36 - [INFO][turtl_core] main::start() -- locking data dir: /home/zava/.config/Turtl/core/run.lock
+2019-05-14T03:09:36 - [INFO][turtl_core::messaging] messaging::start() -- main loop
+2019-05-14T03:09:36 - [INFO][turtl_core::messaging] messaging::ui_event() -- messaging:ready
+2019-05-14T03:09:36 - [INFO][turtl_core::dispatch] dispatch(1): app:api:set-endpoint
+2019-05-14T03:09:36 - [INFO][turtl_core::dispatch] dispatch(2): user:login-from-saved
+2019-05-14T03:09:36 - [INFO][turtl_core::models::user] User::restore_login() -- restored login from "/home/zava/.config/Turtl/core/7049.login"
+2019-05-14T03:09:37 - [INFO][turtl_core::api] api::call() -- res(6): 200 POST https://apiv3.turtlapp.com/auth
+2019-05-14T03:09:38 - [INFO][turtl_core::api] api::call() -- res(425): 200 GET https://apiv3.turtlapp.com/users/7049
+2019-05-14T03:09:38 - [INFO][turtl_core::messaging] messaging::ui_event() -- user:login
+2019-05-14T03:09:38 - [INFO][turtl_core::dispatch] dispatch(3): sync:start
+2019-05-14T03:09:38 - [INFO][turtl_core::sync] sync::runner() -- outgoing init (run 1)
+2019-05-14T03:09:38 - [INFO][turtl_core::sync] sync::runner() -- outgoing main loop
+2019-05-14T03:09:38 - [INFO][turtl_core::sync] sync::runner() -- incoming init (run 1)
+2019-05-14T03:09:38 - [INFO][turtl_core::sync] sync::runner() -- files:incoming init (run 1)
+2019-05-14T03:09:38 - [INFO][turtl_core::sync] sync::runner() -- files:outgoing init (run 1)
+2019-05-14T03:09:38 - [INFO][turtl_core::sync] sync::runner() -- files:incoming main loop
+2019-05-14T03:09:38 - [INFO][turtl_core::sync] sync::runner() -- files:outgoing main loop
+2019-05-14T03:09:38 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=initial
+2019-05-14T03:09:38 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:09:38 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:09:38 - [INFO][turtl_core::messaging] messaging::ui_event() -- sync:connected
+2019-05-14T03:09:38 - [INFO][turtl_core::sync] sync::start() -- all sync threads started
+2019-05-14T03:09:38 - [INFO][turtl_core::sync] sync::runner() -- incoming main loop
+2019-05-14T03:09:38 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:09:38 - [INFO][turtl_core::messaging] messaging::ui_event() -- profile:loaded
+2019-05-14T03:09:38 - [INFO][turtl_core::messaging] messaging::ui_event() -- profile:indexed
+2019-05-14T03:09:38 - [INFO][turtl_core::dispatch] dispatch(4): profile:load
+2019-05-14T03:09:39 - [INFO][turtl_core::dispatch] dispatch(5): profile:find-notes
+2019-05-14T03:10:03 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:10:29 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:10:29 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:10:29 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:10:29 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:10:55 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:11:19 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:11:19 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:11:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:11:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:11:41 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:11:41 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:11:41 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:11:41 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:12:07 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:12:32 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:12:32 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:12:32 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:12:32 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:12:58 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:13:24 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:13:50 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:14:16 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:14:42 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:15:08 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:15:08 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:15:08 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:15:08 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:15:33 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:15:33 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:15:33 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:15:33 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:15:59 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:15:59 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:15:59 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:15:59 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:16:21 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:16:21 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:16:21 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:16:21 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:16:46 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:16:46 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:16:46 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:16:46 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:17:08 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:17:08 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:17:08 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:17:08 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:17:31 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:17:31 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:17:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:17:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:17:55 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:17:55 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:17:55 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:17:55 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:18:19 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:18:19 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:18:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:18:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:18:44 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:18:44 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:18:44 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:18:44 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:19:10 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:19:36 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:19:58 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:19:58 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:19:58 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:19:58 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:20:20 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:20:20 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:20:20 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:20:20 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:20:43 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:20:43 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:20:43 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:20:43 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:21:08 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:21:08 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:21:08 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:21:08 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:21:30 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:21:30 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:21:30 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:21:30 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:21:55 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:21:55 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:21:55 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:21:55 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:22:19 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:22:19 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:22:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:22:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:22:42 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:22:42 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:22:42 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:22:43 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:23:06 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:23:06 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:23:06 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:23:06 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:23:31 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:23:31 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:23:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:23:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:23:55 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:23:55 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:23:55 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:23:55 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:24:17 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:24:17 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:24:17 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:24:17 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:24:43 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:24:43 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:24:43 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:24:43 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:25:06 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:25:06 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:25:06 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:25:06 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:25:30 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:25:30 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:25:30 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:25:30 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:25:55 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:25:55 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:25:55 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:25:55 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:26:20 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:26:20 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:26:20 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:26:20 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:26:45 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:26:45 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:26:45 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:26:45 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:27:10 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:27:10 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:27:10 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:27:10 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:27:34 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:27:34 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:27:34 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:27:34 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:28:00 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:28:00 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:28:00 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:28:00 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:28:24 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:28:24 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:28:24 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:28:24 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:28:48 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:28:48 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:28:48 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:28:48 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:29:11 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:29:11 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:29:11 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:29:11 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:29:36 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:29:36 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:29:36 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:29:36 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:30:01 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:30:01 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:30:01 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:30:01 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:30:25 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:30:25 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:30:25 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:30:25 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:30:49 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:30:49 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:30:49 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:30:49 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:31:15 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:31:15 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:31:15 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:31:15 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:31:38 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:31:38 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:31:38 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:31:38 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:32:00 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:32:00 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:32:00 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:32:00 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:32:26 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:32:26 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:32:26 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:32:26 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:32:51 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:32:51 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:32:51 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:32:51 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:33:16 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:33:16 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:33:16 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:33:16 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:33:39 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:33:39 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:33:39 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:33:39 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:34:04 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:34:04 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:34:04 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:34:04 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:34:29 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:34:29 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:34:29 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:34:29 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:34:52 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:34:52 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:34:52 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:34:52 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:35:18 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:35:42 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:35:42 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:35:42 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:35:42 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:36:06 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:36:06 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:36:06 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:36:06 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:36:31 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:36:31 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:36:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:36:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:36:55 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:36:55 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:36:55 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:36:55 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:37:19 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:37:19 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:37:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:37:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:37:44 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:37:44 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:37:44 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:37:44 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:38:07 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:38:07 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:38:07 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:38:07 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:38:30 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:38:30 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:38:30 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:38:30 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:38:54 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:38:54 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:38:54 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:38:54 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:39:20 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:39:43 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:39:43 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:39:43 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:39:43 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:40:07 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:40:07 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:40:07 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:40:07 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:40:31 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:40:31 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:40:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:40:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:40:54 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:40:54 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:40:54 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:40:54 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:41:19 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:41:19 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:41:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:41:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:41:42 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:41:42 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:41:42 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:41:42 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:42:07 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:42:07 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:42:07 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:42:07 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:42:31 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:42:31 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:42:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:42:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:42:57 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:43:22 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:43:22 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:43:22 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:43:22 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:43:47 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:43:47 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:43:47 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:43:47 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:44:13 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:44:39 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:45:05 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:45:31 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:45:57 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:46:20 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:46:20 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:46:20 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:46:20 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:46:46 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:47:09 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:47:09 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:47:09 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:47:09 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:47:33 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:47:33 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:47:33 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:47:33 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:47:57 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:47:57 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:47:57 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:47:57 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:48:21 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:48:21 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:48:21 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:48:21 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:48:46 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:48:46 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:48:46 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:48:46 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:49:10 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:49:10 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:49:10 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:49:10 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:49:35 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:49:35 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:49:35 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:49:35 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:50:00 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:50:00 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:50:00 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:50:00 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:50:25 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:50:25 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:50:25 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:50:25 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:50:49 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:50:49 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:50:49 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:50:49 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:51:15 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:51:15 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:51:15 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:51:15 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:51:39 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:51:39 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:51:39 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:51:39 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:52:02 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:52:02 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:52:02 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:52:02 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:52:25 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:52:25 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:52:25 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:52:25 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:52:50 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:52:50 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:52:50 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:52:50 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:53:14 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:53:14 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:53:14 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:53:14 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:53:39 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:53:39 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:53:39 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:53:39 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:54:04 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:54:04 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:54:04 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:54:04 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:54:30 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T03:54:54 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:54:54 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:54:54 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:54:54 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:55:17 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:55:17 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:55:17 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:55:17 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:55:42 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:55:42 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:55:42 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:55:42 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:56:06 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:56:06 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:56:06 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:56:06 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:56:28 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:56:28 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:56:28 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:56:28 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:56:52 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:56:52 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:56:52 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:56:52 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:57:17 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:57:17 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:57:17 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:57:17 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:57:40 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:57:40 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:57:40 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:57:40 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:58:05 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:58:05 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:58:05 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:58:05 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:58:31 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:58:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:58:31 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:58:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:58:56 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:58:56 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:58:56 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:58:56 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:59:19 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:59:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:59:19 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:59:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T03:59:43 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T03:59:43 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T03:59:43 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T03:59:43 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:00:07 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:00:07 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:00:07 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:00:07 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:00:33 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T04:00:59 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T04:01:24 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:01:24 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:01:24 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:01:24 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:01:50 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:01:50 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:01:50 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:01:50 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:02:14 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:02:14 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:02:14 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:02:14 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:02:39 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:02:39 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:02:39 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:02:39 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:03:03 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:03:03 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:03:03 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:03:03 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:03:27 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:03:27 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:03:27 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:03:27 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:03:53 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T04:04:19 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:04:19 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:04:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:04:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:04:43 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:04:43 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:04:43 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:04:43 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:05:07 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:05:07 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:05:07 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:05:07 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:05:33 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T04:05:59 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T04:06:23 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:06:23 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:06:23 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:06:23 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:06:47 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:06:47 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:06:47 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:06:47 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:07:13 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T04:07:39 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:07:39 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:07:39 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:07:39 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:08:05 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T04:08:29 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:08:29 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:08:29 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:08:29 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:08:52 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:08:52 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:08:52 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:08:52 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:09:15 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:09:15 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:09:15 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:09:16 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:09:40 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:09:40 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:09:40 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:09:40 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:10:03 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:10:03 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:10:03 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:10:03 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:10:27 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:10:27 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:10:27 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:10:27 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:10:51 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:10:51 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:10:51 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:10:51 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:11:17 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T04:11:43 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T04:12:08 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:12:08 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:12:08 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:12:08 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:12:32 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:12:32 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:12:32 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:12:32 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:12:56 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:12:56 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:12:56 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:12:56 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:13:21 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:13:21 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:13:21 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:13:21 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:13:45 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:13:45 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:13:45 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:13:45 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:14:08 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:14:08 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:14:08 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:14:08 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:14:33 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:14:33 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:14:33 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:14:33 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:14:58 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:14:58 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:14:58 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:14:58 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:15:23 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:15:23 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:15:23 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:15:24 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:15:47 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:15:47 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:15:47 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:15:47 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:16:10 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:16:10 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:16:10 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:16:10 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:16:33 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:16:33 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:16:33 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:16:33 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:16:56 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:16:56 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:16:56 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:16:56 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:17:19 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:17:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:17:19 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:17:19 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:17:42 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:17:42 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:17:42 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:17:42 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:18:06 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:18:06 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:18:06 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:18:06 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:18:29 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:18:29 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:18:29 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:18:29 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:18:52 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:18:52 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:18:52 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:18:52 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:19:16 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:19:16 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:19:16 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:19:16 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:19:41 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:19:41 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:19:41 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:19:41 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:20:05 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:20:05 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:20:05 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:20:05 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:20:29 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:20:29 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:20:29 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:20:29 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:20:52 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:20:52 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:20:52 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:20:52 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:21:16 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:21:16 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:21:16 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:21:16 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:21:41 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:21:41 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:21:41 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:21:41 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:22:05 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:22:05 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:22:05 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:22:05 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:22:28 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:22:28 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:22:28 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:22:28 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:22:51 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:22:51 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:22:51 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:22:51 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:23:17 - [ERROR][turtl_core::sync] sync::runner() -- incoming: main loop: {"message":"https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll: timed out","type":"generic"}
+2019-05-14T04:23:42 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:23:42 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:23:42 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:23:42 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:24:08 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:24:08 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:24:08 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:24:08 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:24:33 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:24:33 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:24:33 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:24:33 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:24:56 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:24:56 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:24:56 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:24:56 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:25:20 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:25:20 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:25:20 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:25:20 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:25:43 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:25:43 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:25:43 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:25:43 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:26:06 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:26:06 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:26:06 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:26:06 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:26:31 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:26:31 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:26:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:26:31 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:26:54 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:26:54 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:26:54 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:26:54 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming
+2019-05-14T04:27:16 - [INFO][turtl_core::api] api::call() -- res(85): 200 GET https://apiv3.turtlapp.com/sync?sync_id=1013786&type=poll
+2019-05-14T04:27:16 - [INFO][turtl_core::sync::incoming] SyncIncoming.update_local_db_from_api_sync() -- ignored 0 incoming syncs
+2019-05-14T04:27:16 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:connected
+2019-05-14T04:27:16 - [INFO][turtl_core::dispatch] dispatch::dispatch_event() -- sync:incoming

@@ -74,6 +74,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
+modules-right = bspwm i3
 font-0 =mononoki Nerd Font:size=9:antialias=true:autohint=true;0
 font-1 = unifont:fontformat=truetype:size=14:antialias=true;1
 font-3 = Siji:style=Regular:size=10;1
@@ -154,7 +155,7 @@ index-sort = true
 wrapping-scroll = false
 
 ; Only show workspaces on the same output as the bar
-;pin-workspaces = true
+pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = #000

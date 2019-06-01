@@ -1,4 +1,4 @@
-# Defined in /tmp/fish.6YocAx/fish_greeting.fish @ line 2
+# Defined in /tmp/fish.lQRcCc/fish_greeting.fish @ line 2
 function fish_greeting
-	echo "->" (date +%d%a%b%m\|%y\|%R)
+	echo "->" (date +%a%d%b%y\|%R)
 end
