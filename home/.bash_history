@@ -337,3 +337,80 @@ nvim .tmux.conf
 fish
 nvim .tmux.conf
 fish
+gist
+yay 8821ce
+yay homeshick
+yay homeshick
+homeshick clone https://github.com/tsaber/dotfiles
+homeshick link dotfiles -vbf
+yay polybar
+yay ddgr
+yay 
+git clone https://github.com/tsaber/etckep
+cd etckep
+cp -r udev makepkg.conf pacman.conf -t /etc/
+sudo cp -r udev makepkg.conf pacman.conf -t /etc/
+yay tmux
+reboot
+yay termite
+yay termite
+shutdown now
+yay nerd fonts
+fish
+reboot
+nvim
+yay neovim
+vi .config/polybar/config
+chmod +x .config/polybar/launch.sh 
+vim .config/polybar/launch.sh 
+./.config/polybar/launch.sh 
+nvim .config/i3/config
+vim .config/i3/config
+rofi
+fish
+rfkill
+wifi-menu
+sudo wifi-menu
+sudo visudo
+wifi
+yay
+ip link
+yay
+yay termite
+yay alacritty
+yay gist
+gist
+gist --login
+gist --help
+gist -l
+yay wget
+wget https://gist.github.com/b0a1664069c3cdfed5780c55100a3bc3
+ls
+ls b0a1664069c3cdfed5780c55100a3bc3 
+cat b0a1664069c3cdfed5780c55100a3bc3 
+nvim b0a1664069c3cdfed5780c55100a3bc3 
+yay neovim
+nvim b0a1664069c3cdfed5780c55100a3bc3 
+gist
+gist --help
+gist -r b0a1664069c3cdfed5780c55100a3bc3 
+sudo pacman -S $(gist -r b0a1664069c3cdfed5780c55100a3bc3)
+pacman --help
+pacman -Sh
+sudo pacman -S --needed --noconfirm $(gist -r b0a1664069c3cdfed5780c55100a3bc3)
+sudo pacman -S --needed $(gist -r b0a1664069c3cdfed5780c55100a3bc3)
+sudo pacman -S --needed $(sed 's/gtk3//' $(gist -r b0a1664069c3cdfed5780c55100a3bc3))
+sudo pacman -S --needed $(sed 's/gtk3//'-- $(gist -r b0a1664069c3cdfed5780c55100a3bc3))
+sudo pacman -S --needed $(sed 's/gtk3//'- $(gist -r b0a1664069c3cdfed5780c55100a3bc3))
+sudo pacman -S --needed $(gist -r b0a1664069c3cdfed5780c55100a3bc3)
+yay gtk3
+sudo pacman -S --needed $(gist -r b0a1664069c3cdfed5780c55100a3bc3)
+mhwd-kernel
+mhwd-kernel -l
+mhwd-kernel -li
+yay -R linux50 linux51 linux 52
+yay -R linux50 linux51 linux52
+yay -Rd linux50 linux51 linux52
+yay -Rs linux50 linux51 linux52
+yay -Rs linux50 linux51 linux52 linux{50,51,52}-virtualbox-{guest,host}-modules
+nvim .bashrc

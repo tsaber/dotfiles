@@ -22,6 +22,5 @@ end
 #source /usr/share/chruby/{chruby,auto}.fish
 
 if status is-login
-	sudo ryzen-stabilizator -disable-c6 > /dev/null
 	sudo nitrogen --restore
 end

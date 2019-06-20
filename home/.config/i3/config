@@ -94,7 +94,6 @@ workspace $ws9 output DisplayPort-1
 workspace $ws10 output DisplayPort-1
 assign [class="firefox"] $ws3
 assign [class="palemoon"] $ws3
-assign [instance="termite"] $ws4
 assign [class="^(?i)skype$"] $ws1
 assign [class="^dota2$"] $ws10
 assign [class="^Steam$"] $ws10
