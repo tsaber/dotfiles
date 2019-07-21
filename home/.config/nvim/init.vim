@@ -42,7 +42,7 @@ set termguicolors                    " Enable GUI colors for the terminal to get
 set history=100
 set hlsearch
 inoremap <C-U> <C-G>u<C-U>
-let g:tmuxline_powerline_separators = 1
+let g:tmuxline_powerline_separators = 0
 set autoread
 set showcmd
 set ignorecase

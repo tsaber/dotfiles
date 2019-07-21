@@ -92,8 +92,10 @@ workspace $ws7 output DisplayPort-1
 workspace $ws8 output DisplayPort-1
 workspace $ws9 output DisplayPort-1
 workspace $ws10 output DisplayPort-1
-assign [class="firefox"] $ws3
+assign [instance="firefox"] $ws8
 assign [class="palemoon"] $ws3
+assign [instance="termite"] $ws9
+assign [instance="st"] $ws9
 assign [class="^(?i)skype$"] $ws1
 assign [class="^dota2$"] $ws10
 assign [class="^Steam$"] $ws10
@@ -192,10 +194,11 @@ bindsym $mod+Shift+p $ens turtl
 bindsym $mod+Shift+u $ens bitwarden-bin
 exec bitwarden-bin
 # class                 border  backgr. text    indicator
-client.focused #586e75 #586e75 #fdf6e3 #268bd2
-client.focused_inactive #073642 #073642 #93a1a1 #002b36
-client.unfocused #002b36 #002b36 #586e75 #002b36
-client.urgent #dc322f #dc322f #fdf6e3 #dc322f
+client.focused          #0088CC #0088CC #ffffff #dddddd
+#client.focused_inactive #0C2D3C #0C2D3C #888888 #484e50 # I don't like it that way
+client.focused_inactive #333333 #333333 #888888 #292d2e
+client.unfocused        #333333 #333333 #888888 #292d2e
+client.urgent           #2f343a #900000 #ffffff #900000
 $ens termite -e "tmux new /usr/bin/weechat"
 bindsym $mod+Shift+m $ens kitty
 #maim:
@@ -208,7 +211,7 @@ bindsym $mod+Shift+Print exec fish -c 'maim -i (xdotool getactivewindow) ~/curwi
 
 #$ens alacritty -e /usr/bin/newsboat 
 $ens redshift -l 56:5
-$ens alacritty -e pavucontrol
+$ens pavucontrol
 $ens nm-applet
 exec_always 'copyq >> /dev/null'
 $ens rclone mount derpberx: /home/zava/0b 
@@ -216,8 +219,10 @@ $ens rclone mount we: /home/zava/0a
 $ens rclone mount yernderx: /home/zava/0y
 $ens thunderbird
 bindsym $mod+Mod1+r $ens chromium
-$ens "mons --primary DisplayPort-1; and sleep 4; and mons -e left"
+$ens fish -c 'mons --primary DisplayPort-1; and sleep 4; and mons -e left'
 bindsym $mod+Mod1+f exec "fish -c facco"
+bindsym $mod+Mod1+d exec "fish -c doto"
 bindsym $mod+F5 $ens '/home/zava/bin/bluerest.sh'
 exec devmon
 $ens blueman-adapters
+$ens ~/.screenlayout/sterp.sh

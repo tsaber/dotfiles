@@ -24,3 +24,6 @@ end
 if status is-login
 	sudo nitrogen --restore
 end
+if status is-interactive
+	base16 atelier-sulphurpool
+end

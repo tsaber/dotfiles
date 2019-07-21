@@ -7,8 +7,8 @@ clickable_url = true
 border_width = 0.5 
 #font = Pixel Operator Mono 16
 #font = artwiz drift.se
-font = FantasqueSansMono Nerd Font 11 
-#font = Fixedsys Excelsior 16
+#font = FantasqueSansMono Nerd Font 11 
+font = Fixedsys Excelsior 12
 #font = Nova Mono 10
 #  lock
 #font = 
