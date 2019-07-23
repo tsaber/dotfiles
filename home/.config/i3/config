@@ -94,7 +94,8 @@ workspace $ws9 output DisplayPort-1
 workspace $ws10 output DisplayPort-1
 assign [instance="firefox"] $ws8
 assign [class="palemoon"] $ws3
-assign [instance="termite"] $ws9
+assign [instance="transmission-qt"] $ws6
+#assign [instance="termite"] $ws9
 assign [instance="st"] $ws9
 assign [class="^(?i)skype$"] $ws1
 assign [class="^dota2$"] $ws10
@@ -226,3 +227,4 @@ bindsym $mod+F5 $ens '/home/zava/bin/bluerest.sh'
 exec devmon
 $ens blueman-adapters
 $ens ~/.screenlayout/sterp.sh
+$ens nitrogen --restore
