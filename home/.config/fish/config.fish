@@ -20,10 +20,8 @@ end
 #cowsay -f satanic (date +%d%a%b%y\|%R\.)
 #bax eval (fasd --init auto)
 #source /usr/share/chruby/{chruby,auto}.fish
-
 if status is-login
-	sudo nitrogen --restore
+	nitrogen --restore
 end
-if status is-interactive
-	base16 atelier-sulphurpool
-end
+base16-atelier-sulphurpool
+sudo ryzen-stabilizator --disable-c6 >> /dev/null

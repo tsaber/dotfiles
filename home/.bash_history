@@ -416,3 +416,12 @@ yay -Rs linux50 linux51 linux52 linux{50,51,52}-virtualbox-{guest,host}-modules
 nvim .bashrc
 yay -Rs linux50 linux51 linux52LANG=C pactl list cards | awk -v card="#8" -v ORS="\n" -v FS="\n" -v RS="" 'split($1,var," ")  var[1] ~ /Card/ && var[2] == card {print}'LANG=C pactl list cards | awk -v card="#8" -v ORS="\n" -v FS="\n" -v RS="" 'split($1,var," ")  var[1] ~ /Card/ && var[2] == card {print}'LANG=C pactl list cards | awk -v card="#8" -v ORS="\n" -v FS="\n" -v RS="" 'split($1,var," ")  var[1] ~ /Card/ && var[2] == card {print}'LANG=C pactl list cards | awk -v card="#8" -v ORS="\n" -v FS="\n" -v RS="" 'split($1,var," ")  var[1] ~ /Card/ && var[2] == card {print}'LANG=C pactl list cards | awk -v card="#8" -v ORS="\n" -v FS="\n" -v RS="" 'split($1,var," ")  var[1] ~ /Card/ && var[2] == card {print}'LANG=C pactl list cards | awk -v card="#8" -v ORS="\n" -v FS="\n" -v RS="" 'split($1,var," ")  var[1] ~ /Card/ && var[2] == card {print}'LANG=C pactl list cards | awk -v card="#8" -v ORS="\n" -v FS="\n" -v RS="" 'split($1,var," ")  var[1] ~ /Card/ && var[2] == card {print}'LANG=C pactl list cards | awk -v card="#8" -v ORS="\n" -v FS="\n" -v RS="" 'split($1,var," ")  var[1] ~ /Card/ && var[2] == card {print}'LANG=C pactl list cards | awk -v card="#8" -v ORS="\n" -v FS="\n" -v RS="" 'split($1,var," ")  var[1] ~ /Card/ && var[2] == card {print}'
 nvim .bashpactlqpacj
+sudo find -name 'fish;
+sudo find -name 'fish'
+sudo find / -name 'fish'
+nvim .bashrc
+fish
+nitrogen
+cd Downloads
+ls
+fish

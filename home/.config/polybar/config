@@ -3,11 +3,12 @@
 background =  #15282D
 background-alt = #1E1C52
 ;foreground = ${xrdb:color7:#222}
-foreground = #a1a4f0
-foreground-alt = #A171a0
-primary = #6317b7
-secondary = #a1a5f2
-alert = #bd2c40
+;foreground = #a1a4f0
+foreground = #aff1ff
+foreground-alt = #aff1ff
+primary = #33a7b7
+secondary = #f1f1f1
+alert = #aa0aff
 
 [bar/example]
 monitor = ${env:MONITOR:DisplayPort-1}
@@ -224,7 +225,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "ɕ★ "
+format-prefix = "ɕ "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
 label = %percentage:2%%
@@ -239,12 +240,12 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp3s0
+interface = wlp1s0
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
+format-connected =  <ramp-signal> <label-connected>
 format-connected-underline = #9f78e1
-label-connected = %essid%
+label-connected = ɑ %essid%
 
 format-disconnected = <label-disconnected>
 format-disconnected-underline = ${self.format-connected-underline}
@@ -265,7 +266,7 @@ interface = enp3s0f3u1u4u3
 interval = 3.0
 
 format-connected-underline =  #55aaaa
-format-connected-prefix = "∢ "
+format-connected-prefix = "ɧ "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
@@ -279,10 +280,10 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =  " %d%m%y%b%a "
+date =  " .%d%a.%m%b.%y"
 date-alt = " %Y-%m-%d"
 
-time = %H%M%S
+time = %H.%M.%S
 time-alt = %H%M%S
 
 format-prefix = ᚅ
@@ -358,24 +359,24 @@ format-charging-underline = #abb5ba
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = "☣ " 
+format-full-prefix = "☣ "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
-ramp-capacity-0 = ☣ 
+ramp-capacity-0 = ☣
 ramp-capacity-1 = ☣
 ramp-capacity-2 = ☣
 ramp-capacity-foreground = ${colors.foreground-alt}
 
-animation-charging-0 = ☣ 
-animation-charging-1 = ☢
+animation-charging-0 = ☣
+animation-charging-1 = ☣
 animation-charging-2 = ☣
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
-animation-discharging-0 = ☢
-animation-discharging-1 = ☢
-animation-discharging-2 = ☢
+animation-discharging-0 = ☣
+animation-discharging-1 = ☣
+animation-discharging-2 = ☣
 animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-framerate = 750
 
@@ -406,7 +407,7 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = ©
+label-open = ɀ
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}

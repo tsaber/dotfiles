@@ -94,13 +94,14 @@ workspace $ws9 output DisplayPort-1
 workspace $ws10 output DisplayPort-1
 assign [instance="firefox"] $ws8
 assign [class="palemoon"] $ws3
+assign [instance="bitwarden"] $ws5
+assign [instance="pavucontrol"] $ws2
 assign [instance="transmission-qt"] $ws6
 #assign [instance="termite"] $ws9
 assign [instance="st"] $ws9
 assign [class="^(?i)skype$"] $ws1
 assign [class="^dota2$"] $ws10
 assign [class="^Steam$"] $ws10
-assign [class="bitwarden-bin"] $ws5
 
 assign [class="^lnp$"] $ws8
 # assign [class="^Dwarf_Fortress$"] $ws9
@@ -187,10 +188,10 @@ $ens termite -e 'an2linuxserver.py'
 exec_always --no-startup-id /home/zava/.config/polybar/launch.sh
 exec_always --no-startup-id fish -c usder
 exec 'fish -c sudo nitrogen --restore'
-bindsym $mod+g $ens alacritty
+bindsym $mod+g $ens termite
 bindsym $mod+Shift+o $ens qutebrowser
 bindsym $mod+Shift+i $ens pavucontrol
-bindsym $mod+Shift+g $ens termite
+bindsym $mod+Shift+g $ens alacritty
 bindsym $mod+Shift+p $ens turtl
 bindsym $mod+Shift+u $ens bitwarden-bin
 exec bitwarden-bin
@@ -228,3 +229,5 @@ exec devmon
 $ens blueman-adapters
 $ens ~/.screenlayout/sterp.sh
 $ens nitrogen --restore
+$ens transmission-qt
+$ens pia-client
