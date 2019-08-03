@@ -75,7 +75,8 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-modules-right = bspwm i3
+modules-center = bspwm i3
+modules-left = date
 font-0 = mononoki Nerd Font:size=9:antialias=true:autohint=true;0
 font-1 = unifont:fontformat=truetype:size=14:antialias=true;1
 font-3 = Siji:style=Regular:size=10;1
@@ -280,7 +281,7 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =  " .%d%a.%m%b.%y"
+date =  " %a|%d.%m.%y|"
 date-alt = " %Y-%m-%d"
 
 time = %H.%M.%S
