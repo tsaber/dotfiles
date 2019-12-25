@@ -38,7 +38,7 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 bindsym $mod+s exec tdrop -maw -10 -s dropdown termite 
-bindsym $mod+i exec chromium
+bindsym $mod+i exec firefox
 bindsym $mod+Left focus left
 bindsym $mod+F12 termite -e "bash"
 bindsym $mod+Down focus down
@@ -92,7 +92,7 @@ workspace $ws7 output DisplayPort-1
 workspace $ws8 output DisplayPort-1
 workspace $ws9 output DisplayPort-1
 workspace $ws10 output DisplayPort-1
-assign [instance="firefox"] $ws8
+#assign [instance="firefox"] $ws8
 assign [instance="turtl"] $ws9
 assign [class="palemoon"] $ws3
 assign [instance="bitwarden"] $ws5
@@ -217,7 +217,7 @@ $ens rclone mount we: /home/zava/0a
 $ens rclone mount yernderx: /home/zava/0y
 $ens thunderbird
 bindsym $mod+Mod1+r $ens chromium
-$ens fish -c 'mons --primary DisplayPort-1; and sleep 4; and mons -e left; and polyb'
+#$ens fish -c 'mons --primary DisplayPort-1; and sleep 4; and mons -e left; and polyb'
 bindsym $mod+Mod1+f exec "fish -c facco"
 bindsym $mod+Mod1+d exec "fish -c doto"
 bindsym $mod+F5 $ens '/home/zava/bin/bluerest.sh'
@@ -226,5 +226,6 @@ $ens blueman-adapters
 $ens ~/.screenlayout/sterp.sh
 $ens nitrogen --restore
 $ens transmission-qt
-$ens fish -c 'pia-client'
+#$ens fish -c 'pia-client'
 $ens turtl
+$ens hp-systray

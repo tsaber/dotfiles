@@ -23,5 +23,4 @@ end
 if status is-login
 	nitrogen --restore
 end
-base16-atelier-sulphurpool
-sudo ryzen-stabilizator --disable-c6 >> /dev/null
+base16-brogrammer

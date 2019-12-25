@@ -425,3 +425,14 @@ nitrogen
 cd Downloads
 ls
 fish
+chsh
+sudo visudo
+nvim /etc/makepkg.conf 
+yay pigz
+yay termite
+reboot
+yay aafm
+fish
+exit
+f
+exit

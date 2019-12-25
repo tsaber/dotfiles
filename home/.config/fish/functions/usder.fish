@@ -1,5 +1,5 @@
-# Defined in /tmp/fish.49lJKy/usder.fish @ line 2
+# Defined in /tmp/fish.tYSmWO/usder.fish @ line 2
 function usder
-	setxkbmap us -option 'compose:menu'; and xmodmap /home/zava/.fddfk 
+	setxkbmap de -option 'compose:menu'; and xmodmap /home/zava/.fddfk 
 	echo $status
 end
