@@ -1,5 +1,0 @@
-cl_showfps 1
-fps_max 14
-
-bind F10 "volume 0.01;fps_max 12"
-bind F9  "volume 0.4;fps_max 70"

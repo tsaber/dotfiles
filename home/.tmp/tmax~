@@ -1,2 +1,0 @@
-#!/usr/bin/fish
-(tmux ls | grep -vq attached; and tmux -2 at); or tmux -2

@@ -1,3 +1,0 @@
-[ -f ~/.fzf.bash ]; and source ~/.fzf.bash
-
-source .va

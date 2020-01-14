@@ -1,3 +1,0 @@
-function ls
-	do ls -a;
-end

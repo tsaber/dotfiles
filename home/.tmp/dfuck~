@@ -1,7 +1,0 @@
-#!/usr/bin/fish
-
-tmux split-window dfat &
-
-cd /opt/dwarffortress
-
-bash ./dfhack
