@@ -28,7 +28,7 @@ default_orientation horizontal
 bindsym $mod+Shift+Return $t 
 bindsym $mod+Return $st 
 bindsym $mod+Shift+q kill
-bindsym $mod+q exec --no-startup-id "rofi -modi window#run#drun#ssh#combi -show run -theme lb"
+bindsym $mod+q exec --no-startup-id "rofi -modi window#run#drun#ssh#combi -show run -theme lb -font 'Fixedsys Excelsior 13'"
 bindsym $mod+e exec --no-startup-id rofi -show window
 bindsym $mod+F1 exec copyq toggle
 bindsym $mod+F2 exec "fish -c polyb"
@@ -230,7 +230,7 @@ exec devmon
 $ens blueman-adapters
 $ens ~/.screenlayout/sterp.sh
 $ens nitrogen --restore
-$ens transmission-qt
+#$ens transmission-qt
 #$ens fish -c 'pia-client'
 $ens turtl
 $ens hp-systray

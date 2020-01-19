@@ -8,7 +8,8 @@ border_width = 0.5
 #font = Pixel Operator Mono 16
 #font = artwiz drift.se
 #font = FantasqueSansMono Nerd Font 11 
-font = Fixedsys Excelsior 12
+font = Fixedsys Excelsior  14
+	
 #font = Nova Mono 10
 #  lock
 #font = 
@@ -24,58 +25,58 @@ scrollback_lines = 5000
 search_wrap = true
 urgent_on_bell = true
 hyperlinks = true
-cursor_blink = true
-browser = w3m
+
+browser = lynx
 filter_unmatched_urls = true
 modify_other_keys = false 
 size_hints = true
-#scrollbar = off
-[colors]
-# Base16 Atelier Sulphurpool
-# Author: Bram de Haan (http://atelierbramdehaan.nl)
 
-foreground          = #979db4
-foreground_bold     = #dfe2f1
-cursor              = #dfe2f1
-cursor_foreground   = #202746
-background          = rgba(32, 39, 70, 0.7)
+[colors]
+# Base16 Apathy
+# Author: Jannik Siebert (https://github.com/janniks)
+
+foreground          = #81B5AC
+foreground_bold     = #A7CEC8
+cursor              = #A7CEC8
+cursor_foreground   = #031A16
+background          = rgba(3, 26, 22)
 
 # 16 color space
 
 # Black, Gray, Silver, White
-color0  = #202746
-color8  = #6b7394
-color7  = #979db4
-color15 = #f5f7ff
+color0  = #031A16
+color8  = #2B685E
+color7  = #81B5AC
+color15 = #D2E7E4
 
 # Red
-color1  = #c94922
-color9  = #c94922
+color1  = #3E9688
+color9  = #3E9688
 
 # Green
-color2  = #ac9739
-color10 = #ac9739
+color2  = #883E96
+color10 = #883E96
 
 # Yellow
-color3  = #c08b30
-color11 = #c08b30
+color3  = #3E4C96
+color11 = #3E4C96
 
 # Blue
-color4  = #3d8fd1
-color12 = #3d8fd1
+color4  = #96883E
+color12 = #96883E
 
 # Purple
-color5  = #6679cc
-color13 = #6679cc
+color5  = #4C963E
+color13 = #4C963E
 
 # Teal
-color6  = #22a2c9
-color14 = #22a2c9
+color6  = #963E4C
+color14 = #963E4C
 
 # Extra colors
-color16 = #c76b29
-color17 = #9c637a
-color18 = #293256
-color19 = #5e6687
-color20 = #898ea4
-color21 = #dfe2f1
+color16 = #3E7996
+color17 = #3E965B
+color18 = #0B342D
+color19 = #184E45
+color20 = #5F9C92
+color21 = #A7CEC8
