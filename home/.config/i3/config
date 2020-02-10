@@ -101,9 +101,11 @@ assign [instance="transmission-qt"] $ws6
 #assign [instance="termite"] $ws9
 assign [instance="st"] $ws9
 assign [class="^(?i)skype$"] $ws1
-assign [class="^dota2$"] $ws10
+assign [class="^dota2$"] $ws8
 assign [class="^Steam$"] $ws10
 
+assign [class="teamspeak3"] $ws10
+assign [class="ripcord"] $ws1
 assign [class="^lnp$"] $ws8
 # assign [class="^Dwarf_Fortress$"] $ws9
 
@@ -148,7 +150,6 @@ hide_edge_borders smart
 default_border pixel
 default_floating_border pixel
 workspace back_and_forth output eDP
-
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+Tab move container to workspace back_and_forth
 bindsym $mod+n scratchpad show
@@ -196,21 +197,65 @@ bindsym $mod+Shift+g $ens alacritty
 bindsym $mod+Shift+p $ens turtl
 bindsym $mod+Shift+u $ens bitwarden-bin
 exec bitwarden-bin
-# class                 border  backgr. text    indicator
-client.focused          #0088CC #0088CC #ffffff #dddddd
-#client.focused_inactive #0C2D3C #0C2D3C #888888 #484e50 # I don't like it that way
-client.focused_inactive #333333 #333333 #888888 #292d2e
-client.unfocused        #333333 #333333 #888888 #292d2e
-client.urgent           #2f343a #900000 #ffffff #900000
+# solarized accents
+set $yellow	#b58900
+set $orange	#cb4b16
+set $red	#dc322f
+set $magenta	#d33682
+set $violet	#6c71c4
+set $blue	#268bd2
+set $cyan	#2aa198
+set $green	#859900
+
+# solarized dark
+set $baseA3 #002b36
+set $baseA2 #073642
+set $baseA1 #586e75
+set $baseA0 #657b83
+set $baseB0 #839496
+set $baseB1 #93a1a1
+set $baseB2 #eee8d5
+set $baseB3 #fdf6e3
+set $custom #1c5766
+
+# $i3-background
+exec_always --no-startup-id xsetroot -solid '$baseA2'
+
+###################
+# solarized (clean)
+###################
+# clientclass 			border  backgr. text 	indicator
+client.focused 			$green	$green	$baseB3 $blue
+client.focused_inactive		$cyan	$cyan	$baseB2 $violet
+client.unfocused  		$baseA2 $baseA2 $baseB1 $baseA1
+#client.urgent 	 		$orange $orange $baseB3 $red
+client.urgent 	 		$yellow $yellow $baseB3 $orange
+
+####################
+# solarized (borders)
+####################
+# clientclass			border  backgr. text 	indicator
+client.focused    		$baseB0	$green	$baseB3 $blue
+client.focused_inactive 	$baseB0	$cyan	$baseB2 $violet
+client.unfocused  		$baseB0 $baseA2 $baseB1 $baseA1
+#client.urgent     		$baseB0 $orange $baseB3 $red
+client.urgent 	 		$baseB0 $yellow $baseB3 $orange
+
+###############################
+# disable cyan? (clean/borders)
+###############################
+#client.focused_inactive 	$custom $custom $baseB2 $violet
+#client.focused_inactive 	$baseB0 $custom $baseB2 $violet
+
 $ens termite -e "tmux new /usr/bin/weechat"
 bindsym $mod+Shift+m $ens kitty
 #maim:
 #Normaltechnique
-bindsym Print exec fish -c 'maim /home/zava/Pictures/skrenshet(date +%a%b%s%H%M).png'
+bindsym Print exec "maim ~/Pictures/skrenshet$(date +%a%b%s%H%M).png"
 #Advanced technique
-bindsym $mod+Print exec fish -c 'maim -s /home/zava/Pictures/megasele(date +%a%H%M%s).png'
+bindsym $mod+Print exec "maim -s ~/Pictures/megasele$(date +%a%H%M%s).png"
 #Hidden technique
-bindsym $mod+Shift+Print exec fish -c 'maim -i (xdotool getactivewindow) ~/curwind(date +%a%b%R).jpg'
+bindsym $mod+Shift+Print exec "maim -i $(xdotool getactivewindow) ~/Pictures/curwind$(date +%a%b%R).png"
 
 #$ens alacritty -e /usr/bin/newsboat 
 $ens redshift -l 56:5
@@ -231,6 +276,10 @@ $ens blueman-adapters
 $ens ~/.screenlayout/sterp.sh
 $ens nitrogen --restore
 #$ens transmission-qt
-#$ens fish -c 'pia-client'
+$ens pia-client
 $ens turtl
 $ens hp-systray
+$ens xmodmap /home/zava/.Xmodmap
+$ens setxkbmap -option compose:menu
+$ens ripcord
+$ens teamspeak3

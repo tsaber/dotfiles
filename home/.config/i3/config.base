@@ -101,9 +101,11 @@ assign [instance="transmission-qt"] $ws6
 #assign [instance="termite"] $ws9
 assign [instance="st"] $ws9
 assign [class="^(?i)skype$"] $ws1
-assign [class="^dota2$"] $ws10
+assign [class="^dota2$"] $ws8
 assign [class="^Steam$"] $ws10
 
+assign [class="teamspeak3"] $ws10
+assign [class="ripcord"] $ws1
 assign [class="^lnp$"] $ws8
 # assign [class="^Dwarf_Fortress$"] $ws9
 
@@ -148,7 +150,6 @@ hide_edge_borders smart
 default_border pixel
 default_floating_border pixel
 workspace back_and_forth output eDP
-
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Shift+Tab move container to workspace back_and_forth
 bindsym $mod+n scratchpad show
@@ -201,11 +202,11 @@ $ens termite -e "tmux new /usr/bin/weechat"
 bindsym $mod+Shift+m $ens kitty
 #maim:
 #Normaltechnique
-bindsym Print exec fish -c 'maim /home/zava/Pictures/skrenshet(date +%a%b%s%H%M).png'
+bindsym Print exec "maim ~/Pictures/skrenshet$(date +%a%b%s%H%M).png"
 #Advanced technique
-bindsym $mod+Print exec fish -c 'maim -s /home/zava/Pictures/megasele(date +%a%H%M%s).png'
+bindsym $mod+Print exec "maim -s ~/Pictures/megasele$(date +%a%H%M%s).png"
 #Hidden technique
-bindsym $mod+Shift+Print exec fish -c 'maim -i (xdotool getactivewindow) ~/curwind(date +%a%b%R).jpg'
+bindsym $mod+Shift+Print exec "maim -i $(xdotool getactivewindow) ~/Pictures/curwind$(date +%a%b%R).png"
 
 #$ens alacritty -e /usr/bin/newsboat 
 $ens redshift -l 56:5
@@ -226,6 +227,10 @@ $ens blueman-adapters
 $ens ~/.screenlayout/sterp.sh
 $ens nitrogen --restore
 #$ens transmission-qt
-#$ens fish -c 'pia-client'
+$ens pia-client
 $ens turtl
 $ens hp-systray
+$ens xmodmap /home/zava/.Xmodmap
+$ens setxkbmap -option compose:menu
+$ens ripcord
+$ens teamspeak3

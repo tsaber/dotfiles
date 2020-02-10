@@ -26,57 +26,57 @@ search_wrap = true
 urgent_on_bell = true
 hyperlinks = true
 
-browser = w3m
+browser = lynx
 filter_unmatched_urls = true
 modify_other_keys = false 
 size_hints = true
 
 [colors]
-# Base16 Brogrammer
-# Author: Vik Ramanujam (http://github.com/piggyslasher)
+# Base16 Atelier Estuary Light
+# Author: Bram de Haan (http://atelierbramdehaan.nl)
 
-foreground          = #4e5ab7
-foreground_bold     = #1081d6
-cursor              = #1081d6
-cursor_foreground   = #1f1f1f
-background          = rgba(31, 31, 31)
+foreground          = #5f5e4e
+foreground_bold     = #302f27
+cursor              = #302f27
+cursor_foreground   = #f4f3ec
+background          = rgba(244, 243, 236)
 
 # 16 color space
 
 # Black, Gray, Silver, White
-color0  = #1f1f1f
-color8  = #ecba0f
-color7  = #4e5ab7
-color15 = #d6dbe5
+color0  = #f4f3ec
+color8  = #878573
+color7  = #5f5e4e
+color15 = #22221b
 
 # Red
-color1  = #d6dbe5
-color9  = #d6dbe5
+color1  = #ba6236
+color9  = #ba6236
 
 # Green
-color2  = #f3bd09
-color10 = #f3bd09
+color2  = #7d9726
+color10 = #7d9726
 
 # Yellow
-color3  = #1dd361
-color11 = #1dd361
+color3  = #a5980d
+color11 = #a5980d
 
 # Blue
-color4  = #5350b9
-color12 = #5350b9
+color4  = #36a166
+color12 = #36a166
 
 # Purple
-color5  = #0f7ddb
-color13 = #0f7ddb
+color5  = #5f9182
+color13 = #5f9182
 
 # Teal
-color6  = #1081d6
-color14 = #1081d6
+color6  = #5b9d48
+color14 = #5b9d48
 
 # Extra colors
-color16 = #de352e
-color17 = #ffffff
-color18 = #f81118
-color19 = #2dc55e
-color20 = #2a84d2
-color21 = #1081d6
+color16 = #ae7313
+color17 = #9d6c7c
+color18 = #e7e6df
+color19 = #929181
+color20 = #6c6b5a
+color21 = #302f27

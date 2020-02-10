@@ -1,6 +1,6 @@
 #
 # ~/.bashrc
-
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export NVM_DIR="$HOME/.nvm"
@@ -11,4 +11,7 @@ export NVM_DIR="$HOME/.nvm"
 source /usr/share/nvm/init-nvm.sh
 source $HOME/.alias
 . /usr/share/fzf/fzf-extras.bash
-fish
+if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" ]]
+then
+	exec fish
+fi
