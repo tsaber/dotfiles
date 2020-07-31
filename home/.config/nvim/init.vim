@@ -29,10 +29,11 @@ Plug 'mhinz/vim-signify'
 Plug 'tomtom/quickfixsigns_vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'itchyny/lightline.vim'
+Plug 'lambdalisue/suda.vim'
 call plug#end()
-
-cmap w!! w !sudo tee >/dev/null % 
+cmap w!! w suda://%
 cmap Q! q!
+" cnoremap w!! execute 'silent! write !SUDO_ASKPASS=`which ssh-askpass` sudo tee % >/dev/null' <bar> edit!
 syntax on
 filetype plugin on 
 set background=dark

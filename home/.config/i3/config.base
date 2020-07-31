@@ -104,7 +104,7 @@ assign [class="^(?i)skype$"] $ws1
 assign [class="^dota2$"] $ws8
 assign [class="^Steam$"] $ws10
 
-assign [class="teamspeak3"] $ws10
+assign [class="^factorio$"] $ws3
 assign [class="ripcord"] $ws1
 assign [class="^lnp$"] $ws8
 # assign [class="^Dwarf_Fortress$"] $ws9
@@ -232,5 +232,8 @@ $ens turtl
 $ens hp-systray
 $ens xmodmap /home/zava/.Xmodmap
 $ens setxkbmap -option compose:menu
-$ens ripcord
+#$ens ripcord
 $ens teamspeak3
+$ens discord
+$ens caffeine-ng
+$ens firefox "https://www.twitch.tv/popout/admiralbulldog/chat?popout="
